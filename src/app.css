@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family: 'equinox';
+	src: url("/Equinox\ Regular.otf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'equinox';
+	src: url("/Equinox\ Bold.otf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'vonique';
+	src: url("/Vonique64.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'vonique';
+	src: url("/Vonique\ 64\ Bold.ttf");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'valorant';
+	src: url("Valorant\ Font.ttf");
+}
