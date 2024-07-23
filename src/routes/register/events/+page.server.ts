@@ -6,7 +6,7 @@ export const actions = {
 
         const data = await request.formData();
         const coding = data.get('coding');
-        const webDesigning = data.get('webDesigning');
+        const webDesigning = data.get('web-designing');
         const treasureHunt = data.get('treasureHunt');
 
         console.log(webDesigning)
