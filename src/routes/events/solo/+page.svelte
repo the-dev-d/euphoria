@@ -3,7 +3,7 @@
     import { Checkbox } from "$lib/shardcn/ui/checkbox";
 	import { Label } from "$lib/shardcn/ui/label";
     import * as RadioGroup from "$lib/shardcn/ui/radio-group/index";
-	import type { ActionData } from "../$types";
+	import type { ActionData } from "../register/$types";
 
 
     const events = {
@@ -12,7 +12,6 @@
     }
 
     export let data: ActionData; 
-    
   </script>
 
 <main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
