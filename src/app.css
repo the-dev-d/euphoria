@@ -77,6 +77,23 @@
   }
 }
 
+
+
+::-webkit-scrollbar {
+	@apply w-3;
+}
+
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	@apply bg-green-900;
+	@apply rounded-s-md;
+}
+
 @font-face {
 	font-family: 'equinox';
 	src: url("/Equinox\ Regular.otf");

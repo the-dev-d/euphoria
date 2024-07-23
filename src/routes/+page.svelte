@@ -1,4 +1,26 @@
 <script>
+	import About from '$lib/components/LandingPage/About.svelte';
+	import Banner from '$lib/components/LandingPage/Banner.svelte';
+	import DevDParallax from '$lib/components/LandingPage/DevD-Parallax.svelte';
+	import Sponsors from '$lib/components/LandingPage/Sponsors.svelte';
+</script>
+
+<svelte:head>
+	<title>RCSS | EUPHORIA</title>
+	<meta name="EUFORIA" content="EUFORIA-respawn-2k24" />
+</svelte:head>
+
+<Banner />
+<About />
+<Sponsors />
+<DevDParallax />
+
+
+<style>
+</style>
+
+
+<!-- <script>
 	import glitch from "$lib/images/main/glitch.png"
 	import contentglitch from "$lib/images/main/content-glitch.png"
 	import agents from "$lib/images/main/agents.png"
@@ -57,4 +79,4 @@
 	.anim-studder {
 		animation: glow 3s linear infinite ;
 	}
-</style>
+</style> -->
