@@ -16,7 +16,7 @@ import Parallax from "../Parallax.svelte";
 	<div class=" absolute left-0 top-0 w-full h-full parallax-scene overflow-hidden">
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.4" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom anim-studder" src='/images/main/content-glitch.png' alt="">
 		<div data-depth="0.25" class="w-full h-[25%] grid content-end">
-			<div class="font-valorant text-center text-9xl from-red-500 to-red-400 bg-gradient-to-br bg-clip-text text-transparent">SOUTH INDIAS BIGGEST</div>
+			<div class="font-valorant text-center text-6xl gl:text-9xl from-red-500 to-red-400 bg-gradient-to-br bg-clip-text text-transparent">SOUTH INDIAS BIGGEST</div>
 		</div>
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.35" id="glitch" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom anim-studder" src='/images/main/glitch.png' alt="">
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.0" id="floor" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src='/images/main/floor.png' alt="">
@@ -24,7 +24,7 @@ import Parallax from "../Parallax.svelte";
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.2" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src='/images/main/agents-2.png' alt="">
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.1" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src='/images/main/agents.png' alt="">
 		<div data-depth="0.08" class="w-full h-full grid content-end">
-			<div class="font-valorant text-center text-black stroke-transparent stroke-[3rem] text-9xl from-green-500 to-green-400 bg-gradient-to-br bg-clip-text">LAN TOURNAMENT</div>
+			<div class="font-valorant text-center text-black stroke-transparent stroke-[3rem] text-6xl gl:text-9xl from-green-500 to-green-400 bg-gradient-to-br bg-clip-text">LAN TOURNAMENT</div>
 		</div>
 	</div>
 	</Parallax>
