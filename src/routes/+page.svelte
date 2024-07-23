@@ -1,10 +1,10 @@
 <script>
 	import glitch from "$lib/images/main/glitch.png"
 	import contentglitch from "$lib/images/main/content-glitch.png"
-	import logo from "$lib/images/main/logo.png"
 	import agents from "$lib/images/main/agents.png"
+	import agents2 from "$lib/images/main/agents-2.png"
+	import agents3 from "$lib/images/main/agents-3.png"
 	import floor from "$lib/images/main/floor.png"
-
 	import { onMount } from "svelte";
 	import Parallax from "$lib/images/components/Parallax.svelte";
 
@@ -17,40 +17,32 @@
 </svelte:head>
 
 <main>
-	<header class="w-full h-[100svh] max-h-[100svh] overflow-hidden bg-valorant-bg relative">
+	<header class="w-full h-[80svh] max-h-[80svh] bg-valorant-bg relative">
 		<Parallax>
-			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.4" id="content-glitch" class="w-full h-full object-cover anim-studder" src={contentglitch} alt="">
-			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.35" id="glitch" class="w-full h-full object-cover anim-studder" src={glitch} alt="">
-			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.3" id="logo" class="w-full h-full object-cover" src={logo} alt="">
-			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.0" id="floor" class="w-full h-full object-cover" src={floor} alt="">
-			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.2" id="agents" class="w-full h-full object-cover" src={agents} alt="">
-		</Parallax>
-		<div class="absolute p-3 top-0 left-0 text-white h-[95%] grid w-2/5 place-items-center content-center">
-			<div>
-				<div class="mb-6">
-					<h3 class="font-equinox uppercase text-2xl font-bold">Rajagairi College of Social Sciences</h3>
-					<h3 class="font-equinox font-semibold">In collaboration with <span class="text-2xl tracking-widest ml-2">AKEF</span></h3>
-				</div>
-				<div class="bg-gradient-to-br from-red-500 to-red-300 bg-clip-text text-transparent">
-					<h1 class="text-8xl font-valorant -ml-2">
-						EUPHORIA
-					</h1>
-					<h4 class="flex justify-between font-equinox text-xl w-[95%] font-semibold">
-						<span>R</span>
-						<span>E</span>
-						<span>S</span>
-						<span>P</span>
-						<span>A</span>
-						<span>W</span>
-						<span>N</span>
-					</h4>
-				</div>
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.4" id="content-glitch" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom anim-studder" src={contentglitch} alt="">
+			<div data-depth="0.25" class="w-full h-[25%] grid content-end">
+				<div class="font-valorant text-center text-9xl from-red-500 to-red-400 bg-gradient-to-br bg-clip-text text-transparent">SOUTH INDIAS BIGGEST</div>
 			</div>
-		</div>
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.35" id="glitch" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom anim-studder" src={glitch} alt="">
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.0" id="floor" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src={floor} alt="">
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.15" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src={agents3} alt="">
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.2" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src={agents2} alt="">
+			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.1" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src={agents} alt="">
+			<div data-depth="0.08" class="w-full h-full grid content-end">
+				<div class="font-valorant text-center text-black stroke-transparent stroke-[3rem] text-9xl from-green-500 to-green-400 bg-gradient-to-br bg-clip-text">LAN TOURNAMENT</div>
+			</div>
+		</Parallax>
 	</header>
 </main>
 
 <style lang="postcss">
+
+	.text-border {
+		text-shadow: 0px 0px 0px 1px white;
+	}
+	.container-inline {
+		container-type: inline-size;
+	}
 	@keyframes glow {
 		0%, 20%, 40%, 55%, 90%, 100% {
 			filter: brightness(100%);
