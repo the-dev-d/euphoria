@@ -14,8 +14,8 @@
     export let data: ActionData; 
   </script>
 
-<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
-    <form method="POST" class="grid gap-6 bg-white p-8 rounded-md shadow-md w-1/3">
+<main class="w-full h-[100svh] grid place-items-center bg-white">
+    <form method="POST" class="grid gap-6 p-8 rounded-md shadow-md w-1/3">
         <div class="grid items-center grid-cols-2">
             <div class="grid gap-6">
                 <RadioGroup.Root bind:value={events.coding}>
