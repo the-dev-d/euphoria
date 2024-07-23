@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<header class=" relative h-10 w-full px-4 gl:h-20">
+<header class=" fixed h-10 w-full px-4 gl:h-20 bg-primary-dark z-20">
 	<nav class=" flex h-full w-full items-center justify-center px-2">
 		<div class="relative flex items-center justify-center h-full w-full flex-[1]">
 			<div class=" relative h-full w-1/3">

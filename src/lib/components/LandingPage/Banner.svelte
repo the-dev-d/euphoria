@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Parallax from '../Parallax.svelte';
-	import CountDown from './CountDown.svelte';
+	import CountDown from '../LandingPage/CountDown.svelte';
 
 	const Agents = ['/images/agents/viper/viper.png', '/images/agents/clove/clove.png'];
 	const Colors = ['/images/agents/viper/bg.png', '/images/agents/clove/bg.png'];

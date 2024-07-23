@@ -16,12 +16,14 @@ const config: Config = {
 		extend: {
 			colors: {
 				'valorant-bg': "#1a1a22",
-				'primary-dark': "#0C111D",
+				'primary-dark-valorant': "#0C111D",
 				'counter': '#3C4851',
 				'viper': '#0B6F30',
 				'agent': '#1E1E1E',
 				'price': '#3BE4C4',
-				'footer': '#261341',
+				'valorant-footer': '#261341',
+				'primary-dark':'#030812',
+				'footer':'#08072C',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -65,7 +67,7 @@ const config: Config = {
 				sans: [...fontFamily.sans],
 				equinox: "equinox",
 				valorant: "valorant",
-				vonique: "vonique"
+				vonique: "vonique",
 			},
 			minWidth: {
 				'sm': '320px',

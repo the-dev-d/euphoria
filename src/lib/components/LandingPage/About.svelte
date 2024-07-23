@@ -37,7 +37,7 @@
 		</figure>
 	</Parallax>
 	<div
-		class="absolute top-[-10%] left-[-10%] h-full w-1/2 bg-gradient-to-b opacity-50 from-red-500 to-violet-500 rounded-full z-[-1] shadow-glow blur-2xl"
+		class="absolute top-[-10%] left-[-10%] h-full w-1/2 bg-gradient-to-b opacity-30 from-red-500 to-violet-500 rounded-full z-[-1] shadow-glow blur-2xl"
 	></div>
 </section>
 
