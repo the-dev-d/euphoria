@@ -15,6 +15,7 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
+				'valorant-bg': "#1a1a22",
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -55,7 +56,10 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: [...fontFamily.sans],
+				equinox: "equinox",
+				valorant: "valorant",
+				vonique: "vonique"
 			}
 		}
 	},

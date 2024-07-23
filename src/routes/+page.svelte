@@ -17,7 +17,7 @@
 </svelte:head>
 
 <main>
-	<header class="w-full h-[80svh] max-h-[80svh] bg-valorant-bg relative">
+	<header class="w-full h-[40svh] md:h-[80svh] md:max-h-[80svh] bg-valorant-bg relative">
 		<Parallax>
 			<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.4" id="content-glitch" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom anim-studder" src={contentglitch} alt="">
 			<div data-depth="0.25" class="w-full h-[25%] grid content-end">
