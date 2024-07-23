@@ -10,7 +10,7 @@ import Parallax from "../Parallax.svelte";
 </svelte:head>
 
 
-<section class=" relative w-full h-[100svh] mt-8 mb-8">
+<section class=" relative w-full h-[100svh] mt-8 mb-8 max-h-[1080px] min-h-[740px]">
 
 	<Parallax>
 	<div class=" absolute left-0 top-0 w-full h-full parallax-scene overflow-hidden">
@@ -24,7 +24,7 @@ import Parallax from "../Parallax.svelte";
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.2" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src='/images/main/agents-2.png' alt="">
 		<img data-caliberate-x="true" data-scalar-y="0.5" data-depth="0.1" id="agents" class="absolute top-0 left-0 w-full h-full max-h-full object-cover object-bottom" src='/images/main/agents.png' alt="">
 		<div data-depth="0.08" class="w-full h-full grid content-end">
-			<div class="font-valorant text-center text-black stroke-transparent stroke-[3rem] text-9xl from-green-500 to-green-400 bg-gradient-to-br bg-clip-text">LAN TOURNAMENT lore</div>
+			<div class="font-valorant text-center text-black stroke-transparent stroke-[3rem] text-9xl from-green-500 to-green-400 bg-gradient-to-br bg-clip-text">LAN TOURNAMENT</div>
 		</div>
 	</div>
 	</Parallax>

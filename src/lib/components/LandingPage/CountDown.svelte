@@ -43,29 +43,29 @@
 >
 	<div class=" hidden gl:flex bg-counter w-full items-center justify-start gap-10 bg-opacity-70">
 		<h1 class="ml-20 text-6xl font-bold text-white">IN</h1>
-		<time class="h-full w-2/3 text-white grid grid-cols-8 font-bold text-6xl">
-			<div class="grid grid-rows-2 place-items-center">
+		<time class="h-full w-2/3 text-white grid grid-cols-8 p-3 place-items-center font-bold text-6xl">
+			<div class="flex flex-col justify-center items-center gap-4">
 				<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-3xl">Days</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4 ">
 				<div>:</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4">
 				<div>{timeRemaining.hours.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-3xl">Hours</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4 ">
 				<div>:</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4 ">
 				<div>{timeRemaining.minutes.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-3xl">Minutes</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4 ">
 				<div>:</div>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="flex flex-col justify-center items-center gap-4 ">
 				<div>{timeRemaining.seconds.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-3xl">Seconds</div>
 			</div>

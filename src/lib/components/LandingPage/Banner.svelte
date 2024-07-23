@@ -29,7 +29,7 @@
 	});
 </script>
 
-<section class="relative w-full h-[90svh] mt-10 mb-10 max-h-[1080px] min-h-[740px]">
+<section class="relative w-full h-[90svh] mb-10 max-h-[1080px] min-h-[740px]">
 	<section class=" absolute top-0 left-0 w-full h-full overflow-hidden">
 		<div class="w-full h-full">
 			<div class="h-full grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 place-items-center">

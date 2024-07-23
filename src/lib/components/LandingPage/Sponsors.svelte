@@ -2,7 +2,7 @@
 	import Parallax from '../Parallax.svelte';
 </script>
 
-<section class=" relative w-full max-h-[1080px] h-[100svh] min-h-[740px]">
+<section class=" relative w-full max-h-[1080px] h-[100svh] min-h-[740px] mb-10">
 	<Parallax>
 		<div class="absolute top-0 left-0 h-full w-full parallax-scene overflow-hidden">
 			<div data-depth="1" class=" absolute top-0 left-0 h-full w-full">
@@ -28,7 +28,7 @@
 			</div>
 		</div>
 	</Parallax>
-	<div class="absolute top-0 left-0 h-full w-full z-[-1]">
+	<div class="absolute top-0 left-0 h-full w-full">
 		<img
 			src="/images/breach.png"
 			alt="circles"
