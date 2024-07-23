@@ -16,6 +16,12 @@ const config: Config = {
 		extend: {
 			colors: {
 				'valorant-bg': "#1a1a22",
+				'primary-dark': "#0C111D",
+				'counter': '#3C4851',
+				'viper': '#0B6F30',
+				'agent': '#1E1E1E',
+				'price':'#3BE4C4',
+				'footer':'#261341',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -60,7 +66,22 @@ const config: Config = {
 				equinox: "equinox",
 				valorant: "valorant",
 				vonique: "vonique"
-			}
+			},
+			minWidth: {
+				'sm': '320px',
+			  },
+			  screens: {
+				'gl': '1025px',
+			  },
+			  gridTemplateColumns: {
+				'banner': '2fr 1fr',
+			  },
+			  gridTemplateRows: {
+				'res': '1fr 2fr',
+			  },
+			  boxShadow: {
+				'glow': '100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
+			  },
 		}
 	},
 };
