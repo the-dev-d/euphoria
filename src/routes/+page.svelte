@@ -1,9 +1,14 @@
 <script>
-	import Banner from "$lib/components/MainPage/Banner.svelte";
-
+	import About from '$lib/components/MainPage/About.svelte';
+	import Banner from '$lib/components/MainPage/Banner.svelte';
+	import Events from '$lib/components/MainPage/Events.svelte';
+	import Promo from '$lib/components/MainPage/Promo.svelte';
 </script>
 
-<Banner/>
+<Banner />
+<About />
+<Events />
+<Promo />
+
 <style>
 </style>
-

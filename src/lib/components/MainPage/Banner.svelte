@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import Parallax from '../Parallax.svelte';
 </script>
 
@@ -58,7 +57,7 @@
 						</div>
 						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.5">
 							<img
-								src="/images/image.png"
+								src="/images/main/euforia.png"
 								alt="V"
 								class="absolute bottom-[50%] left-0 h-full object-contain"
 							/>
@@ -66,9 +65,12 @@
 					</div>
 				</Parallax>
 			</h1>
-
 			<div class=" animate-fly-left-slow mt-4">
 				<h1 class="fugaz-one-regular text-xl">AUGUST 23-24</h1>
+			</div>
+			<div class="grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 gap-[10%] place-items-center w-full h-full mt-[20%] p-10">
+				<button class="block bg-btn-main w-full h-full text-black">REGISTER NOW</button>
+				<button class="block bg-transparent border border-btn-main w-full">KNOW MORE</button>
 			</div>
 		</div>
 	</section>
