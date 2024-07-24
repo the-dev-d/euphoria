@@ -29,45 +29,65 @@
 	});
 </script>
 
-<section class="relative w-full h-[90svh] mb-10 max-h-[1080px] min-h-[740px]">
-	<section class=" absolute top-0 left-0 w-full h-full overflow-hidden">
-		<div class="w-full h-full">
-			<div class="h-full grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 place-items-center">
+<section class="relative mb-10 h-[90svh] max-h-[1080px] min-h-[740px] w-full">
+	<section class=" absolute left-0 top-0 h-full w-full overflow-hidden">
+		<div class="h-full w-full">
+			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
 				<Parallax>
-					<div class="relative h-full w-full parallax-scene">
-						<div class="absolute top-0 left-0 w-full h-full" data-depth="0.2">
+					<div class="parallax-scene relative h-full w-full">
+						<div
+							class="absolute left-0 top-0 h-full w-full"
+							data-depth="0.2"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/v-transparent.png"
 								alt="V"
-								class=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain h-full gl:h-[80%]"
+								class=" absolute left-1/2 top-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform object-contain gl:h-[80%]"
 							/>
 						</div>
 					</div>
 				</Parallax>
 				<Parallax>
-					<div class="relative h-full w-full parallax-scene overflow-hidden">
-						<div data-depth="0.6" class="absolute top-0 left-0 h-full w-full">
+					<div class="parallax-scene relative h-full w-full overflow-hidden">
+						<div
+							data-depth="0.6"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+							class="absolute left-0 top-0 h-full w-full"
+						>
 							<img
 								id="aname"
 								bind:this={agentName}
 								alt="Vname"
-								class="absolute top-0 right-0 object-contain h-full"
+								class="absolute right-0 top-0 h-full object-contain"
 							/>
 						</div>
-						<div  data-depth="0.3" class="absolute top-0 left-0 h-full w-full">
+						<div
+							data-depth="0.3"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+							class="absolute left-0 top-0 h-full w-full"
+						>
 							<img
 								id="abg"
 								bind:this={agentBg}
 								alt="Vbg"
-								class="absolute top-0 right-[10%] opacity-80 object-contain h-full"
+								class="absolute right-[10%] top-0 h-full object-contain opacity-80"
 							/>
 						</div>
-						<div data-depth="0.1" class="absolute top-0 left-0 h-full w-full">
+						<div
+							data-depth="0.1"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+							class="absolute left-0 top-0 h-full w-full"
+						>
 							<img
 								id="agent"
 								bind:this={agentImage}
 								alt="Viper"
-								class="absolute top-0 right-[15%] object-contain h-full"
+								class="absolute right-[15%] top-0 h-full object-contain"
 							/>
 						</div>
 					</div>
@@ -76,19 +96,21 @@
 		</div>
 	</section>
 	<section
-		class="absolute top-0 left-0 grid grid-cols-1 place-items-start lg:grid-cols-banner gap-10 py-8 sm:py-14 gl:place-items-center h-full p-0 md:p-10"
+		class="absolute left-0 top-0 grid h-full grid-cols-1 place-items-start gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner gl:place-items-center"
 	>
-		<div class="flex flex-col lg:justify-center text-center lg:text-left">
-			<h1 class="animate-fly-left font-equinox uppercase font-bold text-3xl sm:text-4xl md:text-5xl">
+		<div class="flex flex-col text-center lg:justify-center lg:text-left">
+			<h1
+				class="animate-fly-left font-equinox text-3xl font-bold uppercase sm:text-4xl md:text-5xl"
+			>
 				Rajagairi College of Social Sciences
 				<br /><span class="text-base sm:text-xl md:text-2xl">In collaboration with</span><span
-					class="tracking-widest ml-2">AKEF</span
+					class="ml-2 tracking-widest">AKEF</span
 				>
 			</h1>
 			<div
 				class=" animate-fly-left-slow bg-gradient-to-br from-green-900 to-green-500 bg-clip-text text-transparent"
 			>
-				<h1 class="text-6xl sm:text-8xl font-valorant">EUPHORIA 2K24</h1>
+				<h1 class="font-valorant text-6xl sm:text-8xl">EUPHORIA 2K24</h1>
 			</div>
 		</div>
 	</section>

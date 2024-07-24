@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<header class="sticky top-0 z-20 h-[10svh] max-h-[10svh] w-full bg-primary-dark px-4">
+<header class="sticky top-0 z-50 h-[10svh] max-h-[10svh] w-full bg-primary-dark px-4">
 	<nav class=" flex h-full w-full items-center justify-center px-2">
 		<div class="relative flex h-full w-full flex-[1] items-center justify-center">
 			<div class=" relative h-full w-1/3">

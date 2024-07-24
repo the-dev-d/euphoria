@@ -3,28 +3,45 @@
 	export let authenticated: boolean = false;
 </script>
 
-<section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full">
-	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden flex justify-center items-center">
+<section class="relative mb-10 h-[88svh] w-full">
+	<section
+		class=" absolute right-0 top-0 flex h-full w-full items-center justify-center overflow-hidden"
+	>
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
 				<div></div>
 				<Parallax>
 					<div class="parallax-scene relative h-full w-full">
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
+						<div
+							class="absolute right-0 top-0 h-full w-full"
+							data-depth="0.4"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/back-glow.png"
 								alt="V"
 								class=" absolute right-0 top-0 h-full object-contain"
 							/>
 						</div>
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.1">
+						<div
+							class="absolute right-0 top-0 h-full w-full"
+							data-depth="0.1"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/eventbanner.png"
 								alt="V"
 								class=" absolute right-0 top-0 h-full object-contain"
 							/>
 						</div>
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
+						<div
+							class="absolute right-0 top-0 h-full w-full"
+							data-depth="0.4"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/front-glow.png"
 								alt="V"
@@ -37,23 +54,33 @@
 		</div>
 	</section>
 	<section
-		class="absolute left-0 top-0 grid h-full grid-cols-1  w-full gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner place-items-center"
+		class="absolute left-0 top-0 grid h-full w-full grid-cols-1 place-items-center gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner"
 	>
 		<div class="flex flex-col text-right lg:justify-center">
 			<h1
-				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl text-center"
+				class="fugaz-one-regular relative text-center text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl"
 			>
 				EUPHORIA'24
 				<Parallax>
 					<div class="parallax-scene absolute left-0 top-0 z-[-1] h-full w-full opacity-40">
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
+						<div
+							class="absolute right-0 top-0 h-full w-full"
+							data-depth="0.6"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/euforia.png"
 								alt="V"
 								class="absolute left-0 top-[50%] h-full object-contain"
 							/>
 						</div>
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.5">
+						<div
+							class="absolute right-0 top-0 h-full w-full"
+							data-depth="0.5"
+							data-caliberate-x="true"
+							data-caliberate-y="true"
+						>
 							<img
 								src="/images/main/euforia.png"
 								alt="V"

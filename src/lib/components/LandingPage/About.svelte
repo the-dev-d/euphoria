@@ -27,7 +27,7 @@
 
 	<Parallax>
 		<figure class="relative w-full h-full overflow-hidden parallax-scene">
-			<div data-depth="0.2" class="absolute top-0 left-0 w-full h-full">
+			<div data-depth="0.2" data-caliberate-x="true" data-caliberate-y="true" class="absolute top-0 left-0 w-full h-full">
 				<img
 					src="/images/main/about.png"
 					alt="about"
