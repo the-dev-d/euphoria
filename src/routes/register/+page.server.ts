@@ -1,25 +1,37 @@
+import { connection } from "$lib/prisma/connection";
 import { ContestantSchema } from "$lib/zod/types";
 import type { Actions } from "@sveltejs/kit";
 
 export const actions = {
-    default: async ({request}) => {
+    default: async ({request, }) => {
 
         const data = await request.formData();
         const name = data.get('name');
         const email = data.get('email');
         const phone = data.get('phone');
         const password = data.get('password');
+        const college = data.get('college');
 
 
         const parsed = ContestantSchema.safeParse({
-            name, email, password, phone
+            name, email, password, phone, college
         });
 
-        if(parsed.success) 
-            return {
-                success: true
-            }
+        if(parsed.success)  {
             
+            try {
+                const created = await connection.createParticipant(parsed.data);
+                return {
+                    success: true
+                }
+            } catch (e) {
+                
+                return {
+                    success: false,
+                    error: "Failed to create participant"
+                }
+            }
+        }
         return {
             success: false,
             error: parsed.error.format(),

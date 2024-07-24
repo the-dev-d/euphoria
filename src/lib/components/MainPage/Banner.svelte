@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
 	import Parallax from '../Parallax.svelte';
+	export let authenticated: boolean = false;
 </script>
 
-<section class="relative mb-10 h-[90svh] min-h-[740px] w-full">
+<section class="relative mb-10 max-h-[88svh] h-[88svh] min-h-[740px] w-full">
 	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
@@ -68,9 +69,14 @@
 			<div class=" animate-fly-left-slow mt-4">
 				<h1 class="fugaz-one-regular text-xl">AUGUST 23-24</h1>
 			</div>
-			<div class="grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 gap-[10%] place-items-center w-full h-full mt-[20%] p-10">
-				<button class="block bg-btn-main w-full h-full text-black py-3 font-valorant">REGISTER NOW</button>
-				<button class="block bg-primary-dark gl:bg-transparent border border-btn-main w-full py-3 font-valorant">KNOW MORE</button>
+			<div class="grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 gap-[10%] place-items-center w-full h-full my-10 p-10">
+				{#if !authenticated}
+					<a href="/register" class="block bg-btn-main w-full h-full text-black text-center p-3">REGISTER NOW</a>
+				{:else}
+					<a href="/dashboard" class="block bg-btn-main w-full h-full text-black text-center p-3">DASHBOARD</a>
+				{/if}
+
+			<a href="#" class="block bg-transparent border p-3 text-center border-btn-main w-full">KNOW MORE</a>
 			</div>
 		</div>
 	</section>
