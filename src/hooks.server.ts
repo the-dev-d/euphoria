@@ -6,9 +6,12 @@ export const handle: Handle = async ({event, resolve}) => {
 
     const {cookies} = event;
     const token = cookies.get('session');
+
     if(token) {
         const [b64, hash] = token.split('.');
         const email = atob(b64);
+
+        console.log(email)
 
         try {
             const participant = await connection.findParticipantByAttribute({email})

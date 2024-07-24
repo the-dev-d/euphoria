@@ -13,21 +13,26 @@
 			/>
 		</div>
 		<div class="relative grid h-full w-full grid-cols-3 grid-rows-1 gap-2 py-2 gl:gap-5">
-			<div
-				class="grid aspect-square w-full place-items-center rounded-xl bg-slate-300 text-center brightness-50 gl:rounded-3xl"
+			<a href="/events/solo/"
+				><div
+					class="grid aspect-square w-full place-items-center rounded-xl bg-slate-300 text-center brightness-50 gl:rounded-3xl"
+				>
+					<h1 class=" text-primary-dark-valorant gl:text-2xl">UG/PG CODING</h1>
+				</div></a
 			>
-				<h1 class=" text-primary-dark-valorant gl:text-2xl">UG/PG CODING</h1>
-			</div>
-			<div
-				class="grid aspect-square w-full place-items-center rounded-xl bg-slate-300 text-center brightness-50 gl:rounded-3xl"
+			<a href="/events/team/treasurehunt/">
+				<div
+					class="grid aspect-square w-full place-items-center rounded-xl bg-slate-300 text-center brightness-50 gl:rounded-3xl"
+				>
+					<h1 class=" text-primary-dark-valorant gl:text-2xl">TREASURE HUNT</h1>
+				</div></a
 			>
-				<h1 class=" text-primary-dark-valorant gl:text-2xl">TREASURE HUNT</h1>
-			</div>
+		<a href="/events/solo/">
 			<div
-				class=" text-center aspect-square grid w-full place-items-center rounded-xl bg-slate-300 brightness-50 gl:rounded-3xl"
+				class=" grid aspect-square w-full place-items-center rounded-xl bg-slate-300 text-center brightness-50 gl:rounded-3xl"
 			>
 				<h1 class=" text-primary-dark-valorant gl:text-2xl">WEB DESIGNING</h1>
-			</div>
+			</div></a>
 		</div>
 	</div>
 </section>
