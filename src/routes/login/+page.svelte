@@ -7,13 +7,13 @@
     export let form: ActionData;
 </script>
 
-<main class="w-full h-screen bg-[#1E1E1E] flex items-center justify-center">
+<main class="w-full h-screen flex items-center justify-center">
     <div class="w-[800px] h-[400px] flex bg-[#1E1E1E] rounded-md overflow-hidden  shadow-md border border-[#3BE4C4]" >
         <div class="w-1/2 p-8 flex flex-col justify-center">
             <form method="POST" class="w-full">
                 <h1 class="text-3xl text-center font-anton mb-8 text-white">LOGIN</h1>
                 <div class="space-y-4">
-                    <Input name="username" class="w-full border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);"placeholder="E-MAIL" />
+                    <Input name="email" class="w-full border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);"placeholder="E-MAIL" />
                     <Input name="password" type="password" class="w-full bg-[#2C3E50] border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);" placeholder="PASSWORD" />
                     <Button type="submit" class="w-full bg-[#3BE4C4] hover:bg-[#33D1B3] text-white py-2 ">LOGIN</Button>
                     <!-- <Button type="button" class="w-full bg-transparent border border-[#3BE4C4] text-[#3BE4C4] hover:bg-[#3BE4C4] hover:text-white py-2 focus:ring-opacity-50">REGISTER</Button> -->

@@ -15,6 +15,13 @@ export const actions = {
         const email = data.get('email') as string;
         const password = data.get('password') as string;
 
+        if(!email || !password) {
+            return {
+                success: false,
+                message: "All fields are required."
+            }
+        }
+
         const user = await  connection.findParticipantByAttribute({email})
         if(!user){
             return {

@@ -8,7 +8,7 @@
 	console.log(data);
 </script>
 
-<Banner authenticated={data.authenticated}/>
+<Banner authenticated={data.authenticated == true}/>
 <About />
 <Events />
 

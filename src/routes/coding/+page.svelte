@@ -85,13 +85,13 @@
 		>
 			<a
 				href="/register"
-				class="block w-full sm:max-w-[200px] bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+				class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>REGISTER NOW</a
 			>
 	
 			<a
 				href="#"
-				class="block w-full sm:max-w-[200px] border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+				class="block w-full border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>LEARN MORE</a
 			>
 		</div>

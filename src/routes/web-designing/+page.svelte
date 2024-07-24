@@ -78,13 +78,13 @@ In the web designing competition, participants will engage in a series of three 
 		>
 			<a
 				href="/register"
-				class="block w-full sm:max-w-[200px] bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+				class="block w-full  bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>REGISTER NOW</a
 			>
 	
 			<a
 				href="#"
-				class="block w-full sm:max-w-[200px] border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+				class="block w-full border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>LEARN MORE</a
 			>
 		</div>
@@ -98,7 +98,7 @@ In the web designing competition, participants will engage in a series of three 
 
 	<article class="relative w-full p-5 gl:p-10">
 		<h2 class="text-2xl font-Ubuntu uppercase text-white mb-4">Coordinators</h2>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">HRISHIKESH U</h3>
 				<p class="text-white">+91 9544360991</p>

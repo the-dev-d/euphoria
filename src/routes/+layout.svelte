@@ -8,7 +8,7 @@
 	class=" relative flex flex-col  min-w-[360px]  w-full text-sm sm:tesxt-base md:text-xl min-h-screen"
 >
 	<NavBar />
-	<main class="flex flex-col flex-1 ">
+	<main class="flex flex-col flex-1 mb-9">
 		<slot />
 	</main>
 	<Footer/>

@@ -50,7 +50,7 @@
 	</div>
 </section>
 
-<section class="relative mt-10 h-[100svh] max-h-[1080px] min-h-[740px] w-full p-5 gl:p-10">
+<section class="relative mt-10  min-h-[740px] w-full p-2 md:p-5 gl:p-10">
 	<h1 class=" text:4xl relative mx-5 font-valorant uppercase text-white gl:mx-10 gl:text-6xl">
 		GUIDLINES
 	</h1>
@@ -72,7 +72,7 @@
 		RULES
 	</h1>
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
-		<ul class="list-disc pl-5 space-y-4 text-sm font-sans gl:text-xl text-white">
+		<ul class="list-disc pl-2 md:pl-5 space-y-4 text-sm font-sans gl:text-xl text-white">
 			<ul class="list-disc pl-5 space-y-2">
 				<li>Teams must consist of exactly 5 participants.</li>
 				<li>Register online with a unique team name; registration closes 24 hours before the event.</li>
@@ -98,30 +98,15 @@
 				For more details, contact the coordinators.
 			  </p>
 		</ul>
-        <div
-			class="relative grid w-full grid-cols-1 sm:grid-cols-2 place-items-center gap-4 sm:gap-6 mt-10"
-		>
-			<a
-				href="/register"
-				class="block w-full sm:max-w-[200px] bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
-				>REGISTER NOW</a
-			>
-	
-			<a
-				href="#"
-				class="block w-full sm:max-w-[200px] border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
-				>LEARN MORE</a
-			>
-		</div>
 	</article>
 </section>
 
-<section class="relative mb-10 h-[50svh] max-h-[540px] min-h-[370px] w-full p-5 gl:p-10">
+<section class="relative mb-10 h-[50svh] min-h-[370px] w-full p-5 gl:p-10">
 	<div
 		class=" relative grid w-full grid-rows-2 place-items-center gap-[10%] p-5 gl:grid-cols-2 gl:grid-rows-1 gl:p-10"
 	>
 		<a href="/register" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
-			>OPEN SOON</a
+			>OPENS SOON</a
 		>
 
 		<a href="#" class="block w-full border border-neon-violet bg-transparent p-3 text-center"
@@ -134,7 +119,7 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<h2 class="text-2xl font-Ubuntu uppercase text-white mb-4">Coordinators</h2>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">SHARISSA MARIAN HURTIS</h3>
 				<p class="text-white">+91 6238885835</p>

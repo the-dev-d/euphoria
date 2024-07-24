@@ -46,9 +46,9 @@
 </script>
 
 
-<main class="w-full h-screen bg-[#1E1E1E] flex items-center justify-center">
-    <div class="w-[800px] h-[auto] flex bg-[#1E1E1E] rounded-md overflow-hidden shadow-md border border-[#3BE4C4]">
-        <div class="w-1/2 p-8 flex flex-col justify-center">
+<main class="w-full h-screen  flex items-center justify-center">
+    <div class="w-[800px] h-[auto] flex bg-[#1E1E1E] rounded-md overflow-hidden shadow-md border border-[#3BE4C4] m-3">
+        <div class=" w-full md:w-1/2 p-8 flex flex-col justify-center">
             <form method="POST" class="w-full space-y-4"> <!-- Added space-y-4 for vertical spacing -->
                 <h1 class="text-3xl text-center font-anton mb-8 text-white">REGISTRATION</h1>
                 <div class="flex flex-col gap-2">
@@ -107,7 +107,7 @@
             {/if}
             </form>
         </div>
-        <div class="w-1/2 bg-[#0F2027] flex flex-col items-center justify-center bg-cover bg-center" style="background-image: url('/images/forms/fbgarcade.jpg');">
+        <div class="w-1/2 hidden bg-[#0F2027] md:flex flex-col items-center justify-center bg-cover bg-center" style="background-image: url('/images/forms/fbgarcade.jpg');">
             <img 
             src="/images/forms/logoeuph.png" 
             alt="Logo" 
