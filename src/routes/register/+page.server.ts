@@ -1,9 +1,15 @@
 import { connection } from "$lib/prisma/connection";
 import { ContestantSchema } from "$lib/zod/types";
-import type { Actions } from "@sveltejs/kit";
+import { redirect, type Actions } from "@sveltejs/kit";
+
+export const load = ({locals}) => {
+    if(locals.user) {
+        throw redirect(302, "/dashboard")
+    }
+}
 
 export const actions = {
-    default: async ({request, }) => {
+    default: async ({request}) => {
 
         const data = await request.formData();
         const name = data.get('name');

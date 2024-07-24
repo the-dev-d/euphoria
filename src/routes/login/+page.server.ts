@@ -2,6 +2,12 @@ import { connection } from "$lib/prisma/connection";
 import { redirect, type Actions } from "@sveltejs/kit";
 import { createAuthToken } from  '$lib/auth/Authentication'
 
+export const load = ({locals}) => {
+    if(locals.user) {
+        throw redirect(302, "/dashboard")
+    }
+}
+
 export const actions = {
     default: async ({request, cookies}) => {
 
@@ -33,7 +39,7 @@ export const actions = {
             maxAge: 60 * 60 * 24 * 3
         });
 
-        throw redirect(302, "/")
+        throw redirect(302, "/dashboard")
 
     },
 } satisfies Actions;
