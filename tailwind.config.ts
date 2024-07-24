@@ -71,6 +71,8 @@ const config: Config = {
 				equinox: "equinox",
 				valorant: "valorant",
 				vonique: "vonique",
+				fugaz: "Fugaz One",
+				Ubuntu: "Ubuntu",
 			},
 			minWidth: {
 				'sm': '320px',
