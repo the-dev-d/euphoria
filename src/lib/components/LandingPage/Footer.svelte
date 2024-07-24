@@ -46,7 +46,7 @@
 
 
 <footer id="contact" class="bg-[#08072C] text-white py-8 px-4 font-roboto">
-	<div class="container mx-auto">
+	<div class=" gl:mx-8">
 		<div class="flex flex-col lg:flex-row justify-between items-start mb-8 gap-8">
 			<div class="w-full lg:w-1/4">
 				<h2 class="text-2xl font-fugaz text-[#FD1C68] mb-2">EUFORIA'24</h2>
