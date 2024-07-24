@@ -11,7 +11,7 @@
 					class="absolute left-0 top-0 h-full object-contain p-3"
 				/>
 			</div>
-			<div class="relative flex items-center justify-start font-valorant text-sm gl:text-2xl">
+			<div class="relative flex items-center justify-start font-valorant text-2xl gl:text-2xl">
 				<a href="/">EUPHORIA'24</a>
 			</div>
 		</div>

@@ -81,7 +81,7 @@
 			</div>
 			
 			<div class="w-full lg:w-3/4">
-				<h3 class="text-lg font-semibold mb-4">Event Coordinators</h3>
+				<h3 class="text-lg font-semibold mb-4 mt-5 gl:mt-0">Event Coordinators</h3>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 					{#each events as event}
 						<div class="bg-[#110F3D] p-4 rounded-lg">
