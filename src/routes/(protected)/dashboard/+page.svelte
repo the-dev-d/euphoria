@@ -1,5 +1,10 @@
 <script lang="ts">
 	export let data;
+	const assets = {
+		CUG: "coding.gif",
+		TH: "th.gif",
+		WEB: "web.gif"
+	}
 </script>
 
 <section class="mb-10 mt-20 min-h-[80svh] w-full text-white">
@@ -10,52 +15,57 @@
 			{/if}
 		</div>
 		<div>
-			<h2 class=" mb-10 mt-5 w-full text-center font-Ubuntu text-5xl uppercase">
+			<h2 class=" mb-10 mt-14 w-full  font-Ubuntu text-4xl uppercase">
 				Registered Events
 			</h2>
 			<div class="grid grid-cols-3 gap-3 gl:grid-cols-6">
 				{#each data.events as event}
-					<div class="aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-						<div class=" w-fit">
-							<span>
-								{event.event_code}
-							</span>
-							<span>
-								{event.verified}
-							</span>
+					<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
+						><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+							<div class="w-full uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+								<span>Web Designing</span>
+							</div>
+							<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt="WEB" />
 						</div>
-					</div>
+					</a>
 				{/each}
 			</div>
 		</div>
 
-		<div>
-			<h2 class=" mb-10 mt-20 w-full text-center font-Ubuntu text-5xl uppercase">All Events</h2>
+		<div class="mb-16">
+			<h2 class=" mb-10 mt-20 w-full font-Ubuntu text-4xl uppercase">All Events</h2>
 			<div class="grid grid-cols-3 gap-3 gl:grid-cols-6">
-				<a href="/events/solo"
-					><div class="aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-						Coding UG
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
+					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+						<div class="w-full uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+							<span>Coding UG/PG</span>
+						</div>
+						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/coding.gif" alt="CUG" />
 					</div></a
 				>
-				<a href="/events/solo"
-					><div class="aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-						Coding PG
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
+					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+						<div class="w-full uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+							<span>Web Designing</span>
+						</div>
+						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/web.gif" alt="WEB" />
 					</div></a
 				>
-				<a href="/events/solo"
-					><div class="aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-						Treasure Hunt
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
+					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+						<div class="w-full uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+							<span>Treasure Hunt</span>
+						</div>
+						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/th.gif" alt="CUG" />
 					</div></a
 				>
-				<a href="/events/solo"
-					><div class="aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-						Web Designing
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
+					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+						<div class="w-full uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+							<span>Respawn</span>
+						</div>
+						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/coding.gif" alt="CUG" />
 					</div></a
-				>
-				<a href="/events/solo"
-					><div class=" aspect-square w-full bg-gradient-to-br from-blue-800 to-green-400">
-                        Respawn Gaming
-                    </div></a
 				>
 			</div>
 		</div>
