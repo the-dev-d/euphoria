@@ -128,3 +128,7 @@
 	font-family: 'valorant';
 	src: url("/Valorant\ Font.ttf");
 }
+@font-face {
+	font-family: 'ubuntu';
+	src: url("/Ubuntu-Regular.ttf");
+}

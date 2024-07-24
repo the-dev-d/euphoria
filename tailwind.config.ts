@@ -24,7 +24,9 @@ const config: Config = {
 				'valorant-footer': '#261341',
 				'primary-dark': '#030812',
 				'footer': '#08072C',
+				'neon-violet':'#D015FF',
 				'btn-main': '#FD1C68',
+				'glow':'100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -69,6 +71,8 @@ const config: Config = {
 				equinox: "equinox",
 				valorant: "valorant",
 				vonique: "vonique",
+				fugaz: "Fugaz One",
+				Ubuntu: "Ubuntu",
 			},
 			minWidth: {
 				'sm': '320px',

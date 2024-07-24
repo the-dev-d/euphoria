@@ -3,8 +3,8 @@
 	export let authenticated: boolean = false;
 </script>
 
-<section class="relative mb-10 max-h-[88svh] h-[88svh] min-h-[740px] w-full">
-	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden">
+<section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full">
+	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden flex justify-center items-center">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
 				<div></div>
@@ -37,14 +37,11 @@
 		</div>
 	</section>
 	<section
-		class="absolute left-0 top-0 grid h-full grid-cols-1 place-items-center gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner gl:place-items-center"
+		class="absolute left-0 top-0 grid h-full grid-cols-1  w-full gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner place-items-center"
 	>
 		<div class="flex flex-col text-right lg:justify-center">
-			<div class=" animate-fly-left-slow mb-4 text-left">
-				<h1 class="fugaz-one-regular text-xl">POWERED BY:</h1>
-			</div>
 			<h1
-				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl"
+				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl text-center"
 			>
 				EUPHORIA'24
 				<Parallax>
@@ -69,14 +66,22 @@
 			<div class=" animate-fly-left-slow mt-4">
 				<h1 class="fugaz-one-regular text-xl">AUGUST 23-24</h1>
 			</div>
-			<div class="grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 gap-[10%] place-items-center w-full h-full my-10 p-10">
+			<div
+				class="my-10 grid h-full w-full grid-rows-2 place-items-center gap-[10%] p-10 gl:grid-cols-2 gl:grid-rows-1"
+			>
 				{#if !authenticated}
-					<a href="/register" class="block bg-btn-main w-full h-full text-black text-center p-3">REGISTER NOW</a>
+					<a href="/register" class="block h-full w-full bg-btn-main p-3 text-center text-black"
+						>REGISTER NOW</a
+					>
 				{:else}
-					<a href="/dashboard" class="block bg-btn-main w-full h-full text-black text-center p-3">DASHBOARD</a>
+					<a href="/dashboard" class="block h-full w-full bg-btn-main p-3 text-center text-black"
+						>DASHBOARD</a
+					>
 				{/if}
 
-			<a href="#" class="block bg-transparent border p-3 text-center border-btn-main w-full">KNOW MORE</a>
+				<a href="#" class="block w-full border border-btn-main bg-transparent p-3 text-center"
+					>KNOW MORE</a
+				>
 			</div>
 		</div>
 	</section>
