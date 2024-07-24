@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<section class="mb-10 mt-20 min-h-[80svh] w-full px-10 text-white">
+<section class="mb-10 mt-20 min-h-[80svh] w-full text-white">
 	<div class="container mx-auto grid gap-2">
 		<div>
 			{#if data.user}
