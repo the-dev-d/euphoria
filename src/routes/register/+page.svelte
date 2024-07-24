@@ -40,7 +40,7 @@
     })
 </script>
 
-<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
+<main class="w-full bg-primary-dark h-[100svh] grid place-items-center">
     <form method="POST" class="grid gap-6 bg-white p-8 rounded-md shadow-md w-1/3">
         <div class="flex w-full flex-col gap-1.5">
             <Label for="name">Name</Label>
@@ -60,7 +60,7 @@
             <div class="flex w-full flex-col gap-1.5">
                 <Label for="phone">Phone</Label>
                 <div class="flex items-center gap-3">
-                    <span>+91</span>
+                    <span class="text-black text-sm">+91</span>
                     <Input required name="phone" type="phone" id="phone" bind:value={phone} placeholder="Enter your phone number" />
                 </div>
                 {#if phone && phoneError}

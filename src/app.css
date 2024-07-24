@@ -77,6 +77,29 @@
   }
 }
 
+
+
+::-webkit-scrollbar {
+	@apply w-3;
+}
+
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	@apply bg-green-900;
+	@apply rounded-s-md;
+}
+
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @font-face {
 	font-family: 'equinox';
 	src: url("/Equinox\ Regular.otf");
@@ -103,5 +126,5 @@
 
 @font-face {
 	font-family: 'valorant';
-	src: url("Valorant\ Font.ttf");
+	src: url("/Valorant\ Font.ttf");
 }
