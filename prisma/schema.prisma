@@ -22,13 +22,13 @@ model Participants {
   college String @db.VarChar(250)
   phone String 
   event_participant Event_participants[]
-
+  auth_token String? @unique
 }
 
 model Events {
   event_id Int @id @default(autoincrement())
   event_name String 
-  amount Float  
+  amount Float
 }
 
 

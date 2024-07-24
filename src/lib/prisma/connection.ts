@@ -7,7 +7,8 @@ export const connection = {
     createParticipant,
     findParticipantByAttribute,
     addPayment,
-    addParticipation
+    addParticipation,
+    findSoloEvents
 }
 
 async function createParticipant(contestant: Contestant) {
@@ -62,13 +63,28 @@ async function addParticipation(participation: any[]) {
   }
 }
 
+async function findSoloEvents(userId: number) {
 
-  async function findAllParticipants() {
-    try {
-      const participants = await client.participants.findMany();
-      return participants;
-    } catch (error) {
-      console.error("Error finding participants:", error);
-      throw error;
-    }
+  try {
+    const events = await client.event_participants.findMany({
+      where: {
+        participant_id: userId
+      }
+    })
+
+    return events;
+  }catch(error) {
+    console.log("Unable to fetch events ", error);
   }
+}
+
+
+async function findAllParticipants() {
+  try {
+    const participants = await client.participants.findMany();
+    return participants;
+  } catch (error) {
+    console.error("Error finding participants:", error);
+    throw error;
+  }
+}

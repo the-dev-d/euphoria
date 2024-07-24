@@ -28,12 +28,12 @@
     let amountPayable = 0;
     $: amountPayable = (events.codingUG.status ? events.codingUG.amount : 0) + (events.codingPG.status ? events.codingPG.amount : 0) + (events.webDesigning.status ? events.webDesigning.amount : 0);
 
-    export let action: ActionData;
+    export let form: ActionData;
 
   </script>
 
 <main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
-    <form method="POST" class="grid text-black gap-6 bg-white p-8 rounded-md shadow-md w-1/3"  use:enhance enctype="multipart/form-data">
+    <form method="POST" class="grid text-black gap-6 bg-white p-8 rounded-md shadow-md w-1/3"   enctype="multipart/form-data">
         <div class="grid items-center grid-cols-2">
             <div class="grid gap-6">
                 <div class="flex items-center space-x-2">
@@ -101,14 +101,13 @@
                 <Input bind:value={transactionId} required type="number" name="upi-transaction-id" placeholder="UPI Transaction id" class="max-w-xs" />
             </div>
         </div>
-        {#if action && !action.success}
+        {#if form && !form.success }
             <p class="my-1 text-red-400 text-sm">
-                    {action.message}
+                {form.message}
             </p>
-        {/if}
-        {#if action && action.success}
-            <p class="my-1 text-green-400 text-sm">
-                    {action.message}
+        {:else if form }
+            <p class="my-1 text-green-500 text-sm">
+                {form.message}
             </p>
         {/if}
         <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == ""} type="submit">Register</Button>
