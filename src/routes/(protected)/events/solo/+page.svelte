@@ -32,8 +32,8 @@
 
   </script>
 
-<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
-    <form method="POST" class="grid text-black gap-6 bg-white p-8 rounded-md shadow-md w-1/3"   enctype="multipart/form-data">
+<main class="w-full h-[100svh] grid place-items-center">
+    <form method="POST" class="grid text-black gap-6 w-full bg-white p-8 rounded-md shadow-md md:w-1/3 md-px-0"   enctype="multipart/form-data">
         <div class="grid items-center grid-cols-2">
             <div class="grid gap-6">
                 <div class="flex items-center space-x-2">

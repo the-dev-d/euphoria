@@ -4,13 +4,13 @@
 	<div
 		class="absolute left-[-30%] top-[-10%] z-[-1] h-full w-1/2 rounded-full bg-gradient-to-b from-red-500 to-violet-500 opacity-30 shadow-glow blur-2xl"
 	></div>
-	<div class="grid h-full w-[80%] grid-rows-2 place-items-center items-end p-2">
+	<div class="grid h-full w-full grid-rows-2 place-items-center items-end p-2 gl:w-[80%]">
 		<a href="/valorant/"
-			><div class="relative h-fit w-full ">
+			><div class="relative h-fit w-full">
 				<img
 					src="/images/main/val-eventBanner.png"
 					alt=""
-					class=" h-full w-full object-contain brightness-50 hover:brightness-75 transition-opacity"
+					class=" h-full w-full object-contain brightness-50 transition-opacity hover:brightness-75"
 				/>
 			</div></a
 		>
@@ -47,7 +47,9 @@
 					/>
 				</div></a
 			>
-			<a class="shadow-white transition-all hover:scale-105 hover:brightness-75" href="/events/team/treasurehunt"
+			<a
+				class="shadow-white transition-all hover:scale-105 hover:brightness-75"
+				href="/events/team/treasurehunt"
 				><div
 					class="relative aspect-square w-full rounded-xl border border-blue-400 bg-blue-900/10 gl:rounded-3xl"
 				>
@@ -65,6 +67,38 @@
 			>
 		</div>
 	</div>
+	<div
+		class="absolute bottom-[-10%] right-[-30%] z-[-1] h-full w-1/2 rounded-full bg-gradient-to-b from-red-500 to-violet-500 opacity-30 shadow-glow blur-2xl"
+	></div>
 </section>
 
-<style></style>
+<style lang="postcss">
+	.rotate-glow {
+		animation:
+			spin 4s linear infinite,
+			brightness 2s infinite;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes brightness {
+		0%,
+		20%,
+		40%,
+		55%,
+		90%,
+		100% {
+			filter: brightness(1);
+		}
+		50% {
+			filter: brightness(0.5);
+		}
+	}
+</style>
