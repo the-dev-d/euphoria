@@ -101,8 +101,10 @@
                     <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/login" class="text-[#3BE4C4]">Login</a> </p>
                 </div>
                 {#if form?.success}
-                    <p class="text-sm text-green-400">Registration successful</p>
-                {/if}
+                    <p class="text-sm text-green-500">Registration successfull</p>
+                {:else if form && !form.success && form.message}
+                    <p class="text-sm text-red-400 my-2">{form.message}</p>
+            {/if}
             </form>
         </div>
         <div class="w-1/2 bg-[#0F2027] flex flex-col items-center justify-center bg-cover bg-center" style="background-image: url('/images/forms/fbgarcade.jpg');">
