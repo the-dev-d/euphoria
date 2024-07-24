@@ -35,9 +35,6 @@ export const actions = {
                     }
                 }
                 const created = await connection.createParticipant(parsed.data);
-                return {
-                    success: true
-                }
             } catch (e) {
                 
                 return {
@@ -45,6 +42,7 @@ export const actions = {
                     error: "Failed to create participant"
                 }
             }
+            throw redirect(302, "/login")
         }
         return {
             success: false,
