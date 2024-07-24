@@ -1,0 +1,116 @@
+<script lang="ts">
+	import { Button } from "$lib/shardcn/ui/button";
+    import { Checkbox } from "$lib/shardcn/ui/checkbox";
+	import { Input } from "$lib/shardcn/ui/input";
+	import { Label } from "$lib/shardcn/ui/label";
+    import * as RadioGroup from "$lib/shardcn/ui/radio-group/index";
+	import type { ActionData } from "./$types";
+    import { PRICE } from "../../../../lib/constants/constants";
+
+
+    const events = {
+        codingUG: {
+            amount: PRICE.codingUG,
+            status: false
+        },
+        codingPG: {
+            amount: PRICE.codingPG,
+            status: false
+        },
+        webDesigning: {
+            amount: PRICE.webDesigning,
+            status: false
+        },
+    }
+
+    let transactionId = "";
+
+    let amountPayable = 0;
+    $: amountPayable = (events.codingUG.status ? events.codingUG.amount : 0) + (events.codingPG.status ? events.codingPG.amount : 0) + (events.webDesigning.status ? events.webDesigning.amount : 0);
+
+    export let action: ActionData;
+
+  </script>
+
+<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
+    <form method="POST" class="grid text-black gap-6 bg-white p-8 rounded-md shadow-md w-1/3"  use:enhance enctype="multipart/form-data">
+        <div class="grid items-center grid-cols-2">
+            <div class="grid gap-6">
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" on:change={(e) => {
+                        if(e.target?.checked) {
+                            events.codingPG.status = false;
+                            events.codingUG.status = true
+                        }else 
+                            events.codingUG.status = false
+                    }} name="coding-ug" id="codingUG" value="coding-ug" bind:checked={events.codingUG.status} aria-labelledby="coding-ug" />
+                    <Label
+                        id="web_designing"
+                        for="codingUG"
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                        Coding (UG)
+                    </Label>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input on:change={(e) => {
+                        if(e.target?.checked) {
+                            events.codingUG.status = false;
+                            events.codingPG.status = true
+                        }else 
+                            events.codingPG.status = false
+                    }} type="checkbox" name="coding-pg" id="codingPG" value="coding-pg" bind:checked={events.codingPG.status} aria-labelledby="coding-pg" />
+                    <Label
+                        id="coding-pg"
+                        for="codingPG"
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                        Coding (PG)
+                    </Label>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" name="web-designing" id="webDesigning" value="web" bind:checked={events.webDesigning.status} aria-labelledby="web_designing" />
+                    <Label
+                        id="web_designing"
+                        for="webDesigning"
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                        Web Designing
+                    </Label>
+                </div>
+            </div>
+            <div class="h-full">
+                <h2 class="text-lg">Amount Payable</h2>
+                <h1 class="my-1 text-2xl font-semibold">
+                    Rs.{amountPayable}
+                </h1>
+            </div>
+
+        </div>
+        <div class="grid gap-4 mt-4">
+            <div>
+                <Label>
+                    Payment Screenshot
+                </Label>
+                <Input  required accept=".jpg, .jpeg, .png" type="file" name="payment-screenshot" placeholder="email" class="max-w-xs" />
+            </div>
+            <div>
+                <Label>
+                    UPI transaction id
+                </Label>
+                <Input bind:value={transactionId} required type="number" name="upi-transaction-id" placeholder="UPI Transaction id" class="max-w-xs" />
+            </div>
+        </div>
+        {#if action && !action.success}
+            <p class="my-1 text-red-400 text-sm">
+                    {action.message}
+            </p>
+        {/if}
+        {#if action && action.success}
+            <p class="my-1 text-green-400 text-sm">
+                    {action.message}
+            </p>
+        {/if}
+        <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == ""} type="submit">Register</Button>
+    </form>
+</main>

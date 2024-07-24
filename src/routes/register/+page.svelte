@@ -11,11 +11,14 @@
     let password = "";
     let phone = "";
     let confirmPassword = "";
+    let college = "";
 
     let nameError: string|undefined = "";
     let emailError: string|undefined = "";
     let passwordError: string|undefined = "";
     let phoneError: string|undefined = "";
+    let collegeError: string|undefined = "";
+
 
 
     export let form: ActionData;
@@ -24,6 +27,7 @@
         emailError = form?.error?.email?._errors[0];
         phoneError = form?.error?.phone?._errors[0];
         passwordError = form?.error?.password?._errors[0];
+        collegeError = form?.error?.college?._errors[0];
     }
 
     $: {
@@ -31,6 +35,7 @@
         emailError = ContestantSchema.shape.email.safeParse(email).error?.format()._errors[0]
         passwordError = ContestantSchema.shape.password.safeParse(password).error?.format()._errors[0]
         phoneError = ContestantSchema.shape.phone.safeParse(phone).error?.format()._errors[0]
+        collegeError = ContestantSchema.shape.college.safeParse(college).error?.format()._errors[0]
     }
 
     
@@ -40,13 +45,21 @@
     })
 </script>
 
-<main class="w-full bg-primary-dark h-[100svh] grid place-items-center">
-    <form method="POST" class="grid gap-6 bg-white p-8 rounded-md shadow-md w-1/3">
+
+<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
+    <form method="POST" class="grid text-black gap-6 bg-white p-8 rounded-md shadow-md w-1/3">
         <div class="flex w-full flex-col gap-1.5">
             <Label for="name">Name</Label>
             <Input required name="name" type="text" bind:value={name} id="name" placeholder="Enter your name" />
             {#if name && nameError}
                 <p class="text-red-400 text-xs">{nameError}</p>
+            {/if}
+        </div>
+        <div class="flex w-full flex-col gap-1.5">
+            <Label for="college">College Name</Label>
+            <Input required name="college" type="text" bind:value={college} id="college" placeholder="Enter your college" />
+            {#if college && collegeError}
+                <p class="text-red-400 text-xs">{collegeError}</p>
             {/if}
         </div>
         <div class="flex w-full flex-col gap-1.5">
@@ -60,7 +73,7 @@
             <div class="flex w-full flex-col gap-1.5">
                 <Label for="phone">Phone</Label>
                 <div class="flex items-center gap-3">
-                    <span class="text-black text-sm">+91</span>
+                    <span class="text-sm">+91</span>
                     <Input required name="phone" type="phone" id="phone" bind:value={phone} placeholder="Enter your phone number" />
                 </div>
                 {#if phone && phoneError}
@@ -82,9 +95,12 @@
                 <p class="text-red-400 text-xs">Password does not match</p>
             {/if}
         </div>
-        <Button disabled={(nameError!=undefined || emailError!= undefined || phoneError != undefined || passwordError != undefined || password !== confirmPassword)} type="submit">Register</Button>
+        <div>
+            <Button disabled={(nameError!=undefined || emailError!= undefined || phoneError != undefined || passwordError != undefined || password !== confirmPassword)} type="submit">Register</Button>
+            <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/login">Login</a> </p>
+        </div>
         {#if form?.success}
-            <p>Registration successfull</p>
+            <p class="text-sm">Registration successfull</p>
         {/if}
     </form>
 </main>
