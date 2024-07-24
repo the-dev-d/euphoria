@@ -24,7 +24,7 @@ export const actions = {
         }
 
         const token = createAuthToken(user.participant_id, user.email)
-        const b64 = btoa(user.participant_id.toString());
+        const b64 = btoa(user.email);
         cookies.set('session', b64 + "." +token, {
             path: '/',
             httpOnly: true,
