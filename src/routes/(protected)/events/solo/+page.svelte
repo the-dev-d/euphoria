@@ -126,6 +126,6 @@
                 {form.message}
             </p>
         {/if}
-        <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == ""} type="submit">Register</Button>
+        <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == "" || fileError !== "" }  type="submit">Register</Button>
     </form>
 </main>
