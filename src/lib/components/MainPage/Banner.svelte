@@ -69,8 +69,8 @@
 				<h1 class="fugaz-one-regular text-xl">AUGUST 23-24</h1>
 			</div>
 			<div class="grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 gap-[10%] place-items-center w-full h-full mt-[20%] p-10">
-				<button class="block bg-btn-main w-full h-full text-black">REGISTER NOW</button>
-				<button class="block bg-transparent border border-btn-main w-full">KNOW MORE</button>
+				<button class="block bg-btn-main w-full h-full text-black py-3 font-valorant">REGISTER NOW</button>
+				<button class="block bg-primary-dark gl:bg-transparent border border-btn-main w-full py-3 font-valorant">KNOW MORE</button>
 			</div>
 		</div>
 	</section>
