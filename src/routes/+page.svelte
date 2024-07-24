@@ -10,7 +10,7 @@
 <Banner authenticated={data.authenticated}/>
 <About />
 <Events />
-<Promo />
+
 
 <style>
 </style>

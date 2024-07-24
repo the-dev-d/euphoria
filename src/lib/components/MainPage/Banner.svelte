@@ -4,7 +4,7 @@
 </script>
 
 <section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full">
-	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden">
+	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden flex justify-center items-center">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
 				<div></div>
@@ -37,14 +37,11 @@
 		</div>
 	</section>
 	<section
-		class="absolute left-0 top-0 grid h-full grid-cols-1 place-items-center gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner gl:place-items-center"
+		class="absolute left-0 top-0 grid h-full grid-cols-1  w-full gap-10 p-0 py-8 sm:py-14 md:p-10 lg:grid-cols-banner place-items-center"
 	>
 		<div class="flex flex-col text-right lg:justify-center">
-			<div class=" animate-fly-left-slow mb-4 text-left">
-				<h1 class="fugaz-one-regular text-xl">POWERED BY:</h1>
-			</div>
 			<h1
-				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl"
+				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl text-center"
 			>
 				EUPHORIA'24
 				<Parallax>
@@ -74,7 +71,7 @@
 			>
 				{#if !authenticated}
 					<a href="/register" class="block h-full w-full bg-btn-main p-3 text-center text-black"
-						>OPEN SOON</a
+						>REGISTER NOW</a
 					>
 				{:else}
 					<a href="/dashboard" class="block h-full w-full bg-btn-main p-3 text-center text-black"
