@@ -16,7 +16,7 @@ datasource db {
 
 model Participants {
   participant_id Int @id @default(autoincrement())
-  email String 
+  email String @unique
   password String 
   name String 
   college String @db.VarChar(250)
