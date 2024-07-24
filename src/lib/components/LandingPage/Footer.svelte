@@ -12,32 +12,32 @@
 		name: 'PG CODING', 
 		coordinator: {
 		  name: 'Gracen K Shaji',
-		  email: 'priya@euforia24.com',
-		  phone: '+91 87654 32109'
+		  email: 'mca2319@rajagiri.edu',
+		  phone: '+91 7736705727'
 		}
 	  },
 	  { 
 		name: 'TREASURE HUNT', 
 		coordinator: {
-		  name: 'Sharissa Marian Hurtis',
-		  email: 'mohammed@euforia24.com',
-		  phone: '+91 76543 21098'
+		  name: 'Majo Augustine',
+		  email: 'mca2330@rajagiri.edu',
+		  phone: '+91 9544318109'
 		}
 	  },
 	  { 
 		name: 'RESPAWN', 
 		coordinator: {
 		  name: 'Ivin Varghese',
-		  email: 'emily@euforia24.com',
-		  phone: '+91 54321 09876'
+		  email: 'mscs2314@rajagiri.edu',
+		  phone: '+91 8078982842'
 		}
 	  },
 	  { 
 		name: 'WEB DESIGNING', 
 		coordinator: {
-		  name: 'Sarah Mathew',
-		  email: 'sarah@euforia24.com',
-		  phone: '+91 65432 10987'
+		  name: 'Hrishikesh U',
+		  email: 'mca2323@rajagiri.edu',
+		  phone: '+91 9544360991'
 		}
 	  }
 	];

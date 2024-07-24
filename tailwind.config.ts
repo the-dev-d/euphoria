@@ -73,6 +73,10 @@ const config: Config = {
 				vonique: "vonique",
 				fugaz: "Fugaz One",
 				Ubuntu: "Ubuntu",
+				roboto: ['Roboto', 'sans-serif'],
+        'roboto-semi-bold': ['Roboto', 'sans-serif'],
+        anton: ['Anton', 'sans-serif'],
+				
 			},
 			minWidth: {
 				'sm': '320px',
@@ -91,7 +95,14 @@ const config: Config = {
 			},
 			dropShadow: {
 				'glow': '100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
-			}
+			},
+			btnspacing: {
+				'50px': '50px', // Adding custom spacing of 50px
+			  },
+			  formbackgroundImage: {
+				'fbgarcade': "url('/static/images/forms/fbgarcade.jpg')",
+			  },
+			
 		}
 	},
 };
