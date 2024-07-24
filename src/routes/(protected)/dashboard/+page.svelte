@@ -3,6 +3,7 @@
 	export let data;
 	const assets = {
 		CUG: "coding.gif",
+		CPG: "coding.gif",
 		TH: "th.gif",
 		WEB: "web.gif"
 	}
@@ -15,8 +16,8 @@
 	}
 </script>
 
-<section class="mb-10 mt-20 min-h-[80svh] w-full text-white">
-	<div class="container mx-auto grid gap-2">
+<section class="mb-10 mt-20 min-h-[80svh] w-full text-white px-5">
+	<div class="mx-auto gl:mx-12 grid gap-2">
 		<div class="flex h-fit mb-5 justify-between">
 			{#if data.user}
 				<h2 class="fugaz-one-regular text-4xl gl:text-6xl uppercase">Welcome {data.user.name}</h2> 
@@ -47,7 +48,7 @@
 									<span>Verification Pending</span>
 								</div>
 							{/if}
-							<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt="WEB" />
+							<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt={event.event_code} />
 						</div>
 					</div>
 				{/each}

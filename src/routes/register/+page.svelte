@@ -97,10 +97,12 @@
         </div>
         <div>
             <Button disabled={(nameError!=undefined || emailError!= undefined || phoneError != undefined || passwordError != undefined || password !== confirmPassword)} type="submit">Register</Button>
+            {#if form?.success}
+                <p class="text-sm">Registration successfull</p>
+            {:else if form && !form.success && form.message}
+                <p class="text-sm text-red-400 my-2">{form.message}</p>
+            {/if}
             <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/login">Login</a> </p>
         </div>
-        {#if form?.success}
-            <p class="text-sm">Registration successfull</p>
-        {/if}
     </form>
 </main>

@@ -23,9 +23,17 @@ export const actions = {
             name, email, password, phone, college
         });
 
+
         if(parsed.success)  {
             
             try {
+                const existing = await connection.findParticipantByAttribute({email});
+                if(existing) {
+                    return {
+                        success: false,
+                        message: "User already exist"
+                    }
+                }
                 const created = await connection.createParticipant(parsed.data);
                 return {
                     success: true
