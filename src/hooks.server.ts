@@ -12,6 +12,11 @@ export const handle: Handle = async ({event, resolve}) => {
 
         try {
             const participant = await connection.findParticipantByAttribute({email})
+            if(!participant){
+                //event.cookies.delete('session');
+                return resolve(event);
+            }
+                
             const generatedHash = createAuthToken(participant.participant_id, participant.email)
             if(generatedHash === hash) {
                 event.locals.user = participant;
