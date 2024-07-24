@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<section class="relative mb-10 mt-10 min-h-[740px] w-full p-5 text-center gl:p-10">
+<section id="about" class="relative mb-10 mt-10 min-h-[740px] w-full p-5 text-center gl:p-10">
 	<h1 class=" relative font-valorant text-6xl uppercase text-white gl:text-6xl">ABOUT</h1>
 	<div class="relative grid h-full w-full grid-rows-2 place-items-center gap-12 gl:gap-0">
 		<div class="flex h-full w-full items-center">

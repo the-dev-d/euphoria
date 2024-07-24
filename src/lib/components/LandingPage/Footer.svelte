@@ -45,7 +45,7 @@
 
 
 
-<footer class="bg-[#08072C] text-white py-8 px-4 font-roboto">
+<footer id="contact" class="bg-[#08072C] text-white py-8 px-4 font-roboto">
 	<div class="container mx-auto">
 		<div class="flex flex-col lg:flex-row justify-between items-start mb-8 gap-8">
 			<div class="w-full lg:w-1/4">

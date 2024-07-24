@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class=" relative flex flex-col max-w-[1920px] min-w-[360px] mx-auto w-full text-sm sm:tesxt-base md:text-xl min-h-screen"
+	class=" relative flex flex-col  min-w-[360px]  w-full text-sm sm:tesxt-base md:text-xl min-h-screen"
 >
 	<NavBar />
 	<main class="flex flex-col flex-1 ">

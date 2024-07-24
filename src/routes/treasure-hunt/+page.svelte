@@ -44,7 +44,7 @@
 	</section>
 </section>
 
-<section class="relative mt-10 h-[100svh] max-h-[1080px] min-h-[740px] w-full p-5 gl:p-10">
+<section id="know-more" class="relative mt-10 h-[100svh] max-h-[1080px] min-h-[740px] w-full p-5 gl:p-10">
 	<h1 class=" text:4xl relative mx-5 font-valorant uppercase text-white gl:mx-10 gl:text-6xl">
 		GUIDLINES
 	</h1>
@@ -80,13 +80,12 @@
 	<div
 		class=" relative grid w-full grid-rows-2 place-items-center gap-[10%] p-5 gl:grid-cols-2 gl:grid-rows-1 gl:p-10"
 	>
-		<a href="/register" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
-			>OPEN SOON</a
+		<a href="/#" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
+			>OPENS SOON</a
 		>
 
-		<a href="#" class="block w-full border border-neon-violet bg-transparent p-3 text-center"
-			>KNOW MORE</a
-		>
+		<a href="#know-more" class="block w-full border border-neon-violet bg-transparent p-3 text-center"
+			>KNOW MORE</a>
 	</div>
 	<h1 class=" text:4xl relative mx-5 font-valorant uppercase text-white gl:mx-10 gl:text-6xl mt-10">
 		CONTACT
