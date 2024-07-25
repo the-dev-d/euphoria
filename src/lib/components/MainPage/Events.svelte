@@ -68,9 +68,6 @@
 			>
 		</div>
 	</div>
-	<div
-		class="absolute bottom-[-10%] right-[-30%] z-[-1] h-full w-1/2 rounded-full bg-gradient-to-b from-red-500 to-violet-500 opacity-30 shadow-glow blur-2xl"
-	></div>
 </section>
 
 <style lang="postcss">
