@@ -87,7 +87,7 @@
 						<div class="w-full uppercase h-full text-center grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
 							<span>Respawn</span>
 						</div>
-						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/coding.gif" alt="CUG" />
+						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/gaming.gif" alt="RP" />
 					</div></a
 				>
 			</div>

@@ -49,7 +49,7 @@
 	<div class=" gl:mx-8">
 		<div class="flex flex-col lg:flex-row justify-between items-start mb-8 gap-8">
 			<div class="w-full lg:w-1/4">
-				<h2 class="text-2xl font-fugaz text-[#FD1C68] mb-2">EUFORIA'24</h2>
+				<h2 class="text-2xl font-fugaz text-[#FD1C68] mb-2">EUPHORIA'24</h2>
 				<p class="text-sm mb-4  font-Ubuntu">Celebrating innovation and technology</p>
 				<div class="flex space-x-4 mb-4">
 					<a href="#" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
@@ -100,7 +100,7 @@
 		</div>
 
 		<div class="border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
-			<p class="text-sm mb-4 md:mb-0">&copy; 2024 EUFORIA. All Rights Reserved.</p>
+			<p class="text-sm mb-4 md:mb-0">&copy; 2024 EUPHORIA. All Rights Reserved.</p>
 			<div class="flex space-x-4">
 				<!-- <a href="#" class="text-sm hover:text-[#FD1C68] transition-colors duration-300">Privacy Policy</a> -->
 				<a href="https://rajagiri.edu/" class="text-sm hover:text-[#FD1C68] transition-colors duration-300">Rajagiri College of Social Sciences</a>
