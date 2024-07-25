@@ -16,7 +16,7 @@
 			</div></a
 		>
 		<div class="relative grid h-full w-full grid-cols-3 grid-rows-1 gap-2 py-2 gl:gap-5">
-			<a class="shadow-white transition-all hover:scale-105 hover:brightness-75" href="/events/solo"
+			<a class="shadow-white transition-all hover:scale-105 hover:brightness-75" href="/coding"
 				><div
 					class="relative aspect-square w-full rounded-xl border border-blue-400 bg-blue-900/10 gl:rounded-3xl"
 				>
@@ -32,7 +32,7 @@
 					/>
 				</div></a
 			>
-			<a class="shadow-white transition-all hover:scale-105 hover:brightness-75" href="/events/solo"
+			<a class="shadow-white transition-all hover:scale-105 hover:brightness-75" href="/web-designing"
 				><div
 					class="relative aspect-square w-full rounded-xl border border-blue-400 bg-blue-900/10 gl:rounded-3xl"
 				>
@@ -50,7 +50,7 @@
 			>
 			<a
 				class="shadow-white transition-all hover:scale-105 hover:brightness-75"
-				href="/events/team/treasurehunt"
+				href="treasure-hunt"
 				><div
 					class="relative aspect-square w-full rounded-xl border border-blue-400 bg-blue-900/10 gl:rounded-3xl"
 				>
