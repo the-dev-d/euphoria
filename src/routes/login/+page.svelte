@@ -7,25 +7,53 @@
     export let form: ActionData;
 </script>
 
-<main class="w-full bg-slate-100 h-[100svh] grid place-items-center">
-    <form method="POST" class="grid text-black bg-white p-6 rounded-md shadow-md">
-        <div class="grid gap-4">
-            <div class="flex w-full max-w-sm flex-col gap-1.5">
-                <Label for="email">Email</Label>
-                <Input name="email" type="email" id="email" placeholder="Enter your email address" />
-            </div>
-        
-            <div class="flex w-full max-w-sm flex-col gap-1.5">
-                <Label for="password">Password</Label>
-                <Input name="password" type="password" id="password" placeholder="Enter your password" />
-            </div>
-            <Button type="submit">Login</Button>
+<main class="w-full h-screen flex items-center justify-center">
+    <div class="w-[800px] h-[400px] flex bg-[#1E1E1E] rounded-md overflow-hidden  shadow-md border border-[#3BE4C4]" >
+        <div class="w-1/2 p-8 flex flex-col justify-center">
+            <form method="POST" class="w-full">
+                <h1 class="text-3xl text-center font-anton mb-8 text-white">LOGIN</h1>
+                <div class="space-y-4">
+                    <Input name="email" class="w-full border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);"placeholder="E-MAIL" />
+                    <Input name="password" type="password" class="w-full bg-[#2C3E50] border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);" placeholder="PASSWORD" />
+                    <Button type="submit" class="w-full bg-[#3BE4C4] hover:bg-[#33D1B3] text-white py-2 ">LOGIN</Button>
+                    <!-- <Button type="button" class="w-full bg-transparent border border-[#3BE4C4] text-[#3BE4C4] hover:bg-[#3BE4C4] hover:text-white py-2 focus:ring-opacity-50">REGISTER</Button> -->
+                </div>
+                <div class="mt-3">
+                    {#if form && !form.success && form.message}
+                        <p class="text-sm text-red-400">{form.message}</p>
+                    {/if}
+                </div>
+            </form>
         </div>
-
-        <div class="mt-3">
-            {#if form && !form.success && form.message}
-                <p class="text-sm text-red-400">{form.message}</p>
-            {/if}
-        </div>
-    </form>
+        <div class="w-1/2 bg-[#0F2027] flex flex-col items-center justify-center" style="background-image: url('/images/forms/fbgarcade.jpg'); background-size: cover; background-position: center;">
+            
+            <img 
+            src="/images/forms/logoeuph.png" 
+            alt="Logo" 
+            class="image-logo spacing w-80 h-auto" 
+            style="max-width: 100%; height: auto;"
+          />
+          <img 
+            src="/images/forms/Typeface.png" 
+            alt="Typeface" 
+            class="image-typeface w50 h-auto" 
+            style="max-width: 100%; height: auto;"
+          />
+    </div>
+</div>
 </main>
+
+<style>
+    .background {
+      background-image: url('/images/forms/fbgarcade.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .image-logo,
+    .image-typeface {
+      filter: brightness(0) invert(1); /* Makes the image white */
+    }
+    .spacing {
+      margin-bottom: 18px; /* Adds 20px distance between images */
+    }
+  </style>

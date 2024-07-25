@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button } from "$lib/shardcn/ui/button";
     import { Checkbox } from "$lib/shardcn/ui/checkbox";
-	import { Input } from "$lib/shardcn/ui/input";
+	import { Input, type FormInputEvent } from "$lib/shardcn/ui/input";
 	import { Label } from "$lib/shardcn/ui/label";
     import * as RadioGroup from "$lib/shardcn/ui/radio-group/index";
 	import type { ActionData } from "./$types";
@@ -23,6 +23,21 @@
         },
     }
 
+    let file:File|null = null;
+    let fileError = "";
+
+    function fileChanged(e: FormInputEvent) {
+
+        if(!e.target.files)
+            return;
+            
+        file = e.target.files[0];
+        if(file.size > 400000)
+            fileError = "File size must be less than 400KB"
+        else
+            fileError = "";
+        
+    }
     let transactionId = "";
 
     let amountPayable = 0;
@@ -92,7 +107,8 @@
                 <Label>
                     Payment Screenshot
                 </Label>
-                <Input  required accept=".jpg, .jpeg, .png" type="file" name="payment-screenshot" placeholder="email" class="max-w-xs" />
+                <Input on:change={fileChanged} required accept=".jpg, .jpeg, .png" type="file" name="payment-screenshot" placeholder="email" class="max-w-xs" />
+                <p class="text-red-400 text-sm my-1">{fileError}</p>
             </div>
             <div>
                 <Label>
@@ -110,6 +126,6 @@
                 {form.message}
             </p>
         {/if}
-        <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == ""} type="submit">Register</Button>
+        <Button disabled={ (!(events.codingPG.status || events.codingUG.status || events.webDesigning.status )) || transactionId == "" || fileError !== "" }  type="submit">Register</Button>
     </form>
 </main>

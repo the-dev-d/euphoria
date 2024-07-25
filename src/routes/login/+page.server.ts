@@ -2,12 +2,25 @@ import { connection } from "$lib/prisma/connection";
 import { redirect, type Actions } from "@sveltejs/kit";
 import { createAuthToken } from  '$lib/auth/Authentication'
 
+export const load = ({locals}) => {
+    if(locals.user) {
+        throw redirect(302, "/dashboard")
+    }
+}
+
 export const actions = {
     default: async ({request, cookies}) => {
 
         const data = await request.formData();
         const email = data.get('email') as string;
         const password = data.get('password') as string;
+
+        if(!email || !password) {
+            return {
+                success: false,
+                message: "All fields are required."
+            }
+        }
 
         const user = await  connection.findParticipantByAttribute({email})
         if(!user){
@@ -33,7 +46,7 @@ export const actions = {
             maxAge: 60 * 60 * 24 * 3
         });
 
-        throw redirect(302, "/")
+        throw redirect(302, "/dashboard")
 
     },
 } satisfies Actions;

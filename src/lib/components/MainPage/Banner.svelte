@@ -106,7 +106,7 @@
 					>
 				{/if}
 
-				<a href="#" class="block w-full border border-btn-main bg-transparent p-3 text-center"
+				<a href="/#know-more" class="block w-full border border-btn-main bg-transparent p-3 text-center"
 					>KNOW MORE</a
 				>
 			</div>

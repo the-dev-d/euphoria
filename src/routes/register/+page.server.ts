@@ -1,9 +1,15 @@
 import { connection } from "$lib/prisma/connection";
 import { ContestantSchema } from "$lib/zod/types";
-import type { Actions } from "@sveltejs/kit";
+import { redirect, type Actions } from "@sveltejs/kit";
+
+export const load = ({locals}) => {
+    if(locals.user) {
+        throw redirect(302, "/dashboard")
+    }
+}
 
 export const actions = {
-    default: async ({request, }) => {
+    default: async ({request}) => {
 
         const data = await request.formData();
         const name = data.get('name');
@@ -17,13 +23,18 @@ export const actions = {
             name, email, password, phone, college
         });
 
+
         if(parsed.success)  {
             
             try {
-                const created = await connection.createParticipant(parsed.data);
-                return {
-                    success: true
+                const existing = await connection.findParticipantByAttribute({email});
+                if(existing) {
+                    return {
+                        success: false,
+                        message: "User already exist"
+                    }
                 }
+                const created = await connection.createParticipant(parsed.data);
             } catch (e) {
                 
                 return {
@@ -31,6 +42,7 @@ export const actions = {
                     error: "Failed to create participant"
                 }
             }
+            throw redirect(302, "/login")
         }
         return {
             success: false,
