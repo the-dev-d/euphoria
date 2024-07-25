@@ -26,7 +26,6 @@
 Located on two scenic campuses in Kochi, Kerala—the Hill Campus at Kalamassery and the Valley Campus at Kakkanad—RCSS stands out as the flagship of Rajagiri Vidyapeedam. "Rajagiri" translates to "The Hill of the King," symbolizing our commitment to embodying the virtues of love, truth, and justice.
 
 Our motto, “Rajagiri, Relentlessly Towards Excellence,” reflects our dedication to continuous improvement and high standards. Accredited with an 'A++' grade by the National Assessment and Accreditation Council (NAAC), we are recognized for our outstanding education, cutting-edge research, and active community engagement.
-					voluptatibus quae. Amet, id ipsum? Unde, quia ea.
 				</p>
 			</article>
 			<figure class="relative h-fit place-content-center">
