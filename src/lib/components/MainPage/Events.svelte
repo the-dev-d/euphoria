@@ -4,6 +4,7 @@
 	<div
 		class="absolute left-[-30%] top-[-10%] z-[-1] h-full w-1/2 rounded-full bg-gradient-to-b from-red-500 to-violet-500 opacity-30 shadow-glow blur-2xl"
 	></div>
+	<h1 class=" relative font-valorant text-6xl uppercase text-white gl:text-6xl">EVENTS</h1>
 	<div class="grid h-full w-full grid-rows-2 place-items-center items-end p-2 gl:w-[80%]">
 		<a href="/valorant/"
 			><div class="relative h-fit w-full">
