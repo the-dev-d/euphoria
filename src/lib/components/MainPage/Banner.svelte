@@ -41,7 +41,7 @@
 	>
 		<div class="flex flex-col text-right lg:justify-center">
 			<h1
-				class="fugaz-one-regular relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl text-center"
+				class="font-fugas relative text-6xl font-bold uppercase sm:text-6xl md:text-9xl gl:text-9xl text-center"
 			>
 				EUPHORIA'24
 				<Parallax>
