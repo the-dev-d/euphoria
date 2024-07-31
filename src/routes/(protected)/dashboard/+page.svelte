@@ -74,7 +74,7 @@
 						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/web.gif" alt="WEB" />
 					</div></a
 				>
-				<a class="hover:scale-105 transition-all shadow-white" href="#"
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/team/treasurehunt"
 					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
 						<div class="w-full uppercase h-full text-center grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
 							<span>Treasure Hunt</span>
@@ -82,7 +82,7 @@
 						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/th.gif" alt="CUG" />
 					</div></a
 				>
-				<a class="hover:scale-105 transition-all shadow-white" href="#"
+				<a class="hover:scale-105 transition-all shadow-white" href="/events/team/respawn"
 					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
 						<div class="w-full uppercase h-full text-center grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
 							<span>Respawn</span>
