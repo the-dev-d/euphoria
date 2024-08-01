@@ -5,7 +5,8 @@
 		CUG: "coding.gif",
 		CPG: "coding.gif",
 		TH: "th.gif",
-		WEB: "web.gif"
+		WEB: "web.gif",
+		RP: "gaming.gif"
 	}
 	const names = {
 		CUG: "Coding UG",
@@ -14,6 +15,16 @@
 		TH: "Treasure Hunt",
 		RP: "Respawn"
 	}
+
+	const urls = {
+		CUG: "/solo",
+		CPG: "/solo",
+		WEB: "/solo",
+		TH: "/team/treasurehunt",
+		RP: "/team/respawn"
+	}
+
+	const participated = data.events.map(e => e.event_code);
 </script>
 
 <section class="mb-10 mt-20 min-h-[80svh] w-full text-white px-5">
@@ -52,44 +63,27 @@
 						</div>
 					</div>
 				{/each}
+				{#if !data.events || data.events.length == 0}
+					<p class="text-sm opacity-70">No events yet</p>
+				{/if}
 			</div>
 		</div>
 
 		<div class="mb-16">
-			<h2 class=" mb-10 mt-20 w-full font-Ubuntu  text-2xl gl:text-4xl uppercase">All Events</h2>
+			<h2 class=" mb-10 mt-20 w-full font-Ubuntu  text-2xl gl:text-4xl uppercase">Other Events</h2>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-3 gl:grid-cols-6">
-				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
-					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
-						<div class="w-full uppercase text-center h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
-							<span>Coding UG/PG</span>
-						</div>
-						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/coding.gif" alt="CUG" />
-					</div></a
-				>
-				<a class="hover:scale-105 transition-all shadow-white" href="/events/solo"
-					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
-						<div class="w-full text-center uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
-							<span>Web Designing</span>
-						</div>
-						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/web.gif" alt="WEB" />
-					</div></a
-				>
-				<a class="hover:scale-105 transition-all shadow-white" href="/events/team/treasurehunt"
-					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
-						<div class="w-full uppercase h-full text-center grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
-							<span>Treasure Hunt</span>
-						</div>
-						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/th.gif" alt="CUG" />
-					</div></a
-				>
-				<a class="hover:scale-105 transition-all shadow-white" href="/events/team/respawn"
-					><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
-						<div class="w-full uppercase h-full text-center grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
-							<span>Respawn</span>
-						</div>
-						<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/gaming.gif" alt="RP" />
-					</div></a
-				>
+				{#each Object.keys(names) as key}
+					{#if !participated.includes(key)}
+						<a  class="hover:scale-105 transition-all shadow-white" href={"/events" + urls[key]}
+						><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+							<div class="w-full uppercase text-center h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+								<span>{names[key]}</span>
+							</div>
+							<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src="/images/covers/{assets[key]}" alt="{key}" />
+						</div></a>
+					{/if}
+				{/each}
+				
 			</div>
 		</div>
 	</div>
