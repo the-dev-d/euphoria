@@ -10,7 +10,7 @@
 				<div></div>
 				<Parallax>
 					<div class="parallax-scene relative h-full w-full">
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
+						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.3">
 							<img
 								src="/images/main/back-glow.png"
 								alt="V"
@@ -24,7 +24,7 @@
 								class=" absolute right-0 top-0 h-full object-contain"
 							/>
 						</div>
-						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
+						<div class="absolute right-0 top-0 h-full w-full" data-depth="0.3">
 							<img
 								src="/images/main/front-glow.png"
 								alt="V"

@@ -52,16 +52,16 @@
 				<h2 class="text-2xl font-fugaz text-[#FD1C68] mb-2">EUPHORIA'24</h2>
 				<p class="text-sm mb-4  font-Ubuntu">Celebrating innovation and technology</p>
 				<div class="flex space-x-4 mb-4">
-					<a href="#" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
+					<a href="https://www.facebook.com/profile.php?id=61563435161368" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
 						<i class="fab fa-facebook-f"></i>
 					</a>
 					<a href="#" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href="#" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
+					<a href="https://www.instagram.com/euphoria_.24._?igsh=MThqazkxbHYydTd3aA==" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
 						<i class="fab fa-instagram"></i>
 					</a>
-					<a href="#" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
+					<a href="http://linkedin.com/company/euphoria-24" class="text-white hover:text-[#FD1C68] transition-colors duration-300">
 						<i class="fab fa-linkedin-in"></i>
 					</a>
 				</div>

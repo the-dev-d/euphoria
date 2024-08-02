@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	export let authenticated: boolean = false;
 </script>
 
 <header
@@ -21,22 +22,16 @@
 			<!-- <li><a href="#">Fixtures</a></li>
 			<li><a href="#">Tickets</a></li>
 			<li><a href="#">Gallery</a></li> -->
-			<button>
-				<svg
-					class="h-6 w-6"
-					fill="none"
-					stroke="currentColor"
-					viewBox="0 0 24 24"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h16"
-					></path>
-				</svg></button
-			>
+			<!-- {#if !authenticated}
+				<a href="/login" class="">Login</a>
+			{:else}
+				<form method="POST" action="?/logout">
+					<button
+						class="fa-solid fa-right-from-bracket my-auto ml-6 scale-105 rounded-full border p-3 hover:bg-slate-500"
+						type="submit"
+					></button>
+				</form>
+			{/if} -->
 		</ul>
 	</nav>
 </header>

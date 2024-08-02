@@ -126,7 +126,7 @@
 				</h1>
 			</div>
 		</div>
-		<div class="mt-4 grid gap-4">
+		<div class="mt-4 grid gap-4 text-white">
 			<div>
 				<Label>Payment Screenshot</Label>
 				<Input
@@ -136,7 +136,7 @@
 					type="file"
 					name="payment-screenshot"
 					placeholder="email"
-					class="max-w-xs bg-transparent"
+					class="max-w-xs bg-transparent text-white"
 				/>
 				<p class="my-1 text-sm text-red-400">{fileError}</p>
 			</div>

@@ -1,6 +1,7 @@
 <script></script>
 
 <section id="know-more" class="relative mb-10 mt-10 grid min-h-[50svh] w-full place-items-center">
+	<h1 class=" relative font-valorant text-5xl uppercase text-white gl:text-6xl">EVENTS</h1>
 	<div
 		class="absolute left-[-30%] top-[-10%] z-[-1] h-full w-1/2 rounded-full bg-gradient-to-b from-red-500 to-violet-500 opacity-30 shadow-glow blur-2xl"
 	></div>
