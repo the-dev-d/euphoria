@@ -51,7 +51,7 @@
 
   </script>
 
-<main class="w-full h-[100svh] grid place-items-center">
+<main class="w-full h-[88svh] grid place-items-center px-5 gl:px-0">
     <form method="POST" class="grid text-black gap-6 w-full bg-white p-8 rounded-md shadow-md md:w-1/3 md-px-0"   enctype="multipart/form-data">
         <div class="grid items-center grid-cols-2">
             <div class="grid gap-6">

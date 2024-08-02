@@ -7,7 +7,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class=" relative mb-8 mt-8 h-[100svh] max-h-[1080px] min-h-[740px] w-full">
+<section class=" relative mb-10 mt-10 h-[88svh] min-h-[740px] w-full">
 	<Parallax>
 		<div class=" parallax-scene absolute left-0 top-0 h-full w-full overflow-hidden">
 			<img
@@ -18,9 +18,9 @@
 				src="/images/main/content-glitch.png"
 				alt=""
 			/>
-			<div data-depth="0.25" class="grid h-[40%] w-full content-end">
+			<div data-depth="0.25" class="grid h-[35%] w-full content-end">
 				<div
-					class="bg-gradient-to-br from-red-500 to-red-400 bg-clip-text text-center font-valorant text-6xl text-transparent gl:text-9xl"
+					class="bg-gradient-to-br from-red-500 to-red-400 bg-clip-text text-center font-valorant text-5xl text-transparent gl:text-9xl"
 				>
 					SOUTH INDIAS <br />BIGGEST
 				</div>
@@ -71,7 +71,7 @@
 				alt=""
 			/>
 			<div data-depth="0.08" class="grid h-full w-full content-end">
-				<div class="text-center font-valorant text-6xl text-valorant-bg gl:text-9xl">
+				<div class="text-center font-valorant text-5xl font-bold text-valorant-bg gl:text-9xl">
 					LAN TOURNAMENT
 				</div>
 			</div>
@@ -80,12 +80,6 @@
 </section>
 
 <style lang="postcss">
-	.text-border {
-		text-shadow: 0px 0px 0px 1px white;
-	}
-	.container-inline {
-		container-type: inline-size;
-	}
 	@keyframes glow {
 		0%,
 		20%,
