@@ -1,6 +1,7 @@
 <script>
 	import About from '$lib/components/MainPage/About.svelte';
 	import Banner from '$lib/components/MainPage/Banner.svelte';
+	import CountDown from '$lib/components/MainPage/CountDown.svelte';
 	import Events from '$lib/components/MainPage/Events.svelte';
 	import Promo from '$lib/components/MainPage/Promo.svelte';
 
@@ -8,10 +9,10 @@
 	console.log(data);
 </script>
 
-<Banner authenticated={data.authenticated == true}/>
+<Banner authenticated={data.authenticated == true} />
+<CountDown />
 <About />
 <Events />
-
 
 <style>
 </style>
