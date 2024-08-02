@@ -10,9 +10,6 @@ export const handle: Handle = async ({event, resolve}) => {
     if(token) {
         const [b64, hash] = token.split('.');
         const email = atob(b64);
-
-        console.log(email)
-
         try {
             const participant = await connection.findParticipantByAttribute({email})
             if(!participant){

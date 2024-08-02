@@ -23,6 +23,7 @@ model Participants {
   phone String 
   event_participant Event_participants[]
   auth_token String? @unique
+  Teams Teams[]
 }
 
 model Events {
@@ -49,4 +50,39 @@ model Event_participants{
   verified Boolean @default(false)
   event_payment Event_payment @relation(fields: [payment_id], references: [payment_id])
   payment_id Int
+}
+
+model Teams{
+  team_id Int @id @default(autoincrement())
+  team_name String
+  college String
+  lock Boolean @default(false)
+  Leader Participants @relation(fields:[leader_id], references: [participant_id] )
+  leader_id Int
+  Team_members Team_members[]
+  game_member Gamer[]
+  riot_id String?
+  discord_id String?
+}
+
+model Team_members{
+  team_member_id Int @id @default(autoincrement())
+  email String @unique
+  name String
+  phone String
+  team_id Int
+  Team Teams @relation(fields: [team_id], references: [team_id])
+}
+
+model Gamer{
+  member_id Int @id @default(autoincrement())
+  email String @unique
+  name String
+  college String?
+  phone String
+  riot_id String
+  discord_id String
+  substitute Boolean @default(false)
+  team_id Int
+  Team Teams @relation(fields: [team_id], references: [team_id])
 }

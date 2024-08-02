@@ -27,14 +27,14 @@
 			<div class="absolute left-0 top-0 z-[-1] h-full w-full">
 				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
 					<h1
-						class="absolute left-[15%] top-[30%] h-full object-contain text-neon-violet opacity-80"
+						class="absolute w-full top-[30%] translate-x-20 md:translate-x-28 h-full object-contain text-neon-violet opacity-80"
 					>
 						CODING
 					</h1>
 				</div>
 				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.5">
 					<h1
-						class="absolute bottom-[30%] left-[15%] h-full object-contain text-neon-violet opacity-80"
+						class="absolute bottom-[30%] -translate-x-12 md:-translate-x-28 w-full h-full object-contain text-neon-violet opacity-80"
 					>
 						CODING
 					</h1>
@@ -57,7 +57,7 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<p class="text-sm relative block font-sans gl:text-xl">
-			Welcome to the Annual Coding Event! This competition is designed to challenge and inspire developers, bringing out the best in coding talent. The event consists of a preliminary online round followed by an on-campus final at Rajagiri College of Social Sciences.
+			Welcome Code Wizards. Get ready to dive into a world of innovation, creativity, and endless possibilities!. This competition is designed to challenge and inspire developers, bringing out the best in coding talent. The event consists of a preliminary online round followed by an on-campus final at Rajagiri College of Social Sciences.
 		</p>
 	</article>
 	<h1 class="text-4xl relative mx-5 font-fugaz uppercase text-white gl:mx-10 gl:text-6xl mt-10">

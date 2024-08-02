@@ -7,6 +7,7 @@ export const load: PageServerLoad = async ({locals}) => {
     const {user} = locals;
     const events = await connection.findSoloEvents(user.participant_id);
 
+    const res = await connection.checkEventParticipation(["mca2302@rajagiri.edu"], "RP");
     
     return {
         events

@@ -93,7 +93,7 @@ export const actions = {
         try {
             const fileName = `static/screenshots/${user.participant_id}-${uuid}.png`;
             writeFileSync(fileName, Buffer.from(await paymentScreenshot.arrayBuffer()));
-            const res = await connection.addPayment({amount, uuid, upi_transaction_id: transactionId, screenshot: fileName });
+            const res = await connection.addPayment({amount, uuid: crypto.randomUUID(), upi_transaction_id: transactionId, screenshot: fileName });
             const eventParticipation = events.map(event => ({...event, participant_id: user.participant_id, payment_id: res.payment_id, verified: false}));
             const res2 = await connection.addParticipation(eventParticipation);
 

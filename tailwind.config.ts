@@ -71,9 +71,9 @@ const config: Config = {
 				equinox: "equinox",
 				valorant: "valorant",
 				vonique: "vonique",
-				fugaz: "Fugaz One",
-				Ubuntu: "Ubuntu",
-				roboto: ['Roboto', 'sans-serif'],
+				fugaz: "fugas",
+				Ubuntu: "ubuntu-regular",
+				roboto: "roboto-regular",
         'roboto-semi-bold': ['Roboto', 'sans-serif'],
         anton: ['Anton', 'sans-serif'],
 				

@@ -12,11 +12,11 @@ export const actions = {
     default: async ({request}) => {
 
         const data = await request.formData();
-        const name = data.get('name');
-        const email = data.get('email');
-        const phone = data.get('phone');
-        const password = data.get('password');
-        const college = data.get('college');
+        const name = (data.get('name') as string).trim();
+        const email = (data.get('email') as string).trim();
+        const phone = (data.get('phone') as string).trim();
+        const password = (data.get('password') as string).trim();
+        const college = (data.get('college') as string).trim();
 
 
         const parsed = ContestantSchema.safeParse({

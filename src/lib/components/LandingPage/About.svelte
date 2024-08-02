@@ -15,13 +15,7 @@
 	<article class=" relative w-full h-full grid place-items-center p-10">
 		<h1 class=" relative font-valorant uppercase text-white text:4xl gl:text-6xl">ABOUT</h1>
 		<p class=" relative font-sans text-xm gl:text-2xl block w-[80%]">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit provident autem assumenda
-			nisi voluptatibus, ea aperiam hic molestias vero iste minima adipisci excepturi vitae?
-			Delectus et est commodi hic eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Facere culpa perferendis, corrupti nulla asperiores aspernatur itaque eos suscipit minus! Est,
-			sit sapiente voluptatum qui autem obcaecati minus ex eum assumenda. Lorem ipsum dolor sit amet
-			consectetur adipisicing elit. Sunt voluptates repudiandae, minima non id perferendis aliquid
-			possimus iusto, ipsum officiis odit est voluptatibus quae. Amet, id ipsum? Unde, quia ea.
+			Get ready for an adrenaline-pumping experience at Euphoria 2024 with the Valorant LAN Tournament! Join South India's biggest gaming showdown, Respawn, in partnership with the All Kerala Esports Federation (AKEF). Compete with top teams, enjoy state-of-the-art setups, and witness thrilling matches live. With epic prizes and the ultimate bragging rights on the line, this is the event every esports enthusiast has been waiting for. Don't miss the action—Brace for Impact!
 		</p>
 	</article>
 

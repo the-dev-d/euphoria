@@ -6,6 +6,7 @@
     import * as RadioGroup from "$lib/shardcn/ui/radio-group/index";
 	import type { ActionData } from "./$types";
     import { PRICE } from "../../../../lib/constants/constants";
+	import { TransactionSchema } from "$lib/zod/types";
 
 
     const events = {
@@ -25,6 +26,9 @@
 
     let file:File|null = null;
     let fileError = "";
+    let transactionError = "";
+
+    $: transactionError = TransactionSchema.safeParse(transactionId).error?.format()._errors[0] || "";
 
     function fileChanged(e: FormInputEvent) {
 
@@ -115,6 +119,9 @@
                     UPI transaction id
                 </Label>
                 <Input bind:value={transactionId} required type="number" name="upi-transaction-id" placeholder="UPI Transaction id" class="max-w-xs" />
+                {#if transactionId !== ""}
+                   <p class="text-red-400 text-xs mt-2"> {transactionError}</p>
+                {/if}
             </div>
         </div>
         {#if form && !form.success }
