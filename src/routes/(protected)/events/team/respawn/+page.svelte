@@ -168,7 +168,9 @@
 </script>
 
 <section class="mb-10 grid w-full place-items-center">
-	<div class="m-4 w-11/12 rounded-md border bg-white p-4 text-black shadow-md">
+	<div
+		class="order-2 m-4 w-11/12 rounded-md border border-btn-main bg-valorant-bg p-8 text-white shadow-md shadow-btn-main"
+	>
 		<div class="p-4 text-xs">
 			<ul class="list-disc">
 				<li>Minimum 4 student players required</li>
@@ -179,13 +181,13 @@
 		</div>
 	</div>
 	<form
-		class="my-4 w-11/12 rounded-md border bg-white text-black shadow-md"
+		class="order-2 my-4 w-11/12 rounded-md border border-btn-main bg-valorant-bg p-8 text-white shadow-md shadow-btn-main"
 		on:submit|preventDefault={saveTeam}
 	>
 		<div class="grid grid-rows-[auto_1fr]">
-			<div class="grid grid-rows-[auto_1fr] gl:grid-cols-2">
+			<div class="grid grid-rows-[auto_1fr] gl:grid-cols-2 gl:gap-0 gap-5">
 				<div class="grid content-start gap-5 p-4">
-					<h2 class="mb-1">Brace for Impact</h2>
+					<h2 class="mb-1 font-valorant font-bold text-2xl gl:text-4xl">Brace for Impact</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="team_name">Team Name</Label>
 						<div class="flex w-full items-center space-x-2">
@@ -195,8 +197,12 @@
 								type="text"
 								id="team_name"
 								placeholder="Team Name"
+								class="bg-transparent"
 							/>
-							<Button on:click={checkTeamName}>Check</Button>
+							<Button
+								on:click={checkTeamName}
+								class="rounded-xl border-2 border-btn-main bg-btn-main">Check</Button
+							>
 						</div>
 						{#if teamName !== ''}
 							<p class="text-xs text-red-400">{teamNameError}</p>
@@ -210,6 +216,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="transaction_id">Transaction ID</Label>
 						<Input
+							class="bg-transparent"
 							bind:value={transactionId}
 							required
 							type="number"
@@ -223,6 +230,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input
+							class="bg-transparent"
 							on:change={fileChanged}
 							required
 							accept=".jpg, .jpeg, .png"
@@ -236,7 +244,12 @@
 					</div>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="leader_riot_id">Team Leader Riot ID</Label>
-						<Input bind:value={leaderRiotId} id="leader_riot_id" placeholder="Leader Riot ID" />
+						<Input
+							bind:value={leaderRiotId}
+							id="leader_riot_id"
+							placeholder="Leader Riot ID"
+							class="bg-transparent"
+						/>
 						{#if leaderRiotId !== ''}
 							<p class="text-xs text-red-400">{leaderRiotError}</p>
 						{/if}
@@ -244,6 +257,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="leader_discord_id">Team Leader Discord ID</Label>
 						<Input
+							class="bg-transparent"
 							bind:value={leaderDiscrodId}
 							id="leader_discord_id"
 							placeholder="Leader Discord ID"
@@ -253,11 +267,12 @@
 						{/if}
 					</div>
 				</div>
-				<div class="grid gap-5 p-6 py-4">
-					<h2 class=" mb-1">Register your players</h2>
+				<div class="grid gap-5 border-btn-main p-6 py-4 gl:border-l gl:border-t-0 border-t">
+					<h2 class=" mb-1 font-bold text-2xl font-valorant">Register your players</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_name">Name</Label>
 						<Input
+							class="bg-transparent"
 							name="name"
 							bind:value={name}
 							required
@@ -272,6 +287,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_phone">Phone</Label>
 						<Input
+							class="bg-transparent"
 							name="phone"
 							bind:value={phone}
 							required
@@ -286,6 +302,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_email">Email</Label>
 						<Input
+							class="bg-transparent"
 							name="email"
 							bind:value={email}
 							required
@@ -300,6 +317,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="riot_id">Member Riot ID</Label>
 						<Input
+							class="bg-transparent"
 							name="riot_id"
 							bind:value={riotId}
 							required
@@ -314,6 +332,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="discord_id">Member Discord ID</Label>
 						<Input
+							class="bg-transparent"
 							name="discord_id"
 							bind:value={discordId}
 							required
@@ -332,6 +351,7 @@
 							name="substitute"
 							bind:checked={substitute}
 							id="substitute"
+							class="bg-white"
 						/>
 						<div class="grid gap-1.5 leading-none">
 							<Label
@@ -343,7 +363,7 @@
 						</div>
 					</div>
 					<div class="items-top flex items-center space-x-2">
-						<Checkbox name="student" bind:checked={student} id="student" />
+						<Checkbox name="student" bind:checked={student} id="student" class="bg-white" />
 						<div class="grid gap-1.5 leading-none">
 							<Label
 								for="student"
@@ -356,6 +376,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="college_name">College Name</Label>
 						<Input
+							class="bg-transparent"
 							name="college_name"
 							disabled={!student}
 							bind:value={collegeName}
@@ -370,6 +391,7 @@
 					</div>
 
 					<Button
+						class="mt-8 w-full rounded-xl border-2 border-btn-main bg-btn-main"
 						on:click={addMember}
 						disabled={!(
 							nameError == '' &&
@@ -427,7 +449,7 @@
 					</Table.Root>
 				</div>
 				<Button
-					class="mt-8 w-full"
+					class="mt-8 w-full rounded-xl border-2 border-btn-main bg-btn-main"
 					on:click={saveTeam}
 					disabled={members.length !== 6 ||
 						!teamNameAvailable ||

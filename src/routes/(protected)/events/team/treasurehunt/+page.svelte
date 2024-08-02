@@ -116,7 +116,9 @@
 </script>
 
 <section class="mb-10 grid w-full place-items-center">
-	<div class="m-4 w-5/6 rounded-md border bg-white p-4 text-black shadow-md">
+	<div
+		class="m-4 w-5/6 rounded-xl border border-btn-main bg-valorant-bg p-4 text-white shadow-md shadow-btn-main"
+	>
 		<div class="p-4 text-xs">
 			<ul class="list-disc">
 				<li>4 Players including leader</li>
@@ -126,24 +128,30 @@
 		</div>
 	</div>
 	<form
-		class="w-5/6 rounded-md border bg-white p-6 text-black shadow-md"
+		class="w-5/6 rounded-md border border-btn-main bg-valorant-bg p-6 text-white shadow-btn-main"
 		on:submit|preventDefault={saveTeam}
 	>
 		<div class="grid grid-rows-[auto_1fr] gap-6">
-			<div class="relative grid gap-5 gl:grid-cols-2">
-				<div class="grid gap-5 gl:px-5">
-					<h2 class="mb-1">Register for the Hunt</h2>
+			<div class="relative grid gap-10 gl:grid-cols-2 gl:gap-0">
+				<div class="grid gap-5 border-btn-main gl:border-r gl:px-5">
+					<h2 class="mb-1 mt-4 font-valorant text-2xl font-bold gl:text-4xl">
+						Register for the Hunt
+					</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="team_name">Team Name</Label>
 						<div class="flex w-full items-center space-x-2">
 							<Input
+								class=" bg-transparent"
 								bind:value={teamName}
 								required
 								type="text"
 								id="team_name"
 								placeholder="Team Name"
 							/>
-							<Button on:click={checkTeamName}>Check</Button>
+							<Button
+								class=" rounded-xl border-2 border-btn-main bg-btn-main"
+								on:click={checkTeamName}>Check</Button
+							>
 						</div>
 						{#if teamName !== ''}
 							<p class="text-xs text-red-400">{teamNameError}</p>
@@ -157,6 +165,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="transaction_id">Transaction ID</Label>
 						<Input
+							class=" bg-transparent"
 							bind:value={transactionId}
 							required
 							type="number"
@@ -170,6 +179,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input
+							class=" bg-transparent"
 							on:change={fileChanged}
 							required
 							accept=".jpg, .jpeg, .png"
@@ -182,11 +192,12 @@
 						{/if}
 					</div>
 				</div>
-				<div class="grid gap-5 gl:px-5">
-					<h2 class="mb-1 mt-4">Register your members</h2>
+				<div class="grid gap-5 border-t border-btn-main gl:border-l gl:border-t-0 gl:px-5">
+					<h2 class="mb-1 mt-4 font-valorant text-2xl font-bold">Register your members</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_name">Name</Label>
 						<Input
+							class=" bg-transparent"
 							bind:value={name}
 							required
 							type="text"
@@ -200,6 +211,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_phone">Phone</Label>
 						<Input
+							class=" bg-transparent"
 							bind:value={phone}
 							required
 							type="text"
@@ -213,6 +225,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_email">Email</Label>
 						<Input
+							class=" bg-transparent"
 							bind:value={email}
 							required
 							type="email"
@@ -224,6 +237,7 @@
 						{/if}
 					</div>
 					<Button
+						class=" rounded-xl border-2 border-btn-main bg-btn-main"
 						on:click={addMember}
 						disabled={!(nameError == '' && phoneError == '' && emailError == '') ||
 							members.length == 3}>Add</Button
@@ -268,7 +282,7 @@
 			</div>
 		</div>
 		<Button
-			class="mt-8 w-full"
+			class="mt-8 w-full rounded-xl border-2 border-btn-main bg-btn-main"
 			on:click={saveTeam}
 			disabled={members.length !== 3 ||
 				!teamNameAvailable ||

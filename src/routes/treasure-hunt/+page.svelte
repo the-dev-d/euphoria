@@ -101,7 +101,7 @@
 	</article>
 </section>
 
-<section class="relative mb-10 h-[50svh] min-h-[370px] w-full p-5 gl:p-10">
+<section class="relative mb-10  w-full p-5 gl:p-10">
 	<div
 		class=" relative grid w-full grid-rows-2 place-items-center gap-[10%] p-5 gl:grid-cols-2 gl:grid-rows-1 gl:p-10"
 	>
