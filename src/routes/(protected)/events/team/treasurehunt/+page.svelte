@@ -179,7 +179,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input
-							class=" bg-transparent"
+							class="text-black"
 							on:change={fileChanged}
 							required
 							accept=".jpg, .jpeg, .png"

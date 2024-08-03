@@ -1,7 +1,7 @@
 import { connection } from "$lib/prisma/connection";
 import { DiscordIdSchema, GamerSchema, HuntMemberSchema, RiotIdSchema, TeamNameSchema, TransactionSchema } from "$lib/zod/types";
 import { error, redirect, type Actions } from "@sveltejs/kit";
-import { writeFileSync } from "fs";
+import { unlinkSync, writeFileSync } from "fs";
 import { z } from "zod";
 import { PRICE } from "$lib/constants/constants";
 import type { PageServerLoad } from "./$types";
@@ -81,8 +81,9 @@ export const actions = {
             })
 
             const uuid = crypto.randomUUID();
+            const fileName = `static/screenshots/${user.participant_id}-${uuid}.png`;
+
             try {
-                const fileName = `static/screenshots/${user.participant_id}-${uuid}.png`;
                 writeFileSync(fileName, Buffer.from(await screenshot.arrayBuffer()));
                 const {transactionId, teamName, members, riotId, discordId, ...rest} = validated;
 
@@ -118,6 +119,7 @@ export const actions = {
             } catch (e) {
                 console.log(e);
                 if(e.code === "P2002") {
+                    unlinkSync(fileName);
                     return {
                         success: false,
                         message: "Member already exists in some team"
