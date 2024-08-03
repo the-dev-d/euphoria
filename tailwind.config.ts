@@ -24,9 +24,9 @@ const config: Config = {
 				'valorant-footer': '#261341',
 				'primary-dark': '#030812',
 				'footer': '#08072C',
-				'neon-violet':'#D015FF',
+				'neon-violet': '#D015FF',
 				'btn-main': '#FD1C68',
-				'glow':'100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
+				'glow': '100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -59,7 +59,7 @@ const config: Config = {
 				card: {
 					DEFAULT: "hsl(var(--card) / <alpha-value>)",
 					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
-				}
+				},
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -74,9 +74,9 @@ const config: Config = {
 				fugaz: "fugas",
 				Ubuntu: "ubuntu-regular",
 				roboto: "roboto-regular",
-        'roboto-semi-bold': ['Roboto', 'sans-serif'],
-        anton: ['Anton', 'sans-serif'],
-				
+				'roboto-semi-bold': ['Roboto', 'sans-serif'],
+				anton: ['Anton', 'sans-serif'],
+
 			},
 			minWidth: {
 				'sm': '320px',
@@ -94,15 +94,15 @@ const config: Config = {
 				'glow': '100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
 			},
 			dropShadow: {
-				'glow': '100px 100px 100px rgba(139, 92, 246, 0.5) , 0 0 100px  rgba(244, 114, 182, 0.5)',
+				'glow': ['-5px 10px 5px rgba(208,21,255)', '5px -10px 5px rgba(208,21,255)'],
 			},
 			btnspacing: {
 				'50px': '50px', // Adding custom spacing of 50px
-			  },
-			  formbackgroundImage: {
+			},
+			formbackgroundImage: {
 				'fbgarcade': "url('/static/images/forms/fbgarcade.jpg')",
-			  },
-			
+			},
+
 		}
 	},
 };

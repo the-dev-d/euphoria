@@ -17,29 +17,12 @@
 		</Parallax>
 	</section>
 	<section
-		class="absolute left-0 top-0 grid h-full w-full grid-cols-1 place-items-center gap-10 overflow-hidden p-0 py-8 text-center sm:py-14 md:p-10"
+		class="absolute left-0 top-0 grid h-full w-full grid-cols-1 place-items-center gap-10 overflow-hidden p-0 py-8 text-center drop-shadow-glow sm:py-14 md:p-10"
 	>
 		<h1
-			class="fugaz-one-regular back relative z-10 w-full text-4xl font-bold uppercase md:text-6xl xl:text-9xl"
+			class="fugaz-one-regular relative z-10 text-3xl font-bold uppercase md:text-7xl gl:text-8xl"
 		>
-			TREASURE HUNT
-
-			<div class="absolute left-0 top-0 z-[-1] h-full w-full">
-				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
-					<h1
-						class="text-cust-violet absolute left-[15%] top-[30%] h-full object-contain font-bold text-transparent opacity-80"
-					>
-						TREASURE HUNT
-					</h1>
-				</div>
-				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.5">
-					<h1
-						class="text-cust-violet absolute bottom-[30%] left-[15%] h-full object-contain font-bold text-transparent opacity-80"
-					>
-						TREASURE HUNT
-					</h1>
-				</div>
-			</div>
+			VAULTED VENTURE
 		</h1>
 	</section>
 	<div
@@ -69,7 +52,7 @@
 </section>
 
 <section class="relative mt-10 min-h-[740px] w-full p-2 md:p-5 gl:p-10">
-	<h1 class=" text:4xl relative mx-5 font-valorant uppercase text-white gl:mx-10 gl:text-6xl">
+	<h1 class=" relative mx-5 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
 		GUIDLINES
 	</h1>
 
@@ -102,7 +85,9 @@
 				</li>
 			</ul>
 
-			<h3 class="mb-2 mt-6 text-xl font-semibold">Disqualification may occur for:</h3>
+			<h3 class="mb-2 mt-6 text-xl font-semibold text-slate-500">
+				Disqualification may occur for:
+			</h3>
 			<ul class="list-disc space-y-2 pl-5">
 				<li>Tampering with clues or checkpoints</li>
 				<li>Using external help or assistance</li>
@@ -123,21 +108,19 @@
 		PRIZE
 	</h1>
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
-		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
+		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li class="text-3xl font-semibold">First Prize : ₹15,000</li>
 			<li class="text-2xl font-semibold">Second Prize : ₹5,000</li>
 		</ul>
 	</article>
-</section>
-
-<section class="relative mb-10 w-full p-5 gl:p-10">
-	<div
-		class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10"
-	>
+	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
 		<a href="/register" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
 			>REGISTER NOW</a
 		>
 	</div>
+</section>
+
+<section class="relative mb-10 w-full p-5 gl:p-10">
 	<h1 class=" text:4xl relative mx-5 mt-10 font-valorant uppercase text-white gl:mx-10 gl:text-6xl">
 		CONTACT
 	</h1>
