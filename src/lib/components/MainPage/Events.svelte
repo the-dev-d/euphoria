@@ -15,24 +15,31 @@
 				/>
 			</div>
 		</a>
-		<div class="relative grid h-full w-full grid-cols-3 grid-rows-1 gap-2 py-2 gl:gap-5">
-			<a href="/coding"
+		<div class="relative grid h-full w-full grid-cols-4 grid-rows-1 gap-2 py-2 gl:gap-3">
+			<a href="/coding/ug"
 				><div
-					class="grid aspect-square w-full place-items-center rounded-xl border-2 border-pink-900 text-center gl:rounded-3xl relative">
+					class="grid aspect-square w-full place-items-center rounded-lg border-2 border-pink-900 text-center gl:rounded-xl relative">
 					<img class="absolute top-0 left-0 w-full h-full brightness-50" src="/images/covers/coding.gif" alt="coding"/>
-					<h1 class=" text-primary-dark-valorant gl:text-2xl absolute font-semibold text-white">UG/PG CODING</h1>
+					<h1 class=" gl:text-2xl absolute font-semibold text-white">UG CODING</h1>
+				</div>
+			</a>
+			<a href="/coding/pg"
+				><div
+					class="grid aspect-square w-full place-items-center rounded-lg border-2 border-pink-900 text-center gl:rounded-xl relative">
+					<img class="absolute top-0 left-0 w-full h-full brightness-50" src="/images/covers/coding.gif" alt="coding"/>
+					<h1 class=" gl:text-2xl absolute font-semibold text-white">PG CODING</h1>
 				</div>
 			</a>
 			<a href="/treasure-hunt">
 				<div
-					class="grid aspect-square w-full place-items-center rounded-xl text-center border-2 border-pink-900 gl:rounded-3xl relative">
+					class="grid aspect-square w-full place-items-center rounded-lg text-center border-2 border-pink-900 gl:rounded-xl relative">
 				<img class="absolute top-0 left-0 w-full h-full brightness-50" src="/images/covers/th.gif" alt="coding"/>
 					<h1 class=" text-white font-semibold gl:text-2xl absolute">TREASURE HUNT</h1>
 				</div>
 			</a>
 		<a href="/web-designing">
 			<div
-					class="grid aspect-square w-full place-items-center rounded-xl text-center border-2 border-pink-900 gl:rounded-3xl relative">
+					class="grid aspect-square w-full place-items-center rounded-lg text-center border-2 border-pink-900 gl:rounded-xl relative">
 				<img class="absolute top-0 left-0 w-full h-full brightness-50" src="/images/covers/web.gif" alt="coding"/>
 					<h1 class=" text-white font-semibold gl:text-2xl absolute">WEB DESIGNING</h1>
 				</div>

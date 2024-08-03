@@ -42,6 +42,11 @@
 			</div>
 		</h1>
 	</section>
+	<div
+		class="absolute bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
+	>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹10,000</h1>
+	</div>
 	<div class="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center text-white">
 		<p class="text-sm font-semibold mb-2">Scroll down for more info</p>
 		<svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -72,26 +77,31 @@ In the web designing competition, participants will engage in a series of three 
 			<li><strong>Computer Allocation:</strong> Each participant will be allotted a computer system from our side for developing the website.</li>
 			<li><strong>Electronic Devices:</strong> Use of any electronic devices other than the allotted computer system during the development phase will lead to immediate disqualification.</li>
 			<li><strong>Judges' Decision:</strong> The decision of the judges will be final.</li>
+		</ul>        
+	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
+		PRIZE
+	</h1>
+	<article class="relative w-full overflow-hidden p-5 gl:p-10">
+		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
+			<li class="text-3xl font-semibold">First Prize : ₹7,000</li>
+			<li class="text-2xl font-semibold">Second Prize : ₹3,000</li>
 		</ul>
-        <div
-			class="relative grid w-full grid-cols-1 sm:grid-cols-2 place-items-center gap-4 sm:gap-6 mt-10"
+	</article>
+
+	<div
+			class="relative grid w-full  place-items-center gap-4 sm:gap-6 my-10"
 		>
 			<a
 				href="/register"
 				class="block w-full  bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>REGISTER NOW</a
 			>
-	
-			<a
-				href="#"
-				class="block w-full border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
-				>LEARN MORE</a
-			>
-		</div>
-	</article>
+	</div>
+
 </section>
 
-<section class="relative mb-10 h-auto min-h-[370px] w-full p-5 gl:p-10">
+<section class="relative h-auto min-h-[370px] w-full p-5 gl:p-10">
 	<h1 class="text-4xl relative mx-5 font-fugaz uppercase text-white gl:mx-10 gl:text-6xl">
 		CONTACT
 	</h1>

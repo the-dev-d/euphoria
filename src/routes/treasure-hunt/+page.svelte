@@ -45,7 +45,7 @@
 	<div
 		class="absolute bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL:₹1000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹20,000</h1>
 	</div>
 	<div
 		class="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white"
@@ -119,18 +119,23 @@
 			</p>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
+		PRIZE
+	</h1>
+	<article class="relative w-full overflow-hidden p-5 gl:p-10">
+		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
+			<li class="text-3xl font-semibold">First Prize : ₹15,000</li>
+			<li class="text-2xl font-semibold">Second Prize : ₹5,000</li>
+		</ul>
+	</article>
 </section>
 
 <section class="relative mb-10 w-full p-5 gl:p-10">
 	<div
-		class=" relative grid w-full grid-rows-2 place-items-center gap-[10%] p-5 gl:grid-cols-2 gl:grid-rows-1 gl:p-10"
+		class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10"
 	>
 		<a href="/register" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
-			>OPENS SOON</a
-		>
-
-		<a href="#" class="block w-full border border-neon-violet bg-transparent p-3 text-center"
-			>KNOW MORE</a
+			>REGISTER NOW</a
 		>
 	</div>
 	<h1 class=" text:4xl relative mx-5 mt-10 font-valorant uppercase text-white gl:mx-10 gl:text-6xl">

@@ -20,23 +20,23 @@
 		class="absolute left-0 top-0 grid h-full w-full grid-cols-1 place-items-center gap-10 overflow-hidden p-0 py-8 text-center sm:py-14 md:p-10"
 	>
 		<h1
-			class="fugaz-one-regular back relative z-10 w-full text-4xl font-bold uppercase md:text-7xl gl:text-9xl"
+			class="fugaz-one-regular back relative z-10 w-full text-xl font-bold uppercase md:text-4xl gl:text-7xl"
 		>
-			CODING
+			LEGENDARY CODING CONQUEST
 
 			<div class="absolute left-0 top-0 z-[-1] h-full w-full">
 				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.6">
 					<h1
-						class="absolute w-full top-[30%] translate-x-20 md:translate-x-28 h-full object-contain text-neon-violet opacity-80"
+						class="absolute w-full top-[30%] translate-x-4 translate-y-4  md:translate-x-28 h-full object-contain text-neon-violet opacity-80"
 					>
-						CODING
+						LEGENDARY CODING CONQUEST
 					</h1>
 				</div>
 				<div class="absolute right-0 top-0 h-full w-full" data-depth="0.5">
 					<h1
-						class="absolute bottom-[30%] -translate-x-12 md:-translate-x-28 w-full h-full object-contain text-neon-violet opacity-80"
+						class="absolute bottom-[30%] -translate-x-4  -translate-y-2  md:-translate-x-28 w-full h-full object-contain text-neon-violet opacity-80"
 					>
-						CODING
+						LEGENDARY CODING CONQUEST
 					</h1>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<p class="text-sm relative block font-sans gl:text-xl">
-			Welcome Code Wizards. Get ready to dive into a world of innovation, creativity, and endless possibilities!. This competition is designed to challenge and inspire developers, bringing out the best in coding talent. The event consists of a preliminary online round followed by an on-campus final at Rajagiri College of Social Sciences.
+			Dive into the ultimate coding challenge with the Legendary Coding Conquest! This thrilling event brings together the best of coding with a blend of excitement, fun, and fierce competition. Whether you're a budding coder or a seasoned developer, this event is designed to test and showcase your skills in a dynamic and engaging format.
 		</p>
 	</article>
 	<h1 class="text-4xl relative mx-5 font-fugaz uppercase text-white gl:mx-10 gl:text-6xl mt-10">
@@ -81,18 +81,12 @@
 		</ul>
 
         <div
-			class="relative grid w-full grid-cols-1 sm:grid-cols-2 place-items-center gap-4 sm:gap-6 mt-10"
+			class="relative grid w-full place-items-center gap-4 sm:gap-6 mt-10"
 		>
 			<a
 				href="/register"
 				class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 				>REGISTER NOW</a
-			>
-	
-			<a
-				href="#"
-				class="block w-full border-2 border-neon-violet bg-transparent px-4 py-2 text-center text-sm font-semibold text-neon-violet transition-all duration-300 hover:bg-neon-violet hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
-				>LEARN MORE</a
 			>
 		</div>
 	</article>
@@ -111,15 +105,7 @@
 				<p class="text-white">+91 9074768353'</p>
 			</div>
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">GRACEN K SHAJI (PG)</h3>
-				<p class="text-white">+91 7736705727</p>
-			</div>
-			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY (UG)</h3>
-				<p class="text-white">+91 7736705727</p>
-			</div>
-			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">MUHZINA MOHAMED AFZAL (PG)</h3>
 				<p class="text-white">+91 7736705727</p>
 			</div>
 		</div>

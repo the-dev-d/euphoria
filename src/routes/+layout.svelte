@@ -2,6 +2,7 @@
 	import '../app.css';
 	import NavBar from '$lib/components/LandingPage/NavBar.svelte';
 	import Footer from '$lib/components/LandingPage/Footer.svelte';
+
 </script>
 
 <div
