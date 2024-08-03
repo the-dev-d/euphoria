@@ -1,7 +1,7 @@
 <script>
 	import { onDestroy } from 'svelte';
 
-	let targetDate = new Date('2024-08-27T00:00:00');
+	let targetDate = new Date('2024-08-31T00:00:00');
 	let timeRemaining = calculateTimeRemaining(targetDate);
 
 	function calculateTimeRemaining(target) {

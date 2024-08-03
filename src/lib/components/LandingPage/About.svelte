@@ -3,12 +3,12 @@
 </script>
 
 <section
-	class="relative w-full max-h-[1080px] min-h-[740px] h-[100svh] grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 place-items-center mt-8 mb-8"
+	class="relative w-full min-h-[740px] h-[88svh] grid grid-rows-2 gl:grid-cols-2 gl:grid-rows-1 place-items-center mt-10 mb-10"
 >
 	<Parallax>
 		<div class="absolute top-0 left-0 w-full h-full parallax-scene overflow-hidden">
 			<div  data-depth="0.6" class="relative w-full h-full">
-				<img src="/images/main/about-bg.png" alt="XX" class="absolute top-0 right-[10%] h-full object-contain">
+				<img src="/images/main/about-bg.png" alt="XX" class="absolute top-0 right-[10%] h-full object-contain opacity-50">
 			</div>
 		</div>
 	</Parallax>
@@ -21,7 +21,7 @@
 
 	<Parallax>
 		<figure class="relative w-full h-full overflow-hidden parallax-scene">
-			<div data-depth="0.2" class="absolute top-0 left-0 w-full h-full">
+			<div data-depth="0.2" data-caliberate-x="true" data-caliberate-y="true" class="absolute top-0 left-0 w-full h-full">
 				<img
 					src="/images/main/about.png"
 					alt="about"
@@ -31,7 +31,7 @@
 		</figure>
 	</Parallax>
 	<div
-		class="absolute top-[-10%] left-[-10%] h-full w-1/2 bg-gradient-to-b opacity-30 from-red-500 to-violet-500 rounded-full z-[-1] shadow-glow blur-2xl"
+		class="absolute top-[-10%] left-[-10%] h-full w-1/2 bg-gradient-to-b opacity-40 from-red-500 to-violet-500 rounded-full z-[-1] shadow-glow blur-2xl"
 	></div>
 </section>
 
