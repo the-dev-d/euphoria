@@ -74,8 +74,10 @@ const config: Config = {
 				fugaz: "fugas",
 				Ubuntu: "ubuntu-regular",
 				roboto: "roboto-regular",
+				racing:"Racing Sans One",
         'roboto-semi-bold': ['Roboto', 'sans-serif'],
         anton: ['Anton', 'sans-serif'],
+		
 				
 			},
 			minWidth: {

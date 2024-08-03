@@ -5,7 +5,7 @@
 
 	const Agents = ['/images/agents/viper/viper.png', '/images/agents/clove/clove.png'];
 	const Colors = ['/images/agents/viper/bg.png', '/images/agents/clove/bg.png'];
-	const Names = ['/images/agents/viper/type.png', '/images/agents/clove/type.png'];
+	const Names = ['/images/agents/viper/type.png', '/images/agents/clove/type.webp'];
 
 	let currentIndex = 0;
 	let agentImage;

@@ -53,8 +53,8 @@
 	<div
 		class="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 transform bg-price bg-clip-text object-contain text-center font-valorant text-6xl text-transparent gl:text-9xl"
 	>
-		<h1>PRICE<span class=" text-cust-price text-primary-dark">POOL</span></h1>
-		<h1 class="text-cust-black text-white">₹1,45,000</h1>
+		<h1 class="font-racing">PRICE<span class=" text-cust-price  font-racing text-transparent opacity-80">POOL</span></h1>
+		<h1 class="font-racing text-cust-black text-white">₹1,45,000</h1>
 	</div>
 </section>
 

@@ -3,7 +3,7 @@
 	import Banner from '$lib/components/MainPage/Banner.svelte';
 	import CountDown from '$lib/components/MainPage/CountDown.svelte';
 	import Events from '$lib/components/MainPage/Events.svelte';
-	import Promo from '$lib/components/MainPage/Promo.svelte';
+	import Schedule from '$lib/components/MainPage/schedule.svelte';
 
 	export let data;
 	console.log(data);
@@ -13,6 +13,7 @@
 <CountDown />
 <About />
 <Events />
+<Schedule/>
 
 <style>
 </style>
