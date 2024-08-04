@@ -7,7 +7,6 @@ export const handle: Handle = async ({event, resolve}) => {
     const {cookies} = event;
     const token = cookies.get('session');
 
-    console.log("Hooking");
     if(token) {
         const [b64, hash] = token.split('.');
         const email = atob(b64);
