@@ -39,9 +39,9 @@
 </script>
 
 <section
-	class="absolute top-0 left-0 w-full h-full content-end grid grid-rows-2 grid-cols-none gl:grid-cols-1 gl:grid-rows-none"
+	class="absolute top-0 left-0 w-full h-full content-end grid grid-rows-2 grid-cols-none gl:grid-cols-1 gl:grid-rows-none" 
 >
-	<div class=" hidden gl:flex bg-counter w-full items-center justify-start gap-10 bg-opacity-70">
+	<div class=" hidden gl:flex bg-counter w-full items-center justify-start gap-10 bg-opacity-70 z-[-1]">
 		<h1 class="ml-20 text-6xl font-bold text-white">IN</h1>
 		<time class="h-full w-2/3 text-white grid grid-cols-8 p-3 place-items-center font-bold text-6xl">
 			<div class="flex flex-col justify-center items-center gap-4">

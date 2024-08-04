@@ -15,10 +15,14 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
+				'viper':'#0B6F30',
+				'sova':'#4BBEE8',
+				'sage':'#3BE4C4',
+				'clove':'#BB6496',
+				'omen':'#3F3858',
 				'valorant-bg': "#1a1a22",
 				'primary-dark-valorant': "#0C111D",
 				'counter': '#3C4851',
-				'viper': '#0B6F30',
 				'agent': '#1E1E1E',
 				'price': '#3BE4C4',
 				'valorant-footer': '#261341',

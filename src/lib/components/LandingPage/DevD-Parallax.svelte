@@ -20,9 +20,9 @@
 			/>
 			<div data-depth="0.25" class="grid h-[35%] w-full content-end">
 				<div
-					class="bg-gradient-to-br from-red-500 to-red-400 bg-clip-text text-center font-valorant text-5xl text-transparent gl:text-9xl"
+					class="bg-gradient-to-br from-red-500 to-red-400 bg-clip-text text-center font-valorant text-5xl sm:text-7xl md:text-9xl text-transparent"
 				>
-					SOUTH INDIAS <br />BIGGEST
+					SOUTH INDIA'S BIGGEST
 				</div>
 			</div>
 			<img
@@ -71,7 +71,7 @@
 				alt=""
 			/>
 			<div data-depth="0.08" class="grid h-full w-full content-end">
-				<div class="text-center font-valorant text-5xl font-bold text-valorant-bg gl:text-9xl">
+				<div class="text-center font-valorant text-5xl font-bold text-valorant-bg md:text-7xl gl:text-9xl">
 					LAN TOURNAMENT
 				</div>
 			</div>

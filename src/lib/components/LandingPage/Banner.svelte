@@ -3,21 +3,43 @@
 	import Parallax from '../Parallax.svelte';
 	import CountDown from '../LandingPage/CountDown.svelte';
 
-	const Agents = ['/images/agents/viper/viper.png', '/images/agents/clove/clove.png'];
-	const Colors = ['/images/agents/viper/bg.png', '/images/agents/clove/bg.png'];
-	const Names = ['/images/agents/viper/type.png', '/images/agents/clove/type.png'];
+	const Agents = [
+		'/images/agents/viper/viper.png',
+		'/images/agents/clove/clove.png',
+		'/images/agents/sova/sova.png',
+		'/images/agents/sage/sage.png',
+		'/images/agents/omen/omen.png'
+	];
 
+	const Colors = [
+		'/images/agents/viper/bg.png',
+		'/images/agents/clove/bg.png',
+		'/images/agents/sova/bg.png',
+		'/images/agents/sage/bg.png',
+		'/images/agents/omen/bg.png'
+	];
+
+	const Names = [
+		'/images/agents/viper/type.png',
+		'/images/agents/clove/type.png',
+		'/images/agents/sova/type.png',
+		'/images/agents/sage/type.png',
+		'/images/agents/omen/type.png'
+	];
+
+	const vStorke = ['#0B6F30', '#BB6496', '#4BBEE8', '#3BE4C4', '#3F3858'];
 	let currentIndex = 0;
 	let agentImage;
 	let agentBg;
 	let agentName;
+	let vColor;
 
 	function slideShow() {
-		if (agentImage && agentBg && agentName) {
+		if (agentImage && agentBg && agentName && vColor) {
 			agentImage.src = Agents[currentIndex];
 			agentBg.src = Colors[currentIndex];
 			agentName.src = Names[currentIndex];
-
+			vColor.setAttribute('stroke', vStorke[currentIndex]);
 			currentIndex = (currentIndex + 1) % Agents.length;
 		}
 	}
@@ -29,23 +51,40 @@
 	});
 </script>
 
-<section class="relative mb-10 h-[88svh] min-h-[740px] w-full">
+<section class="relative mb-10 h-[88svh] min-h-[600px] w-full">
 	<section class=" absolute left-0 top-0 h-full w-full overflow-hidden">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
 				<Parallax>
-					<div class="parallax-scene relative h-full w-full">
+					<div class="parallax-scene relative z-[-2] h-full w-full">
 						<div
 							class="absolute left-0 top-0 h-full w-full"
 							data-depth="0.2"
 							data-caliberate-x="true"
 							data-caliberate-y="true"
 						>
-							<img
+							<svg
+								width="668"
+								height="554"
+								viewBox="0 0 668 554"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class=" absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transform object-contain gl:h-[80%]"
+							>
+								<g style="mix-blend-mode:hard-light">
+									<path
+										d="M229.687 551L2.5 272.609V7.13073L437.301 551H229.687ZM665.5 272.587L589.337 363H381.692L665.5 7.14415V272.587Z"
+										bind:this={vColor}
+										stroke-width="5"
+									/>
+								</g>
+							</svg>
+
+							<!-- <img
 								src="/images/main/v-transparent.png"
 								alt="V"
 								class=" absolute left-1/2 top-1/2 h-full -translate-x-1/2 -translate-y-1/2 transform object-contain gl:h-[80%]"
-							/>
+							/> -->
 						</div>
 					</div>
 				</Parallax>
@@ -55,7 +94,7 @@
 							data-depth="0.6"
 							data-caliberate-x="true"
 							data-caliberate-y="true"
-							class="absolute left-0 top-0 h-full w-full"
+							class="fly-right-to-left absolute left-0 top-0 h-full w-full"
 						>
 							<img
 								id="aname"
@@ -68,7 +107,7 @@
 							data-depth="0.3"
 							data-caliberate-x="true"
 							data-caliberate-y="true"
-							class="absolute left-0 top-0 h-full w-full"
+							class="fly-top-to-bottom absolute left-0 top-0 h-full w-full"
 						>
 							<img
 								id="abg"
@@ -81,7 +120,7 @@
 							data-depth="0.1"
 							data-caliberate-x="true"
 							data-caliberate-y="true"
-							class="absolute left-0 top-0 h-full w-full"
+							class="fly-right-to-left absolute left-0 top-0 h-full w-full"
 						>
 							<img
 								id="agent"
@@ -117,5 +156,63 @@
 	<CountDown />
 </section>
 
-<style>
+<style lang="postcss">
+	@keyframes flyInRightToLeft {
+		0% {
+			transform: translateX(100%);
+			opacity: 0;
+		}
+		25% {
+			transform: translateX(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes flyOutLeft {
+		0% {
+			transform: translateX(0);
+			opacity: 1;
+		}
+		50% {
+			transform: translateX(-100%);
+			opacity: 0;
+		}
+	}
+	@keyframes flyInTopToBottom {
+		0% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+		15% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes flyOutTop {
+		0% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+		15% {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+	}
+	/* .fly-right-to-left {
+		animation:
+			flyInRightToLeft 1s ease-in-out forwards,
+			flyOutLeft 1s ease-in-out forwards;
+		animation-delay: 0s, 5s;
+		animation-duration: 6s;
+		animation-iteration-count: infinite;
+	} */
+	/* .fly-top-to-bottom {
+		animation: flyInTopToBottom 1s forwards;
+		animation: flyOutTop 1s forwards;
+		animation-delay: 0s;
+		animation-duration: 5.8s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	} */
 </style>

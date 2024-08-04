@@ -2,7 +2,7 @@
 	import About from '$lib/components/LandingPage/About.svelte';
 	import Banner from '$lib/components/LandingPage/Banner.svelte';
 	import DevDParallax from '$lib/components/LandingPage/DevD-Parallax.svelte';
-	import Register from '$lib/components/LandingPage/Register.svelte';
+	import Rules from '$lib/components/LandingPage/Rules.svelte';
 	import Sponsors from '$lib/components/LandingPage/Sponsors.svelte';
 </script>
 
@@ -14,10 +14,8 @@
 <Banner />
 <About />
 <Sponsors />
+<Rules />
 <DevDParallax />
-<Register/>
-
 
 <style>
 </style>
-
