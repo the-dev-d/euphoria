@@ -4,6 +4,15 @@ import { connection } from "$lib/prisma/connection";
 import crypto from 'crypto';
 import { writeFileSync } from 'fs';
 
+export const load = async ({locals}) => {
+    const res = await connection.findParticipation(locals.user.participant_id);
+    const events = res.map(e => e.event_code);
+    
+    if(events.includes("TH")) {
+        throw redirect(301, "/dashboard")
+    }
+}
+
 export const actions = {
     default: async ({request, locals}) => {
 

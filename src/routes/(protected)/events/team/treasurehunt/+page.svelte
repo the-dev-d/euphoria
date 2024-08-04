@@ -115,7 +115,7 @@
 
 <section class="mb-10 grid w-full place-items-center">
 	<div
-		class="m-4 w-5/6 rounded-xl border border-btn-main bg-valorant-bg p-4 text-white shadow-md shadow-btn-main"
+		class="m-4 w-11/12 md:w-5/6 rounded-xl border border-btn-main bg-valorant-bg p-4 text-white shadow-md shadow-btn-main"
 	>
 		<div class="p-4 text-xs">
 			<ul class="list-disc">
@@ -126,7 +126,7 @@
 		</div>
 	</div>
 	<form
-		class="w-5/6 rounded-md border border-btn-main bg-valorant-bg p-6 text-white shadow-btn-main"
+		class="w-11/12 md:w-5/6 rounded-md border border-btn-main bg-valorant-bg p-4 md:p-6 text-white shadow-btn-main"
 		on:submit|preventDefault={saveTeam}
 	>
 		<div class="grid grid-rows-[auto_1fr] gap-6">

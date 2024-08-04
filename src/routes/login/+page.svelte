@@ -8,8 +8,8 @@
 </script>
 
 <main class="w-full h-screen flex items-center justify-center">
-    <div class="w-[800px] h-[400px] flex bg-[#1E1E1E] rounded-md overflow-hidden  shadow-md border border-[#3BE4C4]" >
-        <div class="w-1/2 p-8 flex flex-col justify-center">
+    <div class="w-[800px] h-[400px] m-2 flex bg-[#1E1E1E] rounded-md overflow-hidden  shadow-md border border-[#3BE4C4]" >
+        <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
             <form method="POST" class="w-full">
                 <h1 class="text-3xl text-center font-anton mb-8 text-white">LOGIN</h1>
                 <div class="space-y-4">
@@ -25,7 +25,7 @@
                 </div>
             </form>
         </div>
-        <div class="w-1/2 bg-[#0F2027] flex flex-col items-center justify-center" style="background-image: url('/images/forms/fbgarcade.jpg'); background-size: cover; background-position: center;">
+        <div class="w-0 md:w-1/2 bg-[#0F2027] flex flex-col items-center justify-center" style="background-image: url('/images/forms/fbgarcade.jpg'); background-size: cover; background-position: center;">
             
             <img 
             src="/images/forms/logoeuph.png" 

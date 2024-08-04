@@ -178,7 +178,7 @@
 		</div>
 	</div>
 	<form
-		class="order-2 my-4 w-11/12 rounded-md border border-btn-main bg-valorant-bg p-8 text-white shadow-md shadow-btn-main"
+		class="order-2 my-4 w-11/12 rounded-md border border-btn-main bg-valorant-bg md:p-8 text-white shadow-md shadow-btn-main"
 		on:submit|preventDefault={saveTeam}
 	>
 		<div class="grid grid-rows-[auto_1fr]">
@@ -264,7 +264,7 @@
 						{/if}
 					</div>
 				</div>
-				<div class="grid gap-5 border-btn-main p-6 py-4 gl:border-l gl:border-t-0 border-t">
+				<div class="grid gap-5 border-btn-main p-4 md:p-6 py-4 gl:border-l gl:border-t-0 border-t">
 					<h2 class=" mb-1 font-bold text-2xl font-valorant">Register your players</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_name">Name</Label>

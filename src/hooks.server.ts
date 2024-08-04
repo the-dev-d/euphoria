@@ -7,6 +7,7 @@ export const handle: Handle = async ({event, resolve}) => {
     const {cookies} = event;
     const token = cookies.get('session');
 
+    console.log("Hooking");
     if(token) {
         const [b64, hash] = token.split('.');
         const email = atob(b64);
@@ -20,7 +21,6 @@ export const handle: Handle = async ({event, resolve}) => {
             const generatedHash = createAuthToken(participant.participant_id, participant.email)
             if(generatedHash === hash) {
                 event.locals.user = participant;
-                // console.log("Authentication Spawned");
             }
 
         } catch (error) {
