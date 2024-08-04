@@ -67,14 +67,12 @@
 
 		if (screenshot.size > 400000) {
 			screenshotError = 'File size must be less than 400KB';
-			console.log('Error');
 		} else {
 			screenshotError = '';
 		}
 	}
 
 	async function checkTeamName() {
-		console.log('Checking');
 		if (teamNameError !== '' || teamName === '') {
 			return;
 		}
@@ -138,7 +136,6 @@
 
 			if (parsed[1] === false) {
 				genericError = parsed[2];
-				console.log(parsed);
 			} else {
 				goto('/dashboard');
 			}
@@ -230,7 +227,7 @@
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input
-							class="bg-transparent"
+							class="text-black"
 							on:change={fileChanged}
 							required
 							accept=".jpg, .jpeg, .png"
@@ -388,6 +385,7 @@
 						{#if collegeName !== ''}
 							<p class="text-xs text-red-400">{collegeNameError}</p>
 						{/if}
+						<p class="text-xs my-2">Please use full form as it will be used in your certificates.</p>
 					</div>
 
 					<Button
@@ -456,6 +454,7 @@
 						saving ||
 						screenshot === null ||
 						members.filter((m) => m.student).length < 4 ||
+						members.filter((m) => m.substitute).length !== 2 ||
 						transactionIdError ||
 						!(leaderRiotError == '' && leaderDiscordError == '')}
 				>

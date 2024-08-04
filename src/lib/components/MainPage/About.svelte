@@ -15,9 +15,9 @@
 			<article
 				class="relative mt-10 h-fit w-full flex-1 overflow-hidden text-left md:mt-0 gl:w-full gl:p-10"
 			>
-				<p class=" text-xm relative block text-justify font-sans gl:text-xl">
+				<p class="text-xm relative block text-justify font-sans gl:text-xl">
 					Euphoria is the biennial national student fest organized by the Department of Computer
-					Science and the Computer Students Association of Rajagiri (C.S.T.A.R). Since its
+					Science and the Computer Students Association of Rajagiri (CSTAR). Since its
 					inception, Euphoria has grown to become one of the most anticipated college fests in
 					India, celebrated every two years with great enthusiasm and participation. This technical
 					cum cultural extravaganza brings together over 700 students from more than 300 colleges,
@@ -39,7 +39,7 @@
 				/>
 			</figure>
 			<article class=" relative h-fit w-full flex-1 overflow-hidden text-left gl:w-full gl:p-10">
-				<p class=" text-xm w-fullfont-sans relative block text-justify gl:text-xl">
+				<p class=" text-xm w-full relative block text-justify gl:text-xl">
 					Rajagiri College of Social Sciences (RCSS) is a beacon of educational excellence, founded
 					by the Carmelites of Mary Immaculate (CMI) fathers, the first indigenous religious
 					congregation for men in the Syrian Catholic tradition of Christianity in India. Inspired
@@ -66,4 +66,9 @@
 </section>
 
 <style>
+	p {
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+	}
 </style>

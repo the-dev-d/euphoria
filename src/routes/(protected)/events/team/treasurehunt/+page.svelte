@@ -36,14 +36,12 @@
 
 		if (screenshot.size > 400000) {
 			screenshotError = 'File size must be less than 400KB';
-			console.log('Error');
 		} else {
 			screenshotError = '';
 		}
 	}
 
 	async function checkTeamName() {
-		console.log('Checking');
 		if (teamNameError !== '' || teamName === '') {
 			return;
 		}

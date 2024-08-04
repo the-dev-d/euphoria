@@ -20,6 +20,7 @@ export const handle: Handle = async ({event, resolve}) => {
             const generatedHash = createAuthToken(participant.participant_id, participant.email)
             if(generatedHash === hash) {
                 event.locals.user = participant;
+                // console.log("Authentication Spawned");
             }
 
         } catch (error) {

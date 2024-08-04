@@ -6,7 +6,6 @@
 	import Promo from '$lib/components/MainPage/Promo.svelte';
 
 	export let data;
-	console.log(data);
 </script>
 
 <Banner authenticated={data.authenticated == true} />

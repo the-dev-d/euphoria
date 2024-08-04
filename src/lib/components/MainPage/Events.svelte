@@ -16,22 +16,6 @@
 			</div>
 		</a>
 		<div class="relative grid h-full w-full grid-cols-4 grid-rows-1 gap-2 py-2 gl:gap-3">
-			<a href="/coding/ug"
-				><div
-					class="relative grid aspect-square w-full place-items-center rounded-lg border-2 border-pink-900 text-center transition-all hover:scale-105 gl:rounded-xl"
-				>
-					<img
-						class="absolute left-0 top-0 h-full w-full brightness-50"
-						src="/images/covers/coding.gif"
-						alt="coding"
-					/>
-					<h1
-						class="font-valorante absolute font-valorant text-xs font-bold text-white sm:text-xl gl:text-2xl"
-					>
-						UG CODING
-					</h1>
-				</div>
-			</a>
 			<a href="/coding/pg"
 				><div
 					class="relative grid aspect-square w-full place-items-center rounded-lg border-2 border-pink-900 text-center transition-all hover:scale-105 gl:rounded-xl"
@@ -57,6 +41,22 @@
 					/>
 					<h1 class="absolute font-valorant text-xs font-bold text-white sm:text-xl gl:text-2xl">
 						TREASURE HUNT
+					</h1>
+				</div>
+			</a>
+			<a href="/coding/ug"
+				><div
+					class="relative grid aspect-square w-full place-items-center rounded-lg border-2 border-pink-900 text-center transition-all hover:scale-105 gl:rounded-xl"
+				>
+					<img
+						class="absolute left-0 top-0 h-full w-full brightness-50"
+						src="/images/covers/coding.gif"
+						alt="coding"
+					/>
+					<h1
+						class="font-valorante absolute font-valorant text-xs font-bold text-white sm:text-xl gl:text-2xl"
+					>
+						UG CODING
 					</h1>
 				</div>
 			</a>

@@ -16,8 +16,8 @@ export const HuntMemberSchema = z.object({
     phone: z.string().regex(/^[0-9]+$/, {message: "Phone number should only have numbers"}).length(10),
 })
 
-export const RiotIdSchema = z.string().min(1);
-export const DiscordIdSchema = z.string().min(1);
+export const RiotIdSchema = z.string().regex(/^[a-zA-Z0-9-]{3,16}#[a-zA-Z]{2,5}$/, 'Invalid Riot Games ID format');
+export const DiscordIdSchema = z.string().regex(/^\d{17,19}$/, 'Invalid Discord ID format').transform(val => BigInt(val))
 export const CollegeNameSchema = z.string().min(1);
 
 export const GamerSchema = z.object({

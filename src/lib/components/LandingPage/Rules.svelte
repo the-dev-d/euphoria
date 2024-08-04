@@ -93,11 +93,6 @@
 			</li>
 		</ul>
 	</article>
-	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
-		<a href="/register" class="block h-full w-full bg-red-500 p-3 text-center text-black"
-			>REGISTER NOW</a
-		>
-	</div>
 </section>
 
 <style>

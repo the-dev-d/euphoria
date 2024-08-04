@@ -11,7 +11,7 @@ export const load:PageServerLoad = async ({locals}) => {
     const res = await connection.findParticipation(locals.user.participant_id);
     const events = res.map(e => e.event_code);
     
-    if(events.includes("TH")) {
+    if(events.includes("TH") || events.includes("CUG") || events.includes("CPG") || events.includes("WEB")) {
         throw redirect(301, "/dashboard")
     }
 }

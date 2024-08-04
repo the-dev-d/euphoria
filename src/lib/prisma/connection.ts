@@ -13,6 +13,7 @@ export const connection = {
     checkTeamNameAvailable,
     findParticipation,
     createTeam,
+    getGamingCount,
     checkEventParticipation
 }
 
@@ -22,7 +23,13 @@ async function createParticipant(contestant: Contestant) {
     });
     return created;
 }
-
+async function getGamingCount() {
+  return await client.event_participants.count({
+    where: {
+      event_code: "RP"
+    }
+  })
+}
 async function findParticipantByAttribute(condition:any) {
   try {
     const participant = await client.participants.findUnique({

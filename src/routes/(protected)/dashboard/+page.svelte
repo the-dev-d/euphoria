@@ -31,7 +31,7 @@
 	<div class="mx-auto gl:mx-12 grid gap-2">
 		<div class="flex h-fit mb-5 justify-between">
 			{#if data.user}
-				<h2 class="fugaz-one-regular text-4xl gl:text-6xl uppercase">Welcome {data.user.name}</h2> 
+				<h2 class="font-fugaz text-[#fa4454] text-4xl gl:text-6xl uppercase">Welcome {data.user.name}</h2> 
 				<form method="POST" action="?/logout">
 					<button class="fa-solid fa-right-from-bracket my-auto ml-6 scale-105 hover:bg-slate-500 p-3 rounded-full border" type="submit" ></button>
 				</form>
@@ -67,6 +67,10 @@
 					<p class="text-sm opacity-70">No events yet</p>
 				{/if}
 			</div>
+			<ul class="my-8 text-sm list-disc">
+				<li>Verifications will start from 10th Aug. Your registration will be verified within 5-6 working days after registration.</li>
+				<li>Participation in parallel events is not allowed.</li>
+			</ul>
 		</div>
 
 		<div class="mb-16">

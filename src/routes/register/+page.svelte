@@ -59,11 +59,12 @@
                     {/if}
                 </div>
                 <div class="flex flex-col gap-2">
-                    <Label for="college">College Name</Label>
+                    <Label for="college">College Name </Label>
                     <Input required name="college" type="text" bind:value={college} id="college" placeholder="Enter your college" class="w-full border-none text-white placeholder-roboto" style="background-color: rgba(60, 72, 81, 0.3);"/>
                     {#if college && collegeError}
                         <p class="text-red-400 text-xs">{collegeError}</p>
                     {/if}
+                    <p class="text-xs my-2">Please use full form as it will be used in your certificates.</p>
                 </div>
                 <div class="flex flex-col gap-2">
                     <Label for="email">Email</Label>
