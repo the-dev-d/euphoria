@@ -50,10 +50,10 @@
 <main class="grid h-[88svh] w-full place-items-center px-5 gl:px-0">
 	<form
 		method="POST"
-		class="md-px-0 grid w-full gap-6 rounded-xl border-2 border-btn-main bg-valorant-bg p-8 text-white shadow-md shadow-btn-main md:w-1/3"
+		class="md-px-0 grid w-full gap-6 rounded-xl border-2 border-btn-main bg-valorant-bg p-8 text-white shadow-md shadow-btn-main lg:w-1/3"
 		enctype="multipart/form-data"
 	>
-		<div class="grid grid-cols-2 items-center">
+		<div class="grid lg:grid-cols-2 items-center gap-6">
 			<div class="grid gap-6">
 				<div class="flex items-center space-x-2">
 					<input
@@ -119,12 +119,16 @@
 					</Label>
 				</div>
 			</div>
-			<div class="h-full">
-				<h2 class="text-lg font-bold text-green-500">Amount Payable</h2>
-				<h1 class="my-1 text-2xl font-semibold">
-					Rs.{amountPayable}/-
-				</h1>
+			<div class="grid">
+				<img src="/images/payment.png" class="w-4/6 m-auto my-2 text-sm md:w-3/5" alt="">
+				<p class="text-center text-sm">rajagiricss@sbi</p>
 			</div>
+		</div>
+		<div>
+			<h2 class="text-lg font-bold text-green-500">Amount Payable</h2>
+			<h1 class="my-1 text-2xl font-semibold">
+				Rs.{amountPayable}/-
+			</h1>
 		</div>
 		<div class="mt-4 grid gap-4 text-white">
 			<div>
@@ -167,6 +171,7 @@
 		<Button
 			disabled={!(events.codingPG.status || events.codingUG.status || events.webDesigning.status) ||
 				transactionId == '' ||
+				transactionError !== '' ||
 				fileError !== ''}
 			class=" rounded-xl border-2 border-btn-main bg-btn-main"
 			type="submit">Register</Button

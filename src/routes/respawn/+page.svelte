@@ -15,7 +15,7 @@
 
 <Banner />
 <div class="text-6xl font-valorant text-center mt-20 mb-10 bg-[#fa4454] p-6">
-	<h3 class="flex items-center justify-center mt-3">REGISTRATIONS  {data.count} /24 </h3>
+	<h3 class="flex items-center justify-center mt-3">REGISTRATIONS  {data.count} /32 </h3>
 </div>
 <About />
 <Sponsors />
@@ -23,9 +23,11 @@
 <DevDParallax />
 <div>
 	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
-		<a href="/register" class="block h-full w-full bg-red-500 p-3 text-center text-black"
-			>REGISTER NOW</a
-		>
+		{#if data.count <32} 
+			<a href="/register" class="block h-full w-full bg-red-500 p-3 text-center text-black">REGISTER NOW</a>
+		{:else}
+			<div class="block h-full w-full bg-red-500 p-3 text-center text-black">REGISTER NOW</div>
+		{/if}
 	</div>
 </div>
 <style>

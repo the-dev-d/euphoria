@@ -222,6 +222,12 @@
 							<p class="text-xs text-red-400">{transactionIdError}</p>
 						{/if}
 					</div>
+					<div>
+						<div>
+							<img src="/images/payment.png" class="w-4/6 m-auto my-2 text-sm md:w-1/2 lg:w-1/3" alt="">
+							<p class="text-center text-sm">rajagiricss@sbi</p>
+						</div>
+					</div>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input

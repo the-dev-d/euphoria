@@ -131,7 +131,7 @@
 	>
 		<div class="grid grid-rows-[auto_1fr] gap-6">
 			<div class="relative grid gap-10 gl:grid-cols-2 gl:gap-0">
-				<div class="grid gap-5 border-btn-main gl:border-r gl:px-5">
+				<div class="grid gap-5 border-btn-main gl:border-r gl:px-5 jus">
 					<h2 class="mb-1 mt-4 font-valorant text-2xl font-bold gl:text-4xl">
 						Register for the Hunt
 					</h2>
@@ -174,6 +174,10 @@
 							<p class="text-xs text-red-400">{transactionIdError}</p>
 						{/if}
 					</div>
+					<div>
+						<img src="/images/payment.png" class="w-4/6 m-auto my-2 text-sm md:w-1/2 lg:w-1/3" alt="">
+						<p class="text-center text-sm">rajagiricss@sbi</p>
+					</div>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="screenshot">Payment Screenshot</Label>
 						<Input
@@ -190,7 +194,7 @@
 						{/if}
 					</div>
 				</div>
-				<div class="grid gap-5 border-t border-btn-main gl:border-l gl:border-t-0 gl:px-5">
+				<div class="grid content-start gap-5 border-t border-btn-main gl:border-l gl:border-t-0 gl:px-5">
 					<h2 class="mb-1 mt-4 font-valorant text-2xl font-bold">Register your members</h2>
 					<div class="flex w-full flex-col gap-1.5">
 						<Label for="member_name">Name</Label>

@@ -75,7 +75,6 @@ export const actions = {
             amount+=PRICE.webDesigning;
         }
 
-        console.log("Unique")
         if(amount == 0) {
             return {
                 success: false,

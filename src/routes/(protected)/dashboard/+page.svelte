@@ -29,7 +29,6 @@
 
 <section class="mb-10 mt-20 min-h-[80svh] w-full text-white px-5">
 	<div class="mx-auto gl:mx-12 grid gap-2">
-		{@debug data}
 		<div class="flex h-fit mb-5 justify-between">
 			{#if data.user}
 				<h2 class="font-fugaz text-[#fa4454] text-4xl gl:text-6xl uppercase">Welcome {data.user.name} </h2> 

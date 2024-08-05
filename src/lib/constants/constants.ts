@@ -1,7 +1,7 @@
 export const PRICE = {
-    codingUG: 100,
-    codingPG: 100,
-    webDesigning: 100,
+    codingUG: 150,
+    codingPG: 150,
+    webDesigning: 150,
     treasureHunt: 600,
-    respawn: 1500
+    respawn: 700
 }
