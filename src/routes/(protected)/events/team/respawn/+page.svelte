@@ -168,7 +168,6 @@
 	>
 		<div class="p-4 text-xs">
 			<ul class="list-disc">
-				<li>Minimum 4 student players required</li>
 				<li>2 Substitute players & 5 live players required</li>
 				<li>None of the members should be leader or member of other Respawn Battle</li>
 				<li>Any violation of terms & conditions will lead to disqualification with no refunds</li>
