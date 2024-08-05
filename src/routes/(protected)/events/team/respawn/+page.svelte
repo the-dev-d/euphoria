@@ -7,8 +7,6 @@
 		CollegeNameSchema,
 		DiscordIdSchema,
 		GamerSchema,
-		HuntMemberSchema,
-		ImageSchema,
 		RiotIdSchema,
 		TeamNameSchema,
 		TransactionSchema
@@ -453,7 +451,6 @@
 						!teamNameAvailable ||
 						saving ||
 						screenshot === null ||
-						members.filter((m) => m.student).length < 4 ||
 						members.filter((m) => m.substitute).length !== 2 ||
 						transactionIdError ||
 						!(leaderRiotError == '' && leaderDiscordError == '')}
