@@ -28,7 +28,7 @@
 	<div
 		class="absolute bottom-[20%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹10,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
 	</div>
 	<div
 		class="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center text-white"
@@ -109,10 +109,10 @@
 				before the event starts.
 			</li>
 			<li>
-				<strong>Competition Results:</strong> The winners of the 1st, 2nd, and 3rd places will be announced.
+				<strong>Competition Results:</strong> The winners of the 1st and 2nd places will be announced.
 			</li>
 			<li>
-				<strong>Certificates:</strong> All participants will receive a participation certificate.
+				<strong>Certificates:</strong> All participants will receive a participation e-certificate.
 			</li>
 			<li>
 				<strong>Contact Information:</strong> For more details, please contact the event coordinators.
@@ -175,13 +175,13 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<h2 class="font-Ubuntu mb-4 text-2xl uppercase text-white">Coordinators</h2>
-		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+		<div class="grid grid-cols-1 gap-4">
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">GRACEN K SHAJI (PG)</h3>
+				<h3 class="text-lg font-semibold text-neon-violet">GRACEN K SHAJI</h3>
 				<p class="text-white">+91 7736705727</p>
 			</div>
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">MUHZINA MOHAMED AFZAL (PG)</h3>
+				<h3 class="text-lg font-semibold text-neon-violet">MUHZINA MOHAMED AFZAL</h3>
 				<p class="text-white">+91 6282648189</p>
 			</div>
 		</div>

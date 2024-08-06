@@ -28,7 +28,7 @@
 	<div
 		class="absolute bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹20,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE: ₹20,000</h1>
 	</div>
 	<div
 		class="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white"
@@ -53,13 +53,13 @@
 
 <section class="relative mt-10 min-h-[740px] w-full p-2 md:p-5 gl:p-10">
 	<h1 class=" relative mx-5 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
-		GUIDLINES
+		GUIDELINES
 	</h1>
 
 	<article class="relative w-full p-5 gl:p-10">
 		<p class="relative block font-sans text-sm gl:text-xl">
 			Welcome to the Treasure Hunt of Euphoria, hosted by the Computer Science Department at
-			Rajagiri of Social Sciences, Kalamassery! Our goal is to inspire teamwork, enhance
+			Rajagiri College of Social Sciences, Kalamassery! Our goal is to inspire teamwork, enhance
 			problem-solving skills, and ignite a passion for technology through this exciting
 			challenge.Please display good sportsmanship, stay safe, and reach out to organizers if needed.
 			Respect the environment by not littering or damaging property. Wishing you the best of
@@ -72,16 +72,37 @@
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
 		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
 			<ul class="list-disc space-y-2 pl-5">
-				<li>Teams must consist of exactly 5 participants.</li>
 				<li>
-					Register online with a unique team name; registration closes 24 hours before the event.
+					<strong>Team Composition:</strong> Each team must consist of exactly 4 energetic members from
+					the same college. Gather your best problem solvers and creative thinkers!
 				</li>
-				<li>Teams will receive a QR code with the first clue at the start of the event.</li>
-				<li>Mobile phones and internet use are prohibited during the hunt.</li>
-				<li>The event lasts 2-3 hours. Clues must be solved in the specified sequence.</li>
 				<li>
-					Teams must stay together throughout the hunt; splitting up will result in
-					disqualification.
+					<strong>Unique Identity:</strong> Register your team with a unique and catchy team name, and
+					make sure to assign a fearless team leader at the time of registration.
+				</li>
+				<li>
+					<strong>Solo Participation:</strong> Remember, no participant can be part of more than one
+					team. Choose wisely!
+				</li>
+				<li>
+					<strong>College Cap:</strong> Only a maximum of three teams from each college can showcase
+					their prowess. Represent your college with pride!
+				</li>
+				<li>
+					<strong>Identification:</strong> Participants must carry their college ID at all times within
+					the event premises. No ID, no entry!
+				</li>
+				<li>
+					<strong>Sequential Solving:</strong> Clues must be solved in the given order. Skipping ahead
+					is not an option! Brace yourself for eliminations in each round.
+				</li>
+				<li>
+					<strong>No Extra Time:</strong> The event will commence as scheduled. Organizers won't be responsible
+					for any overlaps with other events. Stay focused and be on time!
+				</li>
+				<li>
+					<strong>No Refunds:</strong> Once registered, there are no take-backs. Ensure you're ready
+					for the challenge before you commit!
 				</li>
 			</ul>
 
@@ -89,21 +110,22 @@
 				Disqualification may occur for:
 			</h3>
 			<ul class="list-disc space-y-2 pl-5">
-				<li>Tampering with clues or checkpoints</li>
-				<li>Using external help or assistance</li>
-				<li>Misbehaving or using unfair means</li>
-				<li>Consuming prohibited substances (smoking, drinking, etc.)</li>
-				<li>The judge’s decision is final and not subject to challenge.</li>
+				<li>Tampering with clues or checkpoints. Play fair and square!</li>
+				<li>Damaging any property. Respect the venue and its surroundings.</li>
+				<li>Using external help or assistance. It's all about your team's wits!</li>
+				<li>Misbehaving or using unfair means. Keep it classy and respectful.</li>
+				<li>Consuming prohibited substances. Stay sharp and clear-headed.</li>
 			</ul>
 
 			<p class="mt-6">
-				All participants must adhere to event rules and be punctual; events will start on schedule.
-				Rules may change; any updates will be announced before the event starts. Winners will be
-				recognized for 1st, 2nd, and 3rd places. All teams will receive participation certificates.
-				For more details, contact the coordinators.
+				The event will last between 5-6 hours. All participants must be punctual as events will
+				start on schedule. Any updates to the rules will be announced before the event starts. The
+				decisions of the event coordinators will be final. Winners will be recognized for 1st and
+				2nd places, and all teams will receive participation certificates.
 			</p>
 		</ul>
 	</article>
+
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
 		PRIZE
 	</h1>
@@ -129,15 +151,15 @@
 	</h1>
 
 	<article class="relative w-full p-5 gl:p-10">
-		<h2 class="mb-4 font-Ubuntu text-2xl uppercase text-white">Coordinators</h2>
+		<h2 class="font-Ubuntu mb-4 text-2xl uppercase text-white">Coordinators</h2>
 		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">SHARISSA MARIAN HURTIS</h3>
-				<p class="text-white">+91 6238885835</p>
+				<p class="text-white">+91 6238 885 835</p>
 			</div>
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">MAJO AUGUSTINE</h3>
-				<p class="text-white">+91 9544318109</p>
+				<h3 class="text-lg font-semibold text-neon-violet">ALBIN JOSEPH</h3>
+				<p class="text-white">+91 92079 31308</p>
 			</div>
 		</div>
 	</article>

@@ -28,7 +28,7 @@
 	<div
 		class="absolute bottom-[20%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹11,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹11,000</h1>
 	</div>
 	<div
 		class="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center text-white"
@@ -180,13 +180,13 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<h2 class="mb-4 font-Ubuntu text-2xl uppercase text-white">Coordinators</h2>
-		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+		<div class="grid grid-cols-1 gap-4">
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">DHAIVATH LAL (UG)</h3>
+				<h3 class="text-lg font-semibold text-neon-violet">DHAIVATH LAL</h3>
 				<p class="text-white">+91 9074768353'</p>
 			</div>
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY (UG)</h3>
+				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY</h3>
 				<p class="text-white">+91 7559012043</p>
 			</div>
 		</div>

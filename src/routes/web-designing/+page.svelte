@@ -28,7 +28,7 @@
 	<div
 		class="absolute bottom-[20%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRICE POOL : ₹10,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
 	</div>
 	<div
 		class="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center text-white"
@@ -71,31 +71,67 @@
 		RULES
 	</h1>
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
-		<ul class="list-disc space-y-4 pl-5 font-sans text-sm text-white gl:text-xl">
+		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
 			<li>
-				<strong>Individual Participation:</strong> Participants need to design a responsive website containing
-				4 or more pages based on the given topic (topic will be provided at the venue) and present it
-				to the judges.
+				<strong>Individual Event:</strong> This is an individual competition; each participant competes
+				alone.
 			</li>
 			<li>
-				<strong>Homepage:</strong> The first page must be your Homepage, which should include a LOGO
-				or picture depicting the topic and the website name.
+				<strong>Website Requirements:</strong> Participants must design a responsive website with a
+				minimum of four pages based on a topic provided at the venue. The website must include:
+				<ul class="list-disc space-y-2 pl-5">
+					<li>
+						A homepage featuring a logo or picture representing the topic and the name of the
+						website.
+					</li>
+					<li>Remaining pages providing content relevant to the website's theme.</li>
+				</ul>
 			</li>
 			<li>
-				<strong>Additional Pages:</strong> Other pages must be dedicated to discussions suitable for
-				the website.
+				<strong>Presentation:</strong> Participants will present their final website to the judges.
 			</li>
 			<li>
-				<strong>Computer Allocation:</strong> Each participant will be allotted a computer system from
-				our side for developing the website.
+				<strong>Judging:</strong> The judges' decisions are final and binding.
 			</li>
 			<li>
-				<strong>Electronic Devices:</strong> Use of any electronic devices other than the allotted computer
-				system during the development phase will lead to immediate disqualification.
+				<strong>Equipment and Resources:</strong> Each participant will be provided with a computer
+				system for website development. Note:
+				<ul class="list-disc space-y-2 pl-5">
+					<li>
+						The use of any electronic devices other than the allotted computer system during the
+						development phase is prohibited and will lead to immediate disqualification.
+					</li>
+					<li>
+						The use of ChatGPT or any other AI tools is strictly prohibited and will result in
+						disqualification.
+					</li>
+				</ul>
 			</li>
-			<li><strong>Judges' Decision:</strong> The decision of the judges will be final.</li>
+			<li>
+				<strong>Development Rules:</strong> Participants may use any framework of their choice for
+				developing the website. Note:
+				<ul class="list-disc space-y-2 pl-5">
+					<li>
+						The use of pre-made templates is not allowed; all design and development work must be
+						original.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<strong>Additional Information:</strong> Ensure your design is responsive and functional on various
+				devices. Follow the provided topic closely and maintain originality in your design.
+			</li>
+			<li>
+				<strong>Contact:</strong> For any queries or further details, please contact the event coordinators.
+			</li>
 		</ul>
+
+		<p class="mt-6">
+			We expect 40 participants. If there are more than 40 registrations, we will conduct an online
+			preliminary round.
+		</p>
 	</article>
+
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
 		PRIZE
 	</h1>
@@ -105,6 +141,9 @@
 			<li class="text-2xl font-semibold">Second Prize : ₹4,000</li>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
+		REGISTRATION FEE: ₹150
+	</h1>
 	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
 		<a
 			href="/register"
@@ -120,7 +159,7 @@
 	</h1>
 
 	<article class="relative w-full p-5 gl:p-10">
-		<h2 class="mb-4 font-Ubuntu text-2xl uppercase text-white">Coordinators</h2>
+		<h2 class="font-Ubuntu mb-4 text-2xl uppercase text-white">Coordinators</h2>
 		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">HRISHIKESH U</h3>

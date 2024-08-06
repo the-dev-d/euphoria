@@ -19,9 +19,9 @@
 		{
 			name: 'TREASURE HUNT',
 			coordinator: {
-				name: 'Majo Augustine',
-				email: 'mca2330@rajagiri.edu',
-				phone: '+91 9544318109'
+				name: 'Albin Joseph',
+				email: 'mca2307@rajagiri.edu',
+				phone: '+91 920791308'
 			}
 		},
 		{
