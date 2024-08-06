@@ -183,7 +183,7 @@
 		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">DHAIVATH LAL</h3>
-				<p class="text-white">+91 9074768353'</p>
+				<p class="text-white">+91 9074768353</p>
 			</div>
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY</h3>

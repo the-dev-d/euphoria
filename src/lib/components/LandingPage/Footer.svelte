@@ -20,7 +20,7 @@
 			name: 'TREASURE HUNT',
 			coordinator: {
 				name: 'Albin Joseph',
-				email: 'mca2307@rajagiri.edu',
+				email: 'mca2305@rajagiri.edu',
 				phone: '+91 920791308'
 			}
 		},
@@ -54,7 +54,7 @@
 			name: 'MAIN COORDINATOR',
 			coordinator: {
 				name: 'Leo Thomas',
-				email: 'mca2323@rajagiri.edu',
+				email: 'mca2329@rajagiri.edu',
 				phone: '+91 9526438400'
 			}
 		},
@@ -62,14 +62,14 @@
 			name: 'MAIN COORDINATOR',
 			coordinator: {
 				name: 'Krishnapriya KJ',
-				email: 'msccs2316@rajagiri.edu',
+				email: 'msccs2320@rajagiri.edu',
 				phone: '+91 9562058307'
 			}
 		}
 	];
 </script>
 
-<footer id="contact" class="bg-[#08072C] px-4 py-8 font-roboto text-white">
+<footer id="contact" class="relative bg-[#08072C] px-4 py-8 font-roboto text-white mt-5">
 	<div class=" gl:mx-8">
 		<div class="mb-8 flex flex-col items-start justify-between gap-8 lg:flex-row">
 			<div class="w-full lg:w-1/4">
@@ -81,9 +81,6 @@
 						class="text-white transition-colors duration-300 hover:text-[#FD1C68]"
 					>
 						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="#" class="text-white transition-colors duration-300 hover:text-[#FD1C68]">
-						<i class="fab fa-twitter"></i>
 					</a>
 					<a
 						href="https://www.instagram.com/euphoria_.24._?igsh=MThqazkxbHYydTd3aA=="
@@ -98,7 +95,7 @@
 						<i class="fab fa-linkedin-in"></i>
 					</a>
 				</div>
-				<div class=" w-full ">
+				<div class=" w-full">
 					<h3 class="mb-4 text-lg font-semibold">Event Location</h3>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5585722353653!2d76.31302237507876!3d10.053237090054912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080dd2c4bfaed9%3A0x616d1c1cb927fe62!2sRajagiri%20College%20of%20Social%20Sciences%20(Autonomous)!5e0!3m2!1sen!2sin!4v1721826098545!5m2!1sen!2sin"
@@ -113,8 +110,8 @@
 					</iframe>
 				</div>
 			</div>
-			<div class="w-full grid gap-4">
-				<div class="w-full ">
+			<div class="grid w-full gap-4">
+				<div class="w-full">
 					<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 						{#each coordinators as event}
 							<div class="rounded-lg bg-[#110F3D] p-4">

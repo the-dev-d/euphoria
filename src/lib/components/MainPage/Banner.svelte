@@ -3,7 +3,7 @@
 	export let authenticated: boolean = false;
 </script>
 
-<section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full">
+<section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full overflow-hidden">
 	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden flex justify-center items-center">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">

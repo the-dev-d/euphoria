@@ -28,7 +28,7 @@
 	<div
 		class="absolute bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
 	>
-		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE: ₹20,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL: ₹20,000</h1>
 	</div>
 	<div
 		class="absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center text-white"
