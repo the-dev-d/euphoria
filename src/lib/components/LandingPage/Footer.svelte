@@ -27,8 +27,8 @@
 	  { 
 		name: 'RESPAWN', 
 		coordinator: {
-		  name: 'Ivin Varghese',
-		  email: 'mscs2314@rajagiri.edu',
+		  name: 'Ivin Varghese George',
+		  email: 'msccs2314@rajagiri.edu',
 		  phone: '+91 8078982842'
 		}
 	  },
