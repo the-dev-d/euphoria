@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<title>RCSS | EUPHORIA</title>
-	<meta name="EUPHORIA" content="EUFORIA-respawn-2k24" />
+	<meta name="EUPHORIA" content="EUPHORIA-RESPAWN-2k24" />
 </svelte:head>
 
 <Banner />

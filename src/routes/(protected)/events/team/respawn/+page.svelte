@@ -343,6 +343,9 @@
 						{#if discordId !== ''}
 							<p class="text-xs text-red-400">{discordError}</p>
 						{/if}
+						<a target="_blank" href="https://www.remote.tools/remote-work/how-to-find-discord-id" class="text-xs text-indigo-400 hover:underline">
+							How to find your discord ID ?
+						</a>
 					</div>
 
 					<div class="items-top flex items-center space-x-2">
