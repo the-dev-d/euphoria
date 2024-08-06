@@ -73,20 +73,17 @@
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
 		<ul class="list-disc space-y-4 pl-2 font-sans text-sm text-white md:pl-5 gl:text-xl">
 			<li>
-				<strong>Individual Event:</strong> This is an individual competition; each participant competes
+				<strong>Individual Event:</strong> This is an individual competition, each participant competes
 				alone.
 			</li>
 			<li>
-				<strong>Website Requirements:</strong> Participants must design a responsive website with a
-				minimum of four pages based on a topic provided at the venue. The website must include:
-				<ul class="list-disc space-y-2 pl-5">
-					<li>
-						A homepage featuring a logo or picture representing the topic and the name of the
-						website.
-					</li>
-					<li>Remaining pages providing content relevant to the website's theme.</li>
-				</ul>
+				<strong>Website Requirements:</strong> Participants must design a responsive website with a minimum
+				of four pages based on a topic provided at the venue. The website must include:
 			</li>
+			<li>
+				A homepage featuring a logo or picture representing the topic and the name of the website.
+			</li>
+			<li>Remaining pages providing content relevant to the website's theme.</li>
 			<li>
 				<strong>Presentation:</strong> Participants will present their final website to the judges.
 			</li>
@@ -94,29 +91,27 @@
 				<strong>Judging:</strong> The judges' decisions are final and binding.
 			</li>
 			<li>
-				<strong>Equipment and Resources:</strong> Each participant will be provided with a computer
-				system for website development. Note:
-				<ul class="list-disc space-y-2 pl-5">
-					<li>
-						The use of any electronic devices other than the allotted computer system during the
-						development phase is prohibited and will lead to immediate disqualification.
-					</li>
-					<li>
-						The use of ChatGPT or any other AI tools is strictly prohibited and will result in
-						disqualification.
-					</li>
-				</ul>
+				<strong>Equipment and Resources:</strong> Each participant will be provided with a computer system
+				for website development. Note:
 			</li>
 			<li>
-				<strong>Development Rules:</strong> Participants may use any framework of their choice for
-				developing the website. Note:
-				<ul class="list-disc space-y-2 pl-5">
-					<li>
-						The use of pre-made templates is not allowed; all design and development work must be
-						original.
-					</li>
-				</ul>
+				The use of any electronic devices other than the allotted computer system during the
+				development phase is prohibited and will lead to immediate disqualification.
 			</li>
+			<li>
+				The use of ChatGPT or any other AI tools is strictly prohibited and will result in
+				disqualification.
+			</li>
+			<li>
+				<strong>Development Rules:</strong> Participants may use any framework of their choice for developing
+				the website. Note:
+			</li>
+
+			<li>
+				The use of pre-made templates is not allowed, all design and development work must be
+				original.
+			</li>
+
 			<li>
 				<strong>Additional Information:</strong> Ensure your design is responsive and functional on various
 				devices. Follow the provided topic closely and maintain originality in your design.
@@ -127,8 +122,8 @@
 		</ul>
 
 		<p class="mt-6">
-			We expect 40 participants. If there are more than 40 registrations, we will conduct an online
-			preliminary round.
+			<strong>Note: </strong>If there are more than expected registrations, we will conduct an
+			online preliminary round on 26th.
 		</p>
 	</article>
 
