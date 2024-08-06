@@ -146,6 +146,9 @@
 				In this final round, you'll work on 3 coding problems over a 2-hour period.The top 3 participants
 				will be declared winners.
 			</li>
+			<li>
+				<strong>Languages</strong> C, C++, Java, Python.
+			</li>
 		</ul>
 	</article>
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
