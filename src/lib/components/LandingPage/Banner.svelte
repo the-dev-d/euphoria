@@ -141,7 +141,7 @@
 			<h1
 				class="animate-fly-left font-equinox text-3xl font-bold uppercase sm:text-4xl md:text-5xl"
 			>
-				Rajagairi College of Social Sciences
+				Rajagiri College of Social Sciences (Autonomous)
 				<br /><span class="text-base sm:text-xl md:text-2xl">In collaboration with</span><span
 					class="ml-2 tracking-widest">AKEF</span
 				>

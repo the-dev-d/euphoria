@@ -161,6 +161,9 @@
 			<li class="text-xl font-semibold">Third Prize : ₹2,000</li>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
+		REGISTRATION FEE: ₹150
+	</h1>
 	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
 		<a
 			href="/register"
@@ -184,7 +187,7 @@
 			</div>
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY (UG)</h3>
-				<p class="text-white">+91 7736705727</p>
+				<p class="text-white">+91 7559012043</p>
 			</div>
 		</div>
 	</article>

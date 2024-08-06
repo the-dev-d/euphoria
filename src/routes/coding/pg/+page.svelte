@@ -156,6 +156,9 @@
 			<li class="text-2xl font-semibold">Second Prize : ₹3,000</li>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
+		REGISTRATION FEE: ₹150
+	</h1>
 	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
 		<a
 			href="/register"
@@ -171,23 +174,15 @@
 	</h1>
 
 	<article class="relative w-full p-5 gl:p-10">
-		<h2 class="mb-4 font-Ubuntu text-2xl uppercase text-white">Coordinators</h2>
+		<h2 class="font-Ubuntu mb-4 text-2xl uppercase text-white">Coordinators</h2>
 		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">DHAIVATH LAL (UG)</h3>
-				<p class="text-white">+91 9074768353'</p>
-			</div>
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">GRACEN K SHAJI (PG)</h3>
 				<p class="text-white">+91 7736705727</p>
 			</div>
 			<div>
-				<h3 class="text-lg font-semibold text-neon-violet">VARGHESE P ROY (UG)</h3>
-				<p class="text-white">+91 7736705727</p>
-			</div>
-			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">MUHZINA MOHAMED AFZAL (PG)</h3>
-				<p class="text-white">+91 7736705727</p>
+				<p class="text-white">+91 6282648189</p>
 			</div>
 		</div>
 	</article>

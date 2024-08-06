@@ -113,6 +113,9 @@
 			<li class="text-2xl font-semibold">Second Prize : ₹5,000</li>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
+		REGISTRATION FEE: ₹600
+	</h1>
 	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
 		<a href="/register" class="block h-full w-full bg-neon-violet p-3 text-center text-black"
 			>REGISTER NOW</a

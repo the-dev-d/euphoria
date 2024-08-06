@@ -93,6 +93,9 @@
 			</li>
 		</ul>
 	</article>
+	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
+		REGISTRATION FEE: ₹700
+	</h1>
 </section>
 
 <style>

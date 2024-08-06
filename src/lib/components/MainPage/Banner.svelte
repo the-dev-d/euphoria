@@ -64,7 +64,7 @@
 				</Parallax>
 			</h1>
 			<div class=" animate-fly-left-slow mt-4">
-				<h1 class="fugaz-one-regular text-xl">AUGUST 30-31</h1>
+				<h1 class="font-fugaz text-2xl drop-shadow-lg">AUGUST 30-31</h1>
 			</div>
 			<div
 				class="my-10 grid h-full w-full grid-rows-2 place-items-center gap-[10%] p-10 gl:grid-cols-2 gl:grid-rows-1"
