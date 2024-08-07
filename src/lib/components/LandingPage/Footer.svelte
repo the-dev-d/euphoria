@@ -51,7 +51,7 @@
 			}
 		},
 		{
-			name: 'MAIN COORDINATOR',
+			name: 'STUDENT COORDINATOR',
 			coordinator: {
 				name: 'Leo Thomas',
 				email: 'mca2329@rajagiri.edu',
@@ -59,7 +59,7 @@
 			}
 		},
 		{
-			name: 'MAIN COORDINATOR',
+			name: 'STUDENT COORDINATOR',
 			coordinator: {
 				name: 'Krishnapriya KJ',
 				email: 'msccs2320@rajagiri.edu',
