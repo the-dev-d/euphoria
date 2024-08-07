@@ -28,6 +28,7 @@
 	let transactionError = '';
 
 	$: transactionError = TransactionSchema.safeParse(transactionId).error?.format()._errors[0] || '';
+	$: console.log(transactionId)
 
 	function fileChanged(e: FormInputEvent) {
 		if (!e.target.files) return;
@@ -36,7 +37,10 @@
 		if (file.size > 400000) fileError = 'File size must be less than 400KB';
 		else fileError = '';
 	}
+
 	let transactionId = '';
+
+	let event = '';
 
 	let amountPayable = 0;
 	$: amountPayable =
@@ -57,21 +61,15 @@
 			<div class="grid gap-6">
 				<div class="flex items-center space-x-2">
 					<input
-						type="checkbox"
-						on:change={(e) => {
-							if (e.target?.checked) {
-								events.codingPG.status = false;
-								events.codingUG.status = true;
-							} else events.codingUG.status = false;
-						}}
-						name="coding-ug"
+						type="radio"
+						name="event"
 						id="codingUG"
-						value="coding-ug"
-						bind:checked={events.codingUG.status}
+						bind:group={event}
+						value="cug"
 						aria-labelledby="coding-ug"
 					/>
 					<Label
-						id="web_designing"
+						id="coding-ug"
 						for="codingUG"
 						class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 					>
@@ -80,17 +78,11 @@
 				</div>
 				<div class="flex items-center space-x-2">
 					<input
-						on:change={(e) => {
-							if (e.target?.checked) {
-								events.codingUG.status = false;
-								events.codingPG.status = true;
-							} else events.codingPG.status = false;
-						}}
-						type="checkbox"
-						name="coding-pg"
+						type="radio"
+						name="event"
+						bind:group={event}
 						id="codingPG"
-						value="coding-pg"
-						bind:checked={events.codingPG.status}
+						value="cpg"
 						aria-labelledby="coding-pg"
 					/>
 					<Label
@@ -103,11 +95,11 @@
 				</div>
 				<div class="flex items-center space-x-2">
 					<input
-						type="checkbox"
-						name="web-designing"
+						type="radio"
+						bind:group={event}
+						name="event"
 						id="webDesigning"
 						value="web"
-						bind:checked={events.webDesigning.status}
 						aria-labelledby="web_designing"
 					/>
 					<Label
@@ -127,7 +119,7 @@
 		<div>
 			<h2 class="text-lg font-bold text-green-500">Amount Payable</h2>
 			<h1 class="my-1 text-2xl font-semibold">
-				Rs.{amountPayable}/-
+				Rs.150/-
 			</h1>
 		</div>
 		<div class="mt-4 grid gap-4 text-white">
@@ -169,7 +161,7 @@
 			</p>
 		{/if}
 		<Button
-			disabled={!(events.codingPG.status || events.codingUG.status || events.webDesigning.status) ||
+			disabled={!event||
 				transactionId == '' ||
 				transactionError !== '' ||
 				fileError !== ''}

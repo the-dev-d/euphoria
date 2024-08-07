@@ -125,23 +125,15 @@
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
 		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li>
-				<strong>24th Aug - Code Oracle:</strong>
+				<strong>Code Oracle:</strong>
 				This round features 25 multiple-choice questions focusing on predicting the output of code snippets.
-				You will have 30 minutes to complete the test. The top 50 performers will advance to the second
-				round of preliminaries.Top 50 will qualify for Round 2.
 			</li>
 			<li>
-				<strong>27th Aug - Algorithm Showdown:</strong>
-				In this round, you'll tackle 2 coding problems on Hackerrank over the course of 1 hour. The competition
-				is organized into 5 batches.Top 30 will qualify for Round 3.
-			</li>
-			<li>
-				<strong>30th Aug - Debug Duel:</strong>
+				<strong>Debug Duel:</strong>
 				This round tests your debugging skills. You'll have 60 minutes to fix 3 code snippets with bugs.
-				You are allowed one false appeal for clarification.Top 15 will qualify for final round.
 			</li>
 			<li>
-				<strong>30th Aug - Code Masters:</strong>
+				<strong>Code Masters:</strong>
 				In this final round, you'll work on 4 coding problems over a 2-hour period.The top 2 participants
 				will be declared winners.
 			</li>
