@@ -26,12 +26,13 @@
 		</h1>
 	</section>
 	<div
-		class="absolute bottom-[20%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[18%]"
+		class="absolute bottom-[8%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[15%]"
 	>
 		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
+		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 26-AUG-24</h1>
 	</div>
 	<div
-		class="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center text-white"
+		class="absolute bottom-1 left-0 right-0 hidden flex-col items-center justify-center text-white gl:flex"
 	>
 		<p class="mb-2 text-sm font-semibold">Scroll down for more info</p>
 		<svg
