@@ -2,7 +2,7 @@ import type { Contestant, HuntMember } from "$lib/zod/types";
 import { PrismaClient, type Participants } from "@prisma/client";
 import { date } from "zod";
 
-const client = new PrismaClient();
+export const client = new PrismaClient();
 
 export const connection = {
     createParticipant,

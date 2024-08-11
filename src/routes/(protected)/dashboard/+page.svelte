@@ -44,23 +44,33 @@
 			<div class="grid grid-cols-2 gap-3 md:grid-cols-4 gl:grid-cols-6">
 				{#each data.events as event}
 					<div class=" transition-all shadow-white" >
-						<div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
-							<div class="w-full text-center uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
-								<span>
-									{names[event.event_code]}
-								</span>
+						{#if event.verified}
+							<a href="profile">
+								<div  class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+									<div class="w-full text-center uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+										<span>
+											{names[event.event_code]}
+										</span>
+									</div>
+										<div class="bottom-0 absolute m-1 text-xs bg-green-600 border p-1 px-3 rounded-full">
+											<span>Verified</span>
+									</div>
+									<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt={event.event_code} />
+								</div>
+							</a>
+						{:else}
+							<div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
+								<div class="w-full text-center uppercase h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
+									<span>
+										{names[event.event_code]}
+									</span>
+								</div>
+									<div class="bottom-0 absolute m-1 text-xs border-yellow-600 border p-1 px-3 rounded-full">
+										<span>Verification Pending</span>
+									</div>
+								<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt={event.event_code} />
 							</div>
-							{#if event.verified}
-								<div class="bottom-0 absolute m-1 text-xs bg-green-600 border p-1 px-3 rounded-full">
-									<span>Verified</span>
-								</div>
-							{:else}
-								<div class="bottom-0 absolute m-1 text-xs border-yellow-600 border p-1 px-3 rounded-full">
-									<span>Verification Pending</span>
-								</div>
-							{/if}
-							<img class="absolute top-0 left-0 w-full h-full brightness-50 z-10" src={"/images/covers/" + assets[event.event_code]} alt={event.event_code} />
-						</div>
+						{/if}
 					</div>
 				{/each}
 				{#if !data.events || data.events.length == 0}

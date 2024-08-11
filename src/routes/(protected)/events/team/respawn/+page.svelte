@@ -455,11 +455,13 @@
 				<Button
 					class="mt-8 w-full rounded-xl border-2 border-btn-main bg-btn-main"
 					on:click={saveTeam}
-					disabled={members.length !== 6 ||
+					disabled={
+						members.length < 4 ||
+						members.length > 6 ||
+						members.filter(m => m.substitute).length > 2 ||
 						!teamNameAvailable ||
 						saving ||
 						screenshot === null ||
-						members.filter((m) => m.substitute).length !== 2 ||
 						transactionIdError ||
 						!(leaderRiotError == '' && leaderDiscordError == '')}
 				>

@@ -50,6 +50,8 @@ model Event_participants{
   verified Boolean @default(false)
   event_payment Event_payment @relation(fields: [payment_id], references: [payment_id])
   payment_id Int
+
+  created_at DateTime @default(now())
 }
 
 model Teams{
@@ -85,4 +87,11 @@ model Gamer{
   substitute Boolean @default(false)
   team_id Int
   Team Teams @relation(fields: [team_id], references: [team_id])
+}
+
+model Admins {
+
+  admin_id Int @unique @default(autoincrement())
+  username String
+  password String
 }

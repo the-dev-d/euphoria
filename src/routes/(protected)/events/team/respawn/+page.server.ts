@@ -54,12 +54,30 @@ export const actions = {
                 }
             }
 
-            if(parsed.data.members.length !== 6) {
+            if(parsed.data.members.length < 4) {
                 return {
                     success: false,
-                    message: "Exactly 6 members required"
+                    message: "Atleast 4 members required"
                 }
             }
+
+            if(parsed.data.members.length >= 4) {
+
+                if((parsed.data.members.length - parsed.data.members.filter(m => m.substitute).length) !== 4)
+                    return {
+                        success: false,
+                        message: "Atleast 4 active members required"
+                    }
+            }
+
+            if(parsed.data.members.length > 6) {
+
+                return {
+                    success: false,
+                    message: "Atmost 7 members allowed"
+                }
+            }
+
             const validated = parsed.data;
             const emails = validated.members.map(member => member.email );
             const check = await connection.checkEventParticipation(emails, "RP");
