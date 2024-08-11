@@ -49,7 +49,7 @@
 
 </script>
 
-<main class="bg-white h-[90svh] text-black">
+<main class="bg-white min-h-[90svh] text-black">
     <div>
         <AlertDialog.Root bind:open={open}>
             <AlertDialog.Content>
@@ -116,7 +116,7 @@
             <Button>Apply</Button>
           </a>
     </div>
-    <div class="w-[90%] mx-auto max-h-[70svh] border rounded-md">
+    <div class="w-[90%] mx-auto border rounded-md">
         <Table.Root>
             <Table.Header>
               <Table.Row>
@@ -159,7 +159,7 @@
             </Table.Body>
           </Table.Root>
     </div>
-    <div class="flex items-center justify-center text-sm mt-4">
+    <div class="flex items-center justify-center text-sm my-4">
         <a href={pageNumber > 0 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
             <span class="material-symbols-outlined">
                 chevron_left
