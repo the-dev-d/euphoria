@@ -55,21 +55,31 @@
       <section class="mb-16">
         <h2 class="text-3xl font-semibold mb-6">Event Details</h2>
         <!-- Add event details content here -->
-      </section>
-  
-      <section id="ticket" class="bg-gradient-to-r from-purple-900 to-blue-900 p-8 rounded-lg flex flex-col md:flex-row justify-between items-center mb-12 neon-border">
-        <div class="text-white mb-6 md:mb-0">
-          <h3 class="text-2xl font-bold mb-3">EUPHORIA RESPAWN</h3>
-          <p class="text-lg">Rajagiri Sports and Cultural Centre Kalamassery</p>
-          <p class="text-lg">Rajagiri College of Social Sciences</p>
-          <p class="text-xl font-semibold mt-4">31st AUGUST</p>
-          <p class="text-lg">DOOR OPEN: 9AM</p>
-          <p class="text-2xl font-bold mt-4">Prize Pool: 100K</p>
-        </div>
-        <div class="bg-white w-32 h-32 flex items-center justify-center rounded-lg overflow-hidden">
-          <img src="/api/placeholder/128/128?text=QR+Code" alt="QR Code" class="w-full h-full object-cover" />
-        </div>
-      </section>
+    </section>
+    
+    <section id="ticket" class="relative p-6 rounded-lg flex flex-row justify-between items-center mb-12 max-w-3xl mx-auto overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img src="/images/agents/img.webp" alt="Background Image" class="w-full h-full object-cover"/>
+      </div>
+      
+      <!-- Content -->
+      <div class="relative z-10 text-black flex-grow">
+        <h3 class="text-3xl font-bold mb-2">EVENT NAME</h3>
+        <p class="text-lg">Rajagiri Sports and Cultural Centre</p>
+        <p class="text-lg">Rajagiri College of Social Sciences</p>
+        <p class="text-2xl font-bold mt-4">31.08.2024</p>
+        <p class="text-lg">DOOR OPEN: 9:AM</p>
+        <p class="text-xl font-bold mt-4">Ticket Price</p>
+        <p class="text-4xl font-bold">150 INR</p>
+      </div>
+    
+      <div class="relative z-10 flex flex-col items-end bg-white p-2 rounded">
+        <img src="/path/to/qr-code.png" alt="QR Code" class="w-24 h-24" />
+      </div>
+    </section>
+    
+      
   
       <div class="text-center mb-8">
         <p class="text-lg mb-2">In Association with</p>
