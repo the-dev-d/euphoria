@@ -65,7 +65,15 @@
 				email: 'msccs2320@rajagiri.edu',
 				phone: '+91 9562058307'
 			}
-		}
+		},
+		{
+			name: 'FOR SPONSORSHIP ',
+			coordinator: {
+				name: 'Muhammed Nihal',
+				email: 'mca2337@rajagiri.edu',
+				phone: '+91 9544252302'
+			}
+		},
 	];
 </script>
 
@@ -112,7 +120,7 @@
 			</div>
 			<div class="grid w-full gap-4">
 				<div class="w-full">
-					<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+					<div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
 						{#each coordinators as event}
 							<div class="rounded-lg bg-[#110F3D] p-4">
 								<h4 class="mb-2 font-fugaz text-[#FD1C68]">{event.name}</h4>

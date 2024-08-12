@@ -104,8 +104,8 @@
 				disqualification.
 			</li>
 			<li>
-				<strong>Development Rules:</strong> Participants may use any framework of their choice for developing
-				the website. Note:
+				<strong>Development Rules:</strong> Participants may use any css framework of their choice for developing
+				the website.
 			</li>
 
 			<li>
@@ -122,10 +122,7 @@
 			</li>
 		</ul>
 
-		<p class="mt-6">
-			<strong>Note: </strong>If there are more than expected registrations, we will conduct an
-			online preliminary round on 26th.
-		</p>
+		
 	</article>
 
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
