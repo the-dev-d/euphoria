@@ -71,7 +71,7 @@
         <p class="text-2xl font-bold mt-4">31.08.2024</p>
         <p class="text-lg">DOOR OPEN: 9:AM</p>
         <p class="text-xl font-bold mt-4">Ticket Price</p>
-        <p class="text-4xl font-bold">150 INR</p>
+        <p class="text-4xl font-bold">129 INR</p>
       </div>
     
       <div class="relative z-10 flex flex-col items-end bg-white p-2 rounded">
