@@ -7,8 +7,6 @@ export const load: PageServerLoad = async ({url, depends}) => {
 
     depends("database");
     let pageNumber = Number(url.searchParams.get('page')) || 0;
-    if(pageNumber < 1)
-        pageNumber = 1;
 
     let limit = Number(url.searchParams.get('limit') || 10);
     if(limit < 0)
@@ -22,8 +20,11 @@ export const load: PageServerLoad = async ({url, depends}) => {
     });
 
     if(pageNumber > Math.ceil(count/limit)) {
-        pageNumber = Math.ceil(count/limit);
+        pageNumber = Math.ceil(count/limit);   
     }
+
+    if(pageNumber < 1)
+        pageNumber = 1;
 
     const participations = await client.event_participants.findMany({
         take: limit,
