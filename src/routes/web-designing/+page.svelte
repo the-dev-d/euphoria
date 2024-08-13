@@ -78,6 +78,14 @@
 				alone.
 			</li>
 			<li>
+				<strong>Punctuality:</strong> All events will commence at the scheduled times. Punctuality is
+				appreciated.
+			</li>
+			<li>
+				<strong>Identity Proof:</strong> Each participant must carry a valid identity proof and college
+				ID card.
+			</li>
+			<li>
 				<strong>Website Requirements:</strong> Participants must design a responsive website with a minimum
 				of four pages based on a topic provided at the venue. The website must include:
 			</li>
@@ -116,6 +124,13 @@
 			<li>
 				<strong>Additional Information:</strong> Ensure your design is responsive and functional on various
 				devices. Follow the provided topic closely and maintain originality in your design.
+			</li>
+			<li>
+				<strong>Rule Changes:</strong> Rules are subject to change and any updates will be announced
+				before the event starts.
+			</li>
+			<li>
+				<strong>Certificates:</strong> All participants will receive a participation certificate.
 			</li>
 			<li>
 				<strong>Contact:</strong> For any queries or further details, please contact the event coordinators.
