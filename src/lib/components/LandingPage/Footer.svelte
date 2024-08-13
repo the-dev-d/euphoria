@@ -21,7 +21,7 @@
 			coordinator: {
 				name: 'Albin Joseph',
 				email: 'mca2305@rajagiri.edu',
-				phone: '+91 920791308'
+				phone: '+91 9207931308'
 			}
 		},
 		{
