@@ -121,6 +121,9 @@
 				<strong>Contact:</strong> For any queries or further details, please contact the event coordinators.
 			</li>
 		</ul>
+		<p class="mt-6">
+			<strong>Note: </strong>If registrations exceed expectations, we will conduct a preliminary quiz round on the day of the event to shortlist candidates.
+		</p>
 
 		
 	</article>
