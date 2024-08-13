@@ -93,7 +93,7 @@
 			</li>
 			<li>
 				<strong>Equipment and Resources:</strong> Each participant will be provided with a computer system
-				for website development. Note:
+				for website development.
 			</li>
 			<li>
 				The use of any electronic devices other than the allotted computer system during the
