@@ -1,9 +1,8 @@
 import { client } from "$lib/prisma/connection";
-import type { Actions } from "@sveltejs/kit";
+import { redirect, type Actions } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async ({url, depends}) => {
-
 
     depends("database");
     let pageNumber = Number(url.searchParams.get('page')) || 0;
@@ -23,14 +22,17 @@ export const load: PageServerLoad = async ({url, depends}) => {
         pageNumber = Math.ceil(count/limit);   
     }
 
+<<<<<<< Updated upstream
     if(pageNumber < 1)
         pageNumber = 1;
 
     const participations = await client.event_participants.findMany({
+=======
+    let participations = await client.event_participants.findMany({
+>>>>>>> Stashed changes
         take: limit,
         include: {
             participant: true,
-
             event_payment: true
         },
         skip: (pageNumber-1) * limit,
@@ -40,6 +42,10 @@ export const load: PageServerLoad = async ({url, depends}) => {
         where: {
             verified: false
         }
+    })
+    participations = participations.map(p=> {
+        delete p.participant.password;
+        return p;
     })
 
     return {
@@ -84,6 +90,19 @@ export const actions = {
                 success: false,
             }
         }
+    },
+
+    logout: async({cookies}) => {
+
+        cookies.delete('admin', {
+            path: '/',
+            httpOnly: true,
+            sameSite: 'strict',
+            secure: false, //TODO : to be changed,
+            maxAge: 60 * 60 * 24 * 3
+        });
+
+        throw redirect(302, "/");
     }
     
 } satisfies Actions;

@@ -8,7 +8,7 @@
     import { createRender, createTable, Render, Subscribe } from "svelte-headless-table";
     import * as Pagination from "$lib/shardcn/ui/pagination";
     import * as Select from "$lib/shardcn/ui/select";
-	  import { readable, writable } from "svelte/store";
+	import { readable, writable } from "svelte/store";
     import { Root } from "postcss";
     import * as Sheet from "$lib/shardcn/ui/sheet/index";
     import {
@@ -29,68 +29,30 @@
       hide: addHiddenColumns(),
     });
     $:{
-      tableData.set(data.participations);
-      console.log(data);
+      tableData.set(data.participants);
     }
 
 
     const columns = table.createColumns([
       table.column({
-        accessor: (a) => a.participant.name,
+        accessor: (a) => a.name,
         header: "Name"
       }),
 
       table.column({
-        accessor: (a) => a.participant.college,
+        accessor: (a) => a.college,
         header: "College"
       }),
 
       table.column({
-        accessor: (a) => a.participant.email,
+        accessor: (a) => a.email,
         header: "Email"
       }),
 
       table.column({
-        accessor: (a) => a.participant.phone,
+        accessor: (a) => a.phone,
         header: "Phone"
-      }),
-
-      table.column({
-        accessor: (a) => a.created_at.toLocaleString(),
-        header: "Created At"
-      }),
-
-      table.column({
-        accessor: (a) => a.event_code,
-        header: "Event Code"
-      }),
-
-      table.column({
-        accessor: (a) => a.event_payment.amount + " Rs",
-        header: "Amount",
-      }),
-
-      table.column({
-        accessor: (a) => a.event_payment.upi_transaction_id,
-        header: "UPI Transaction ID"
-      }),
-
-      table.column({
-        accessor: (a) => a.event_payment.screenshot,
-        header: "Screenshot",
-        cell: ({value}) => {
-          return createRender(ButtonWrapper, {label: "View", click: () => {handleScreenshotShow(value)}})
-        }
-      }),
-
-      table.column({
-        accessor: (a) => a.event_participant_id,
-        header: "Verify",
-        cell: ({value}) => {
-          return createRender(ButtonWrapper, {label: "Verify", click: () => {handleSwitchChange(value)}})
-        }
       })
-      
     ]);
 
     const { headerRows, pageRows, tableAttrs, tableBodyAttrs, pluginStates, flatColumns } = table.createViewModel(columns);
@@ -103,13 +65,13 @@
     .filter(([, hide]) => !hide)
     .map(([id]) => id);
 
-    const hidableCols = ["Name","College", "Email","Phone","Created At","Event Code", "Amount","UPI Transaction ID"];
+    const hidableCols = ["Name","College", "Email","Phone"];
 
     let currentParticipation = 0;
     let currentScreenshot = "";
 
     let pageSize = data.limit;
-    let pageNumber = data.pageNumber;
+    let pageNumber = data.page;
 
     let open = false;
     let ssopen = false;
@@ -144,41 +106,7 @@
 </script>
 
 <main class="bg-white min-h-[90svh] text-black">
-  <div>
-      <AlertDialog.Root bind:open={open}>
-          <AlertDialog.Content>
-            <AlertDialog.Header>
-              <AlertDialog.Title>Are you absolutely sure?</AlertDialog.Title>
-              <AlertDialog.Description>
-                This will mark the entry as verified and will unlock new privileges to the participant. 
-                <p class="my-3"><span class="font-semibold">Warning : </span> This action is irreversible.</p>
-              </AlertDialog.Description>
-            </AlertDialog.Header>
-            <AlertDialog.Footer>
-              <AlertDialog.Cancel>
-                  <span class="text-black">Cancel</span>
-              </AlertDialog.Cancel>
-              <AlertDialog.Action>
-                  <Button on:click={handleContinue}>Continue</Button>
-              </AlertDialog.Action>
-            </AlertDialog.Footer>
-          </AlertDialog.Content>
-        </AlertDialog.Root>
-  </div>
-  <div>  
-      <Dialog.Root bind:open={ssopen}>
-      <Dialog.Content>
-          <Dialog.Header>
-          <Dialog.Title>
-              <span class="text-black">Screenshot</span>
-          </Dialog.Title>
-          <Dialog.Description>
-              <img class="max-h-[70svh] mx-auto" src={currentScreenshot.replace("static", "")} alt={currentScreenshot.replace("static", "")}>
-          </Dialog.Description>
-          </Dialog.Header>
-      </Dialog.Content>
-      </Dialog.Root>
-  </div>
+
   <!-- {JSON.stringify(participation)} -->
   <div class="w-[90%] mx-auto mt-10 mb-2 flex items-center gap-3">
       <Select.Root bind:selected onSelectedChange={(v) => {data.limit = v?.value;}}>
@@ -194,7 +122,7 @@
             <Select.Item value="50">50</Select.Item>
           </Select.Content>
         </Select.Root>
-        <a href={"admin?page=1&limit="+data.limit}>
+        <a href={"non-participants?page=1&limit="+data.limit}>
           <Button>Apply</Button>
         </a>
         <DropdownMenu.Root>
@@ -254,15 +182,15 @@
         Total {data.count} records
       </div>
       <div class="flex items-center justify-center">
-        <a href={pageNumber > 0 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
+        <a href={pageNumber > 1 ? "non-participants?page="+(data.page - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
           <span class="material-symbols-outlined">
               chevron_left
           </span>
         </a>
         <div class="">
-            Page {data.pageNumber}/ {Math.ceil(data.count/data.limit)}
+            Page {data.page}/ {Math.ceil(data.count/data.limit)}
         </div>
-        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "admin?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
+        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "non-participants?page="+(data.page + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
             <span class="material-symbols-outlined">
                 chevron_right
             </span>
