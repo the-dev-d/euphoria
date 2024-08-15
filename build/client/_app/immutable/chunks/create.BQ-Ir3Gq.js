@@ -1,0 +1,1 @@
+import{m as o,b as n}from"./index.r_n6alX8.js";function l(){return{elements:{root:o("label",{action:t=>({destroy:n(t,"mousedown",e=>{!e.defaultPrevented&&e.detail>1&&e.preventDefault()})})})}}}export{l as c};
