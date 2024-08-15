@@ -30,7 +30,6 @@
     });
     $:{
       tableData.set(data.participations);
-      console.log(data);
     }
 
 

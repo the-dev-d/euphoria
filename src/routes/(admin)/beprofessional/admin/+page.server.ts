@@ -22,14 +22,11 @@ export const load: PageServerLoad = async ({url, depends}) => {
         pageNumber = Math.ceil(count/limit);   
     }
 
-<<<<<<< Updated upstream
     if(pageNumber < 1)
         pageNumber = 1;
 
-    const participations = await client.event_participants.findMany({
-=======
     let participations = await client.event_participants.findMany({
->>>>>>> Stashed changes
+
         take: limit,
         include: {
             participant: true,
