@@ -2,7 +2,7 @@
     import { Input } from "$lib/shardcn/ui/input/index";
     import { Label } from "$lib/shardcn/ui/label/index";
     import { Button } from "$lib/shardcn/ui/button/index";
-	import type { ActionData } from "./$types";
+	  import type { ActionData } from "./$types";
 
     export let form: ActionData;
 </script>

@@ -52,5 +52,27 @@ export const handle: Handle = async ({event, resolve}) => {
             console.log(error);
         }
     }
+
+    const viewer = cookies.get('viewer');
+
+    if(viewer) {
+        const [b64, hash] = viewer.split('.');
+        const email = atob(b64);
+        try {
+            const viewer = await client.viewers.findFirst({where:{email}})
+            if(!viewer){
+                // event.cookies.delete('session');
+                return resolve(event);
+            }
+                
+            const generatedHash = createAuthToken(viewer.viewer_id, viewer.email)
+            if(generatedHash === hash) {
+                event.locals.viewer = viewer;
+            }
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
     return resolve(event);
 }

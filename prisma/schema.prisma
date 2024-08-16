@@ -95,3 +95,23 @@ model Admins {
   username String
   password String
 }
+
+model Viewers {
+  viewer_id Int @unique @default(autoincrement())
+  name String
+  email String
+  phone String
+  password String
+  ticket Tickets?
+}
+
+model Tickets {
+  ticket_id Int @unique @default(autoincrement())
+  viewer_id Int @unique
+  viewer Viewers @relation(fields: [viewer_id], references: [viewer_id])
+  count Int
+  upi_transaction_id String?
+  screenshot String?
+  verified Boolean @default(false)
+  uuid String @unique
+}

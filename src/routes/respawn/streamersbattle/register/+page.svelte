@@ -11,13 +11,11 @@
     let password = "";
     let phone = "";
     let confirmPassword = "";
-    let college = "";
 
     let nameError: string|undefined = "";
     let emailError: string|undefined = "";
     let passwordError: string|undefined = "";
     let phoneError: string|undefined = "";
-    let collegeError: string|undefined = "";
 
 
 
@@ -27,7 +25,6 @@
         emailError = form?.error?.email?._errors[0];
         phoneError = form?.error?.phone?._errors[0];
         passwordError = form?.error?.password?._errors[0];
-        collegeError = form?.error?.college?._errors[0];
     }
 
     $: {
@@ -35,7 +32,6 @@
         emailError = ContestantSchema.shape.email.safeParse(email).error?.format()._errors[0]
         passwordError = ContestantSchema.shape.password.safeParse(password).error?.format()._errors[0]
         phoneError = ContestantSchema.shape.phone.safeParse(phone).error?.format()._errors[0]
-        collegeError = ContestantSchema.shape.college.safeParse(college).error?.format()._errors[0]
     }
 
     
@@ -92,7 +88,7 @@
                 <p class="text-xs my-2">Please bring a Valid ID proof for verification.</p>
                 <div class="flex flex-col gap-2">
                     <Button  class=" bg-[#3BE4C4]" disabled={(nameError != undefined || emailError != undefined || phoneError != undefined || passwordError != undefined || password !== confirmPassword)} type="submit">Register</Button>
-                    <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/login" class="text-[#3BE4C4]">Login</a> </p>
+                    <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/respawn/streamersbattle/login" class="text-[#3BE4C4]">Login</a> </p>
                 </div>
                 {#if form?.success}
                     <p class="text-sm text-green-500">Registration successfull</p>

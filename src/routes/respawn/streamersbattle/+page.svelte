@@ -1,10 +1,7 @@
 <script>
   import { onMount } from 'svelte';
 
-  let streamers = Array(10).fill().map((_, i) => ({ 
-    name: `Streamer ${i + 1}`,
-    imageUrl: `/api/placeholder/200/200?text=Streamer${i+1}`
-  }));
+  let streamers = []
 
   onMount(() => {
     // Add any necessary JavaScript for animations or interactivity
@@ -73,10 +70,6 @@
         <p class="text-xl font-bold mt-4">Ticket Price</p>
         <p class="text-4xl font-bold">129 INR</p>
       </div>
-    
-      <div class="relative z-10 flex flex-col items-end bg-white p-2 rounded">
-        <img src="/path/to/qr-code.png" alt="QR Code" class="w-24 h-24" />
-      </div>
     </section>
     
       
@@ -86,9 +79,11 @@
         <img src="/images/logos/akef-logo.png" alt="AKEF Logo" class="h-12 mx-auto"/>
       </div>
   
-      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
-        Enter Now
-      </button>
+      <a href="/respawn/streamersbattle/register">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
+          Enter Now
+        </button>
+      </a>
     </div>
   </main>
 
