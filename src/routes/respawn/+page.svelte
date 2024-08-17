@@ -34,12 +34,14 @@
 			<div class="block h-full w-full bg-red-500 p-3 text-center text-black">REGISTRATION CLOSED</div>
 		{/if}
 	</div>
+	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
 		WITNESS THE IMPACT
 	</h1>
-	<a href="/respawn/streamersbattle" class="block h-full w-full bg-red-500 p-3 text-center text-black m-9"
+	<a href="/respawn/streamersbattle" class="block h-full w-full bg-red-500 p-3 text-center text-black"
 				>BOOK YOUR TICKETS NOW</a
 			>
+	</div>
 </div>
 
 <style>

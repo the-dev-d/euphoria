@@ -33,9 +33,9 @@
       </div>
       <div class="relative z-10 px-4 space-y-8">
         <img src="/images/forms/Logoc.png" alt="Euphoria Logo" class="w-64 mx-auto mb-4"/>
-        <h1 class="text-5xl md:text-7xl font-bold mb-8">EUPHORIA RESPAWN</h1>
+        <h1 class="text-5xl md:text-7xl mb-8 font-valorant font-bold tracking-wider">EUPHORIA RESPAWN</h1>
         <p class="text-2xl mb-8 neon-text-blue">VALORANT LAN GAMING TOURNAMENT</p>
-        <div class="space-x-4">
+        <div class="flex flex-col gl:flex-row gap-4 justify-center items-center">
           <a href="#ticket" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg inline-block">
             BOOK TICKET
           </a>
