@@ -78,6 +78,14 @@
 				alone.
 			</li>
 			<li>
+				<strong>Punctuality:</strong> All events will commence at the scheduled times. Punctuality is
+				appreciated.
+			</li>
+			<li>
+				<strong>Identity Proof:</strong> Each participant must carry a valid identity proof and college
+				ID card.
+			</li>
+			<li>
 				<strong>Website Requirements:</strong> Participants must design a responsive website with a minimum
 				of four pages based on a topic provided at the venue. The website must include:
 			</li>
@@ -93,7 +101,7 @@
 			</li>
 			<li>
 				<strong>Equipment and Resources:</strong> Each participant will be provided with a computer system
-				for website development. Note:
+				for website development.
 			</li>
 			<li>
 				The use of any electronic devices other than the allotted computer system during the
@@ -104,8 +112,8 @@
 				disqualification.
 			</li>
 			<li>
-				<strong>Development Rules:</strong> Participants may use any framework of their choice for developing
-				the website. Note:
+				<strong>Development Rules:</strong> Participants may use any css framework of their choice for developing
+				the website.
 			</li>
 
 			<li>
@@ -118,14 +126,21 @@
 				devices. Follow the provided topic closely and maintain originality in your design.
 			</li>
 			<li>
+				<strong>Rule Changes:</strong> Rules are subject to change and any updates will be announced
+				before the event starts.
+			</li>
+			<li>
+				<strong>Certificates:</strong> All participants will receive a participation certificate.
+			</li>
+			<li>
 				<strong>Contact:</strong> For any queries or further details, please contact the event coordinators.
 			</li>
 		</ul>
-
 		<p class="mt-6">
-			<strong>Note: </strong>If there are more than expected registrations, we will conduct an
-			online preliminary round on 26th.
+			<strong>Note: </strong>If registrations exceed expectations, we will conduct a preliminary quiz round on the day of the event to shortlist candidates.
 		</p>
+
+		
 	</article>
 
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">
