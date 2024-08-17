@@ -134,10 +134,10 @@ body {
 	font-family: 'valorant';
 	src: url("/Valorant\ Font.ttf");
 }
-
-@font-face {
-	font-family: 'ubuntu';
-	src: url("/Ubuntu-Regular.ttf");
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .roboto-regular {
@@ -155,4 +155,11 @@ body {
 @font-face {
   font-family: 'anton';
   src: url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+}
+
+@font-face {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
 }

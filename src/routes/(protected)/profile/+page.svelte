@@ -23,13 +23,15 @@
         <div>
             <div class="container max-w-96">
                 <!-- {`https://euphoria.rlabz.in/verify/` + data.verified[0].event_payment.uuid} -->
-                <svg
+                 {#each data.verified as verified}
+                    <svg
                     use:qr={{
-                        data: `https://euphoria.rlabz.in/verify/` + data.verified[0].event_payment.uuid,
+                        data: `https://euphoria.rlabz.in/verify/` + verified.event_payment.uuid,
                         logo: '/images/logos/euphoria.png',
                         shape: 'circle',
                     }}
                     />
+                 {/each}
             </div>              
         </div>
     </div>

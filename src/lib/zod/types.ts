@@ -10,6 +10,15 @@ export const ContestantSchema = z.object({
     })
 })
 
+export const ViewerSchema = z.object({
+    name: z.string().regex(/^[A-z. ]+$/, {message: "Only alphabets, spaces and . are allowed"}),
+    email: z.string().email(),
+    phone: z.string().regex(/^[0-9]+$/, {message: "Phone number should only have numbers"}).length(10),
+    password: z.string().min(8).max(16).regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,16}$/, {
+        message: "Password must include at least one uppercase letter, lowercase letters, digit and special character"
+    })
+})
+
 export const HuntMemberSchema = z.object({
     name: z.string().regex(/^[A-z. ]+$/, {message: "Only alphabets, spaces and . are allowed"}),
     email: z.string().email(),
@@ -35,6 +44,7 @@ export const ImageSchema = z.instanceof(File);
 export const TransactionSchema = z.string().min(12)
 
 export type Contestant = z.infer<typeof ContestantSchema>;
+export type Viewer = z.infer<typeof ViewerSchema>;
 export type HuntMember = z.infer<typeof HuntMemberSchema>;
 export type Gamer = z.infer<typeof GamerSchema>;
 
