@@ -1,14 +1,25 @@
 <script>
   import { onMount } from 'svelte';
-
-  let streamers = []
-
+  
+  let streamers = [
+    { name: "VIPER ESSPORTS", youtubeUrl: "https://www.youtube.com/@ViPEREsSports", imageUrl: "/streamersimg/viper_esports.jpg" },
+    { name: "DREAMER GAMING", youtubeUrl: "https://www.youtube.com/@DREAMERofficial", imageUrl: "/streamersimg/dreamer_gaming.jpg" },
+    { name: "BLIND REBEL", youtubeUrl: "https://www.youtube.com/@BLINDRebeL", imageUrl: "/streamersimg/blind_rebel.jpg" },
+    { name: "TXA GAMING", youtubeUrl: "https://www.youtube.com/@txagamingyt", imageUrl: "/streamersimg/txa_gaming.jpg" },
+    { name: "GERMAN KANNAPPI", youtubeUrl: "https://youtube.com/@germankannapi5909", imageUrl: "/streamersimg/german_kannappi.jpg" },
+    { name: "S3 GAMER", youtubeUrl: "https://www.youtube.com/@_S3GAMER_/videos", imageUrl: "/streamersimg/s3_gamer.jpg" },
+    { name: "BOB GAMING", youtubeUrl: "https://youtube.com/@mrbobgaming864", imageUrl: "/streamersimg/bob_gaming.jpg" },
+    { name: "MEN AT ARMS", youtubeUrl: "https://youtube.com/@menatarmsgaming", imageUrl: "/streamersimg/men_at_arms.jpg" },
+    { name: "SHIBIN SHAN GAMING", youtubeUrl: "https://youtube.com/@shibinshan", imageUrl: "/streamersimg/shibin_shan_gaming.jpg" },
+    { name: "STEVE", youtubeUrl: "https://youtube.com/@st3ve132", imageUrl: "/streamersimg/steve.jpg" }
+  ];
+  
   onMount(() => {
     // Add any necessary JavaScript for animations or interactivity
   });
-</script>
+  </script>
 
-<main class="bg-black text-white min-h-screen font-futuristic">
+<main class="bg-[#0D1638]  text-white min-h-screen font-futuristic">
     <header class="relative text-center h-screen flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img 
@@ -37,40 +48,48 @@
   
     <div class="container mx-auto px-4 py-16">
       <section id="meetthem" class="mb-16 text-center">
-        <h2 class="text-3xl font-semibold mb-3">MEET <span class="text-blue-400">THEM</span>...!!!</h2>
+        <h2 class="text-3xl font-semibold mb-3">MEET & GREET <span class="text-blue-400">THEM</span>...!!!</h2>
         <p class="text-xl mb-8">EPIC STREAMERS BATTLE</p>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {#each streamers as streamer}
             <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative neon-border">
               <img src={streamer.imageUrl} alt={streamer.name} class="absolute inset-0 w-full h-full object-cover" />
-              <span class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10">{streamer.name}</span>
+              <a href={streamer.youtubeUrl} target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+                {streamer.name}
+              </a>
             </div>
           {/each}
         </div>
       </section>
   
-      <section class="mb-16">
+      <!-- <section class="mb-16">
         <h2 class="text-3xl font-semibold mb-6">Event Details</h2>
-        <!-- Add event details content here -->
-    </section>
-    
+        Add event details content here-->  
+         <!--</section>-->
     <section id="ticket" class="relative p-6 rounded-lg flex flex-row justify-between items-center mb-12 max-w-3xl mx-auto overflow-hidden">
-      <!-- Background Image -->
+      <!-- Background Image with Overlay -->
       <div class="absolute inset-0 z-0">
-        <img src="/images/agents/img.webp" alt="Background Image" class="w-full h-full object-cover"/>
+          <img src="/images/agents/img.webp" alt="Background Image" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0 bg-black opacity-40"></div>
       </div>
       
-      <!-- Content -->
-      <div class="relative z-10 text-black flex-grow">
-        <h3 class="text-3xl font-bold mb-2">EVENT NAME</h3>
-        <p class="text-lg">Rajagiri Sports and Cultural Centre</p>
-        <p class="text-lg">Rajagiri College of Social Sciences</p>
-        <p class="text-2xl font-bold mt-4">31.08.2024</p>
-        <p class="text-lg">DOOR OPEN: 9:AM</p>
-        <p class="text-xl font-bold mt-4">Ticket Price</p>
-        <p class="text-4xl font-bold">129 INR</p>
+      <!-- Content with Text Stroke -->
+      <div class="relative z-10 text-white flex-grow">
+          <h3 class="text-3xl font-bold mb-2 stroke-black">EUPHORIA RESPAWN</h3>
+          <p class="text-lg stroke-black">Rajagiri Sports and Cultural Centre</p>
+          <p class="text-lg stroke-black">Rajagiri College of Social Sciences</p>
+          <p class="text-2xl font-bold mt-4 stroke-black">31.08.2024</p>
+          <p class="text-lg stroke-black">DOOR OPEN: 9:AM</p>
+          <p class="text-xl font-bold mt-4 stroke-black">Ticket Price</p>
+          <p class="text-4xl font-bold stroke-black">129 INR</p>
       </div>
-    </section>
+  
+      <div class="relative z-10 flex flex-col items-end bg-white p-2 rounded">
+          <img src="/path/to/qr-code.png" alt="QR Code" class="w-24 h-24" />
+      </div>
+  </section>
+  
+    
     
       
   
@@ -79,11 +98,9 @@
         <img src="/images/logos/akef-logo.png" alt="AKEF Logo" class="h-12 mx-auto"/>
       </div>
   
-      <a href="/respawn/streamersbattle/register">
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
-          Enter Now
-        </button>
-      </a>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
+        Enter Now
+      </button>
     </div>
   </main>
 

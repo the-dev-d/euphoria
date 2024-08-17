@@ -4,5 +4,5 @@ export const PRICE = {
     webDesigning: 150,
     treasureHunt: 600,
     respawn: 700,
-    battle: 150
+    battle: 129,
 }
