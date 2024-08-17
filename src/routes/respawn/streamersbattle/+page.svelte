@@ -2,16 +2,16 @@
   import { onMount } from 'svelte';
   
   let streamers = [
-    { name: "VIPER ESSPORTS", youtubeUrl: "https://www.youtube.com/@ViPEREsSports", imageUrl: "/streamersimg/viper_esports.jpg" },
-    { name: "DREAMER GAMING", youtubeUrl: "https://www.youtube.com/@DREAMERofficial", imageUrl: "/streamersimg/dreamer_gaming.jpg" },
-    { name: "BLIND REBEL", youtubeUrl: "https://www.youtube.com/@BLINDRebeL", imageUrl: "/streamersimg/blind_rebel.jpg" },
-    { name: "TXA GAMING", youtubeUrl: "https://www.youtube.com/@txagamingyt", imageUrl: "/streamersimg/txa_gaming.jpg" },
-    { name: "GERMAN KANNAPPI", youtubeUrl: "https://youtube.com/@germankannapi5909", imageUrl: "/streamersimg/german_kannappi.jpg" },
-    { name: "S3 GAMER", youtubeUrl: "https://www.youtube.com/@_S3GAMER_/videos", imageUrl: "/streamersimg/s3_gamer.jpg" },
-    { name: "BOB GAMING", youtubeUrl: "https://youtube.com/@mrbobgaming864", imageUrl: "/streamersimg/bob_gaming.jpg" },
-    { name: "MEN AT ARMS", youtubeUrl: "https://youtube.com/@menatarmsgaming", imageUrl: "/streamersimg/men_at_arms.jpg" },
-    { name: "SHIBIN SHAN GAMING", youtubeUrl: "https://youtube.com/@shibinshan", imageUrl: "/streamersimg/shibin_shan_gaming.jpg" },
-    { name: "STEVE", youtubeUrl: "https://youtube.com/@st3ve132", imageUrl: "/streamersimg/steve.jpg" }
+    // { name: "VIPER ESSPORTS", youtubeUrl: "https://www.youtube.com/@ViPEREsSports", imageUrl: "/streamersimg/viper_esports.jpg" },
+    // { name: "DREAMER GAMING", youtubeUrl: "https://www.youtube.com/@DREAMERofficial", imageUrl: "/streamersimg/dreamer_gaming.jpg" },
+    // { name: "BLIND REBEL", youtubeUrl: "https://www.youtube.com/@BLINDRebeL", imageUrl: "/streamersimg/blind_rebel.jpg" },
+    // { name: "TXA GAMING", youtubeUrl: "https://www.youtube.com/@txagamingyt", imageUrl: "/streamersimg/txa_gaming.jpg" },
+    // { name: "GERMAN KANNAPPI", youtubeUrl: "https://youtube.com/@germankannapi5909", imageUrl: "/streamersimg/german_kannappi.jpg" },
+    // { name: "S3 GAMER", youtubeUrl: "https://www.youtube.com/@_S3GAMER_/videos", imageUrl: "/streamersimg/s3_gamer.jpg" },
+    // { name: "BOB GAMING", youtubeUrl: "https://youtube.com/@mrbobgaming864", imageUrl: "/streamersimg/bob_gaming.jpg" },
+    // { name: "MEN AT ARMS", youtubeUrl: "https://youtube.com/@menatarmsgaming", imageUrl: "/streamersimg/men_at_arms.jpg" },
+    // { name: "SHIBIN SHAN GAMING", youtubeUrl: "https://youtube.com/@shibinshan", imageUrl: "/streamersimg/shibin_shan_gaming.jpg" },
+    // { name: "STEVE", youtubeUrl: "https://youtube.com/@st3ve132", imageUrl: "/streamersimg/steve.jpg" }
   ];
   
   onMount(() => {
@@ -84,23 +84,19 @@
           <p class="text-4xl font-bold stroke-black">129 INR</p>
       </div>
   
-      <div class="relative z-10 flex flex-col items-end bg-white p-2 rounded">
-          <img src="/path/to/qr-code.png" alt="QR Code" class="w-24 h-24" />
-      </div>
   </section>
   
-    
-    
-      
-  
+
       <div class="text-center mb-8">
         <p class="text-lg mb-2">In Association with</p>
         <img src="/images/logos/akef-logo.png" alt="AKEF Logo" class="h-12 mx-auto"/>
       </div>
   
-      <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
-        Enter Now
-      </button>
+      <a href="/respawn/streamersbattle/register">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
+          Enter Now
+        </button>
+      </a>
     </div>
   </main>
 

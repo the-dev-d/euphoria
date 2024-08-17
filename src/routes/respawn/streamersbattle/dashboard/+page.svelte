@@ -93,7 +93,7 @@
                                     bind:value={count} 
                                     name="count" 
                                     type="number" 
-                                    class="w-full px-3 py-2 border bg-white/10 border border-[#63BDC2] rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-[#D4566C] focus:border-transparent" 
+                                    class="w-full px-3 py-2 border bg-white/10  border-[#63BDC2] rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-[#D4566C] focus:border-transparent" 
                                     placeholder="Enter ticket count" 
                                 />
                                 {#if countError}
@@ -153,20 +153,18 @@
                         </Button>
                     </form>
                 {:else}
-                    <div class="text-center" transition:fly="{{ y: 20, duration: 500 }}">
+                    <div class="text-center" >
                         <h2 class="text-2xl font-bold mb-4 text-[#63BDC2]">Your Ticket</h2>
-                        <div class="bg-white p-6 rounded-lg inline-block shadow-lg">
-                            <svg
-                                use:qr={{
-                                    data: `https://euphoria.rlabz.in/verify/viewer/` + data.ticket.uuid,
-                                    logo: '/images/logos/euphoria.png',
-                                    shape: 'square',
-                                    size: 200
-                                }}
-                            />
-                        </div>
+                        <svg
+                        class="w-2/3 mx-auto"
+                            use:qr={{
+                                data: `https://euphoria.rlabz.in/verify/viewer/` + data.ticket.uuid,
+                                logo: '/images/logos/euphoria.png',
+                                shape: 'circle',
+                            }}
+                        />
                         <p class="mt-4 text-lg font-semibold text-[#63BDC2]">Ticket #: {data.ticket.uuid}</p>
-                        <p class="text-green-500">Status: Confirmed</p>
+                        <p class="">Status: {data.ticket.verified ? "Verified" : "Verification Pending"}</p>
                     </div>
                 {/if}
             </div>
