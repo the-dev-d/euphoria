@@ -26,13 +26,13 @@
 		</h1>
 	</section>
 	<div
-		class="absolute bottom-[8%] gl:bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white"
+		class="absolute bottom-[8%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[15%]"
 	>
 		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
 		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 26-AUG-24</h1>
 	</div>
 	<div
-		class="absolute bottom-1 left-0 right-0 hidden gl:flex flex-col items-center justify-center text-white"
+		class="absolute bottom-1 left-0 right-0 hidden flex-col items-center justify-center text-white gl:flex"
 	>
 		<p class="mb-2 text-sm font-semibold">Scroll down for more info</p>
 		<svg
@@ -112,8 +112,8 @@
 				disqualification.
 			</li>
 			<li>
-				<strong>Development Rules:</strong> Participants may use any css framework of their choice for developing
-				the website.
+				<strong>Development Rules:</strong> Participants may use any css framework of their choice for
+				developing the website.
 			</li>
 
 			<li>
@@ -133,14 +133,17 @@
 				<strong>Certificates:</strong> All participants will receive a participation certificate.
 			</li>
 			<li>
+				<strong>No Refunds:</strong> Once registered, there are no take-backs. Ensure you're ready for
+				the challenge before you commit!
+			</li>
+			<li>
 				<strong>Contact:</strong> For any queries or further details, please contact the event coordinators.
 			</li>
 		</ul>
 		<p class="mt-6">
-			<strong>Note: </strong>If registrations exceed expectations, we will conduct a preliminary quiz round on the day of the event to shortlist candidates.
+			<strong>Note: </strong>If registrations exceed expectations, we will conduct a preliminary
+			quiz round on the day of the event to shortlist candidates.
 		</p>
-
-		
 	</article>
 
 	<h1 class="relative mx-5 mt-10 font-fugaz text-4xl uppercase text-white gl:mx-10 gl:text-6xl">

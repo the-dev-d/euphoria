@@ -116,6 +116,10 @@
 				<strong>Certificates:</strong> All participants will receive a participation e-certificate.
 			</li>
 			<li>
+				<strong>No Refunds:</strong> Once registered, there are no take-backs. Ensure you're ready for
+				the challenge before you commit!
+			</li>
+			<li>
 				<strong>Contact Information:</strong> For more details, please contact the event coordinators.
 			</li>
 		</ul>
