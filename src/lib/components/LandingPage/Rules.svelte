@@ -78,7 +78,7 @@
 			</li>
 			<li>
 				<strong>Preliminaries:</strong> Mark your calendars! The preliminary rounds kick off on August
-				21st, running from 10 am to 6 pm. Expect a full day of action-packed matches as teams vie for
+				25th, running from 10 am to 6 pm. Expect a full day of action-packed matches as teams vie for
 				a spot in the next stage.
 			</li>
 			<li>

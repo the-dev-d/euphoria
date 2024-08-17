@@ -15,7 +15,7 @@
 
 <Banner />
 <div class="sm:3xl mt-20 bg-[#fa4454] text-center font-valorant text-2xl gl:text-6xl">
-	<h3 class="mt-3 flex items-center justify-center">Register Before: 18-AUG-24</h3>
+	<h3 class="mt-3 flex items-center justify-center">Register Before: 24-AUG-24</h3>
 </div>
 <div class="sm:3xl mb-10 bg-[#fa4454] text-center font-valorant text-2xl gl:text-6xl">
 	<h3 class="mt-3 flex items-center justify-center">REGISTRATIONS: {data.count}/32</h3>
