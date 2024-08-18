@@ -195,7 +195,6 @@
                 chevron_right
             </span>
         </a>
-        {pageNumber} {data.page} {Math.ceil(data.count/data.limit)}
       </div>
   </div>
 </main>
