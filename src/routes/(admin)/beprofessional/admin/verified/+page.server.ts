@@ -14,7 +14,7 @@ export const load: PageServerLoad = async ({url, depends}) => {
         limit = 10;
 
     const where = {
-        verified: false,
+        verified: true,
     };
 
     if(filter) {

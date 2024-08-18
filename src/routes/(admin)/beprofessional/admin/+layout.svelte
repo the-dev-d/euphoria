@@ -29,6 +29,7 @@
           <Sheet.Close asChild let:builder>
             <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin") }} >Participations</Button>
             <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/non-participants") }}>Non participants</Button>
+            <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/verified") }}>Verified</Button>
           </Sheet.Close>
         </div>
       </Sheet.Content>

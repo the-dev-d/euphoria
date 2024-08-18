@@ -80,16 +80,7 @@
         cell: ({value}) => {
           return createRender(ButtonWrapper, {label: "View", click: () => {handleScreenshotShow(value)}})
         }
-      }),
-
-      table.column({
-        accessor: (a) => a.event_participant_id,
-        header: "Verify",
-        cell: ({value}) => {
-          return createRender(ButtonWrapper, {label: "Verify", click: () => {handleSwitchChange(value)}})
-        }
       })
-      
     ]);
 
     const { headerRows, pageRows, tableAttrs, tableBodyAttrs, pluginStates, flatColumns } = table.createViewModel(columns);
@@ -118,24 +109,6 @@
         ssopen = true;
     }
 
-    async function handleSwitchChange(id:number) {
-        currentParticipation = id;
-        open = true;
-
-    }
-
-    async function handleContinue(e:any) {
-        e.preventDefault();
-        const form = new FormData();
-        form.append("participationId", ""+currentParticipation);
-        const res = await fetch('?/verify', {
-            method: 'POST',
-            body: form
-        });
-        invalidateAll();
-        open = false;
-    }
-
     let limitSelected:Selected<number> = {
       value: data.limit,
       label: ""+data.limit
@@ -148,27 +121,6 @@
 </script>
 
 <main class="bg-white min-h-[90svh] text-black">
-  <div>
-      <AlertDialog.Root bind:open={open}>
-          <AlertDialog.Content>
-            <AlertDialog.Header>
-              <AlertDialog.Title>Are you absolutely sure?</AlertDialog.Title>
-              <AlertDialog.Description>
-                This will mark the entry as verified and will unlock new privileges to the participant. 
-                <p class="my-3"><span class="font-semibold">Warning : </span> This action is irreversible.</p>
-              </AlertDialog.Description>
-            </AlertDialog.Header>
-            <AlertDialog.Footer>
-              <AlertDialog.Cancel>
-                  <span class="text-black">Cancel</span>
-              </AlertDialog.Cancel>
-              <AlertDialog.Action>
-                  <Button on:click={handleContinue}>Continue</Button>
-              </AlertDialog.Action>
-            </AlertDialog.Footer>
-          </AlertDialog.Content>
-        </AlertDialog.Root>
-  </div>
   <div>  
       <Dialog.Root bind:open={ssopen}>
       <Dialog.Content>
@@ -211,7 +163,7 @@
             <Select.Item value="TH">TH</Select.Item>
           </Select.Content>
         </Select.Root>
-        <a href={"admin?page=1&limit="+data.limit+"&filter="+data.filter}>
+        <a href={"verified?page=1&limit="+data.limit+"&filter="+data.filter}>
           <Button>Apply</Button>
         </a>
         <DropdownMenu.Root>
@@ -271,7 +223,7 @@
         Total {data.count} records
       </div>
       <div class="flex items-center justify-center">
-        <a href={pageNumber > 1 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
+        <a href={data.pageNumber > 1 ? "verified?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
           <span class="material-symbols-outlined">
               chevron_left
           </span>
@@ -279,7 +231,7 @@
         <div class="">
             Page {data.pageNumber}/ {Math.ceil(data.count/data.limit)}
         </div>
-        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "admin?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
+        <a href="{data.pageNumber < Math.ceil(data.count/data.limit) ? "verified?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
             <span class="material-symbols-outlined">
                 chevron_right
             </span>
