@@ -131,7 +131,7 @@
 		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li>
 				<strong>Code Oracle:</strong>
-				This round features 25 multiple-choice questions focusing on predicting the output of code snippets.
+				This round features 30 multiple-choice questions focusing on predicting the output of code snippets.
 			</li>
 			<li>
 				<strong>Debug Duel:</strong>
@@ -139,7 +139,7 @@
 			</li>
 			<li>
 				<strong>Code Masters:</strong>
-				In this final round, you'll work on 4 coding problems over a 2-hour period.The top 2 participants
+				In this final round, you'll work on 4 coding problems over a 1hour and 30minutes period.The top 2 participants
 				will be declared winners.
 			</li>
 		</ul>
