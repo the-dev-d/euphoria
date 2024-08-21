@@ -67,7 +67,7 @@
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
 		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li>
-				<strong>Total Teams:</strong> Get ready for an epic showdown as 24 teams compete for the championship
+				<strong>Total Teams:</strong> Get ready for an epic showdown as 16 teams compete for the championship
 				title. Each team will bring their unique strategies and skills to the battlefield. Who will rise
 				to the top?
 			</li>
