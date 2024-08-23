@@ -85,7 +85,7 @@
                         <p class="text-red-400 text-xs">Password does not match</p>
                     {/if}
                 </div>
-                <p class="text-xs my-2">Please bring a Valid ID proof for verification.</p>
+                <p class="text-xs my-2">Please bring a valid institution or organization ID for entry.</p>
                 <div class="flex flex-col gap-2">
                     <Button  class=" bg-[#3BE4C4]" disabled={(nameError != undefined || emailError != undefined || phoneError != undefined || passwordError != undefined || password !== confirmPassword)} type="submit">Register</Button>
                     <p class="text-sm flex gap-3 mt-2"><span>Already Registered? </span> <a href="/respawn/streamersbattle/login" class="text-[#3BE4C4]">Login</a> </p>
