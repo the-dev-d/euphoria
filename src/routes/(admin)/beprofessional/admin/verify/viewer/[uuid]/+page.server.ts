@@ -1,5 +1,5 @@
 import { client } from "$lib/prisma/connection";
-import { redirect, type Actions } from "@sveltejs/kit";
+import { error, redirect, type Actions } from "@sveltejs/kit";
 import type { PageServerLoad } from "../../$types";
 
 export const load: PageServerLoad = async ({params}) => {
@@ -14,6 +14,12 @@ export const load: PageServerLoad = async ({params}) => {
             uuid
         }
     })
+
+    if(!participation) {
+        throw error(404, {
+            message: "participation not found"
+        })
+    }
 
     return {
         uuid,
