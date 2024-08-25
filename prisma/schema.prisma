@@ -52,7 +52,7 @@ model Event_participants{
   verified Boolean @default(false)
   event_payment Event_payment @relation(fields: [payment_id], references: [payment_id])
   payment_id Int
-
+  used Boolean @default(false)
   created_at DateTime @default(now())
 }
 
@@ -115,5 +115,6 @@ model Tickets {
   upi_transaction_id String?
   screenshot String?
   verified Boolean @default(false)
+  used Boolean @default(false)
   uuid String @unique
 }
