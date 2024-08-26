@@ -26,13 +26,13 @@
 		</h1>
 	</section>
 	<div
-		class="absolute bottom-[8%] gl:bottom-[15%] left-0 right-0 flex flex-col items-center justify-center text-white"
+		class="absolute bottom-[8%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[15%]"
 	>
 		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹11,000</h1>
-		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 26-AUG-24</h1>
+		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 28-AUG-24</h1>
 	</div>
 	<div
-		class="hidden gl:flex absolute bottom-0 left-0 right-0 flex-col items-center justify-center text-white"
+		class="absolute bottom-0 left-0 right-0 hidden flex-col items-center justify-center text-white gl:flex"
 	>
 		<p class="mb-2 text-sm font-semibold">Scroll down for more info</p>
 		<svg
@@ -116,6 +116,10 @@
 				<strong>Certificates:</strong> All participants will receive a participation certificate.
 			</li>
 			<li>
+				<strong>No Refunds:</strong> Once registered, there are no take-backs. Ensure you're ready for
+				the challenge before you commit!
+			</li>
+			<li>
 				<strong>Contact Information:</strong> For more details, please contact the event coordinators.
 			</li>
 		</ul>
@@ -170,7 +174,7 @@
 	</h1>
 
 	<article class="relative w-full p-5 gl:p-10">
-		<h2 class="mb-4 font-Ubuntu text-2xl uppercase text-white">Coordinators</h2>
+		<h2 class="font-Ubuntu mb-4 text-2xl uppercase text-white">Coordinators</h2>
 		<div class="grid grid-cols-1 gap-4">
 			<div>
 				<h3 class="text-lg font-semibold text-neon-violet">DHAIVATH LAL</h3>

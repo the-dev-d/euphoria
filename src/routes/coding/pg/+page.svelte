@@ -29,7 +29,7 @@
 		class="absolute bottom-[8%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[15%]"
 	>
 		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
-		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 26-AUG-24</h1>
+		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 28-AUG-24</h1>
 	</div>
 	<div
 		class="absolute bottom-1 left-0 right-0 hidden flex-col items-center justify-center text-white gl:flex"
@@ -116,6 +116,10 @@
 				<strong>Certificates:</strong> All participants will receive a participation e-certificate.
 			</li>
 			<li>
+				<strong>No Refunds:</strong> Once registered, there are no take-backs. Ensure you're ready for
+				the challenge before you commit!
+			</li>
+			<li>
 				<strong>Contact Information:</strong> For more details, please contact the event coordinators.
 			</li>
 		</ul>
@@ -127,7 +131,7 @@
 		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li>
 				<strong>Code Oracle:</strong>
-				This round features 25 multiple-choice questions focusing on predicting the output of code snippets.
+				This round features 30 multiple-choice questions focusing on predicting the output of code snippets.
 			</li>
 			<li>
 				<strong>Debug Duel:</strong>
@@ -135,7 +139,7 @@
 			</li>
 			<li>
 				<strong>Code Masters:</strong>
-				In this final round, you'll work on 4 coding problems over a 2-hour period.The top 2 participants
+				In this final round, you'll work on 4 coding problems over a 1hour and 30minutes period.The top 2 participants
 				will be declared winners.
 			</li>
 		</ul>
