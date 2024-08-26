@@ -1,36 +1,66 @@
 <script>
   import { onMount } from 'svelte';
   
-  let streamers = [
-    // { name: "VIPER ESSPORTS", youtubeUrl: "https://www.youtube.com/@ViPEREsSports", imageUrl: "/streamersimg/viper_esports.jpg" },
-    // { name: "DREAMER GAMING", youtubeUrl: "https://www.youtube.com/@DREAMERofficial", imageUrl: "/streamersimg/dreamer_gaming.jpg" },
-    // { name: "BLIND REBEL", youtubeUrl: "https://www.youtube.com/@BLINDRebeL", imageUrl: "/streamersimg/blind_rebel.jpg" },
-    // { name: "TXA GAMING", youtubeUrl: "https://www.youtube.com/@txagamingyt", imageUrl: "/streamersimg/txa_gaming.jpg" },
-    // { name: "GERMAN KANNAPPI", youtubeUrl: "https://youtube.com/@germankannapi5909", imageUrl: "/streamersimg/german_kannappi.jpg" },
-    // { name: "S3 GAMER", youtubeUrl: "https://www.youtube.com/@_S3GAMER_/videos", imageUrl: "/streamersimg/s3_gamer.jpg" },
-    // { name: "BOB GAMING", youtubeUrl: "https://youtube.com/@mrbobgaming864", imageUrl: "/streamersimg/bob_gaming.jpg" },
-    // { name: "MEN AT ARMS", youtubeUrl: "https://youtube.com/@menatarmsgaming", imageUrl: "/streamersimg/men_at_arms.jpg" },
-    // { name: "SHIBIN SHAN GAMING", youtubeUrl: "https://youtube.com/@shibinshan", imageUrl: "/streamersimg/shibin_shan_gaming.jpg" },
-    // { name: "STEVE", youtubeUrl: "https://youtube.com/@st3ve132", imageUrl: "/streamersimg/steve.jpg" }
-  ];
+  let streamers = [];
   
   onMount(() => {
-    // Add any necessary JavaScript for animations or interactivity
+    // JavaScript for animations or interactivity removed
   });
-  </script>
+</script>
 
-<main class="bg-[#0D1638]  text-white min-h-screen font-futuristic">
-    <header class="relative text-center h-screen flex items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 z-0">
+<main class="bg-[#0D1638] text-white min-h-screen font-futuristic">
+  <header class="relative text-center h-screen flex flex-col justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
         <img 
-          src="/images/forms/fggaming.jpg" 
-          alt="Event Banner" 
-          class="w-full h-full object-cover"
+            src="/images/forms/fggaming.jpg" 
+            alt="Event Banner" 
+            class="w-full h-full object-cover"
         />
         <div class="absolute inset-0 bg-black opacity-60"></div>
-        <!-- Add neon light effects here -->
-        <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-green-500/30 to-blue-500/30"></div>
+    </div>
+
+    <!-- Logo, Title, and Tournament Info -->
+    <div class="relative z-10 px-4 space-y-6 max-w-5xl mx-auto">
+        <div class="flex items-center justify-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8">
+            <img src="/images/forms/Logoc.png" alt="Euphoria Logo" class="w-16 sm:w-20 md:w-24"/>
+            <img src="/images/logos/Euphoria_Typeface-min.png" alt="Euphoria" class="w-48 max-w-xs md:max-w-md lg:max-w-lg"/>
+        </div>
+        <img src="/images/logos/RESP.png" alt="Respawn" class="w-full max-w-2xl mx-auto"/>
+        <p class="text-xl sm:text-2xl md:text-3xl text-yellow-400 font-bold tracking-wider px-4 py-2 rounded-full border-2 border-yellow-400 inline-block">
+            VALORANT LAN GAMING TOURNAMENT
+        </p>
+    </div>
+
+    <!-- Streamers Battle Roster -->
+    <div class="relative z-10 px-4 space-y-6 max-w-6xl mx-auto mt-4">
+      <h2 class="text-3xl font-semibold mb-3">MEET & GREET <span class="text-blue-400">THEM</span>...!!!</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="text-center w-1/4 sm:w-1/5 border-4 border-white rounded-lg overflow-hidden">
+            <img src="/images/streamersimg/Tuborg.png" alt="Chuck" class="w-full h-48 object-cover"/>
+            <p class="text-white mt-2 font-bold text-sm">BLIND TUBORG</p>
+        </div>
+        <div class="text-center w-1/4 sm:w-1/5 border-4 border-white rounded-lg overflow-hidden">
+            <img src="/images/streamersimg/viper.png" alt="TTigers" class="w-full h-48 object-cover"/>
+            <p class="text-white mt-2 font-bold text-sm">VIPER ESSPORTS</p>
+        </div>
+        <div class="text-center w-1/4 sm:w-1/5 border-4 border-white rounded-lg overflow-hidden">
+            <img src="/images/streamersimg/rayan.png" alt="Starting" class="w-full h-48 object-cover"/>
+            <p class="text-white mt-2 font-bold text-sm">SHIBINSHAN</p>
+        </div>
       </div>
+    </div>
+  </header>
+
+  <div class="container mx-auto px-4 py-16">
+    <section id="experience-centers" class="mb-16 text-center">
+      <h2 class="text-3xl font-semibold mb-3">EXPERIENCE <span class="text-blue-400">CENTERS</span></h2>
+      <p class="text-xl mb-8">DISCOVER OUR AMAZING EXPERIENCES</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative">
+          <img src="/images/experience/vr.jpg" alt="VR Experience" class="absolute inset-0 w-full h-full object-cover" />
+          <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+            VR EXPERIENCE
       <div class="relative z-10 px-4 space-y-8">
         <img src="/images/forms/Logoc.png" alt="Euphoria Logo" class="w-64 mx-auto mb-4"/>
         <h1 class="text-5xl md:text-7xl mb-8 font-valorant font-bold tracking-wider">EUPHORIA RESPAWN</h1>
@@ -39,34 +69,23 @@
           <a href="#ticket" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg inline-block">
             BOOK TICKET
           </a>
-          <a href="#meetthem" class="bg-purple-800 hover:bg-purple-900 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg inline-block">
-            KNOW MORE
+        </div>
+        <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative">
+          <img src="/images/experience/ps5.jpg" alt="PS5" class="absolute inset-0 w-full h-full object-cover" />
+          <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+            PS5
+          </a>
+        </div>
+        <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative">
+          <img src="/images/experience/ds.jpg" alt="Driving Simulator" class="absolute inset-0 w-full h-full object-cover" />
+          <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+            DRIVING SIMULATOR
           </a>
         </div>
       </div>
-    </header>
-  
-    <div class="container mx-auto px-4 py-16">
-      <section id="meetthem" class="mb-16 text-center">
-        <h2 class="text-3xl font-semibold mb-3">MEET & GREET <span class="text-blue-400">THEM</span>...!!!</h2>
-        <p class="text-xl mb-8">EPIC STREAMERS BATTLE</p>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {#each streamers as streamer}
-            <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative neon-border">
-              <img src={streamer.imageUrl} alt={streamer.name} class="absolute inset-0 w-full h-full object-cover" />
-              <a href={streamer.youtubeUrl} target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
-                {streamer.name}
-              </a>
-            </div>
-          {/each}
-        </div>
-      </section>
-  
-      <!-- <section class="mb-16">
-        <h2 class="text-3xl font-semibold mb-6">Event Details</h2>
-        Add event details content here-->  
-         <!--</section>-->
-    <section id="ticket" class="relative p-6 rounded-lg flex flex-row justify-between items-center mb-12 max-w-3xl mx-auto overflow-hidden">
+    </section>
+
+    <section id="ticket" class="relative p-6 rounded-lg flex flex-col items-center mb-12 max-w-3xl mx-auto overflow-hidden">
       <!-- Background Image with Overlay -->
       <div class="absolute inset-0 z-0">
           <img src="/images/agents/img.webp" alt="Background Image" class="w-full h-full object-cover"/>
@@ -74,63 +93,43 @@
       </div>
       
       <!-- Content with Text Stroke -->
-      <div class="relative z-10 text-white flex-grow">
-          <h3 class="text-3xl font-bold mb-2 stroke-black">EUPHORIA RESPAWN</h3>
-          <p class="text-lg stroke-black">Rajagiri Sports and Cultural Centre</p>
-          <p class="text-lg stroke-black">Rajagiri College of Social Sciences</p>
-          <p class="text-2xl font-bold mt-4 stroke-black">31.08.2024</p>
-          <p class="text-lg stroke-black">DOOR OPEN: 9:AM</p>
-          <p class="text-xl font-bold mt-4 stroke-black">Ticket Price</p>
-          <p class="text-4xl font-bold stroke-black">129 INR</p>
+      <div class="relative z-10 text-white text-center">
+          <h3 class="text-3xl font-bold mb-2">EUPHORIA RESPAWN</h3>
+          <p class="text-lg">Rajagiri Sports and Cultural Centre</p>
+          <p class="text-lg">Rajagiri College of Social Sciences</p>
+          <p class="text-2xl font-bold mt-4">31.08.2024</p>
+          <p class="text-lg">DOOR OPENS AT 9 AM</p>
+          <p class="text-xl font-bold mt-4">Ticket Price</p>
+          <p class="text-4xl font-bold">129 INR</p>
+          <ul class="mt-4 text-lg font-semibold text-yellow-400 list-disc list-inside">
+            <li>Bring a valid institution or organization ID for entry.</li>
+            <li>Rajagiri students receive special benefits.</li>
+          </ul>
       </div>
-  
-  </section>
-  
+    </section>
 
-      <div class="text-center mb-8">
-        <p class="text-lg mb-2">In Association with</p>
-        <img src="/images/logos/akef-logo.png" alt="AKEF Logo" class="h-12 mx-auto"/>
-      </div>
-  
+    <div class="text-center mb-8">
+      <p class="text-lg mb-2">In Association with</p>
+      <img src="/images/logos/akef-logo.png" alt="AKEF Logo" class="h-12 mx-auto"/>
+    </div>
+
+    <div class="text-center space-y-4">
+   
       <a href="/respawn/streamersbattle/register">
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full block mx-auto transition duration-300 text-xl neon-button">
-          Enter Now
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 text-xl">
+          Book Now
         </button>
       </a>
     </div>
-  </main>
+  </div>
+</main>
 
 <style lang="postcss">
   .font-futuristic {
     font-family: 'Arial', sans-serif; /* Replace with your futuristic font */
   }
 
-  .neon-text {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-  }
-
-  .neon-text-blue {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00f, 0 0 35px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 75px #00f;
-  }
-
-  .neon-text-green {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0f0, 0 0 35px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 75px #0f0;
-  }
-
-  .neon-text-orange {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffa500, 0 0 35px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 75px #ffa500;
-  }
-
   .neon-border {
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de;
-  }
-
-  .neon-button {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00f, 0 0 35px #00f, 0 0 40px #00f;
-    transition: all 0.3s ease;
-  }
-
-  .neon-button:hover {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f0f, 0 0 35px #f0f, 0 0 40px #f0f;
   }
 </style>

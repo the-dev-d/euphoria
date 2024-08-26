@@ -29,7 +29,7 @@
 		class="absolute bottom-[8%] left-0 right-0 flex flex-col items-center justify-center text-white gl:bottom-[15%]"
 	>
 		<h1 class="fugaz-one-regular mb-2 text-2xl font-bold gl:text-6xl">PRIZE POOL : ₹10,000</h1>
-		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 26-AUG-24</h1>
+		<h1 class="fugaz-one-regular mb-2 text-sm font-bold gl:text-3xl">Register Before: 28-AUG-24</h1>
 	</div>
 	<div
 		class="absolute bottom-1 left-0 right-0 hidden flex-col items-center justify-center text-white gl:flex"
@@ -59,11 +59,9 @@
 
 	<article class="relative w-full p-5 gl:p-10">
 		<p class="relative block font-sans text-sm gl:text-xl">
-			In the web designing competition, participants will engage in a series of three creative
+			In the web designing competition, participants will engage in a series of 
 			rounds. First, they will tackle a quiz designed to test their knowledge of modern web design
-			principles and trends. Next, they will modernize an old website, applying contemporary design
-			practices to enhance its functionality and aesthetics. Finally, participants will create a new
-			website based on a given topic, showcasing their ability to translate a theme into a visually
+			principles and trends. Next, they will create a new website based on a given topic, showcasing their ability to translate a theme into a visually
 			appealing and user-friendly design. Each round emphasizes creativity, innovation, and
 			effective application of design concepts.
 		</p>
