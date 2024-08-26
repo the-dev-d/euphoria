@@ -132,7 +132,7 @@
                                 accept=".jpg, .jpeg, .png"
                                 type="file"
                                 name="payment-screenshot"
-                                class="w-full px-3 py-2 border bg-white/10 border border-[#63BDC2] rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#D4566C] file:text-white hover:file:bg-[#63BDC2]"
+                                class="w-full h-full px-3 py-2 border bg-white/10  border-[#63BDC2] rounded-lg text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#D4566C] file:text-white hover:file:bg-[#63BDC2]"
                                 />
                                 {#if fileError}
                                     <p class="text-[#D4566C] text-xs mt-1">{fileError}</p>

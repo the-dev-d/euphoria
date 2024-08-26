@@ -4,7 +4,6 @@ import { writeFileSync } from 'fs';
 export const ssr = false;
 export const load = async ({locals}) => {
 
-    console.log(locals)
     if(!locals.viewer) {
         console.log("not view")
         throw redirect(307, "/respawn/streamersbattle")

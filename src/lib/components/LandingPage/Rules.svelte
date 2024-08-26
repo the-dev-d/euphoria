@@ -67,7 +67,7 @@
 	<article class="relative w-full overflow-hidden p-5 gl:p-10">
 		<ul class="mx-5 list-disc space-y-4 font-sans text-sm text-white gl:text-xl">
 			<li>
-				<strong>Total Teams:</strong> Get ready for an epic showdown as 24 teams compete for the championship
+				<strong>Total Teams:</strong> Get ready for an epic showdown as 16 teams compete for the championship
 				title. Each team will bring their unique strategies and skills to the battlefield. Who will rise
 				to the top?
 			</li>
@@ -78,7 +78,7 @@
 			</li>
 			<li>
 				<strong>Preliminaries:</strong> Mark your calendars! The preliminary rounds kick off on August
-				21st, running from 10 am to 6 pm. Expect a full day of action-packed matches as teams vie for
+				25th, running from 10 am to 6 pm. Expect a full day of action-packed matches as teams vie for
 				a spot in the next stage.
 			</li>
 			<li>

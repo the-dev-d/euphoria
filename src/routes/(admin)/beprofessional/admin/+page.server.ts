@@ -1,22 +1,28 @@
 import { client } from "$lib/prisma/connection";
-import type { Actions } from "@sveltejs/kit";
+import { redirect, type Actions } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async ({url, depends}) => {
 
-
     depends("database");
-    let pageNumber = Number(url.searchParams.get('page')) || 0;
+    let pageNumber = Number(url.searchParams.get('page')) || 1;
 
     let limit = Number(url.searchParams.get('limit') || 10);
+    const filter = String(url.searchParams.get('filter') || "");
+
     if(limit < 0)
         limit = 10;
 
+    const where = {
+        verified: false,
+    };
+
+    if(filter) {
+        where.event_code = filter
+    }
     
     const count = await client.event_participants.count({
-        where: {
-            verified: false,
-        }
+        where
     });
 
     if(pageNumber > Math.ceil(count/limit)) {
@@ -26,27 +32,30 @@ export const load: PageServerLoad = async ({url, depends}) => {
     if(pageNumber < 1)
         pageNumber = 1;
 
-    const participations = await client.event_participants.findMany({
+    let participations = await client.event_participants.findMany({
+
         take: limit,
         include: {
             participant: true,
-
             event_payment: true
         },
         skip: (pageNumber-1) * limit,
         orderBy: {
             created_at: "asc"
         },
-        where: {
-            verified: false
-        }
+        where
+    })
+    participations = participations.map(p=> {
+        delete p.participant.password;
+        return p;
     })
 
     return {
         participations,
         pageNumber,
         limit,
-        count
+        count,
+        filter: ""
     }
 }
 
@@ -84,6 +93,19 @@ export const actions = {
                 success: false,
             }
         }
+    },
+
+    logout: async({cookies}) => {
+
+        cookies.delete('admin', {
+            path: '/',
+            httpOnly: true,
+            sameSite: 'strict',
+            secure: false, //TODO : to be changed,
+            maxAge: 60 * 60 * 24 * 3
+        });
+
+        throw redirect(302, "/");
     }
     
 } satisfies Actions;

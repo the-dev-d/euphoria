@@ -61,6 +61,13 @@
           <img src="/images/experience/vr.jpg" alt="VR Experience" class="absolute inset-0 w-full h-full object-cover" />
           <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
             VR EXPERIENCE
+      <div class="relative z-10 px-4 space-y-8">
+        <img src="/images/forms/Logoc.png" alt="Euphoria Logo" class="w-64 mx-auto mb-4"/>
+        <h1 class="text-5xl md:text-7xl mb-8 font-valorant font-bold tracking-wider">EUPHORIA RESPAWN</h1>
+        <p class="text-2xl mb-8 neon-text-blue">VALORANT LAN GAMING TOURNAMENT</p>
+        <div class="flex flex-col gl:flex-row gap-4 justify-center items-center">
+          <a href="#ticket" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg inline-block">
+            BOOK TICKET
           </a>
         </div>
         <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative">

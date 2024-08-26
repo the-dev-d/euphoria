@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { base } from '$app/paths';
     import { qr } from '@svelte-put/qr/svg';
 
+    console.log(base)
     export let data;
 </script>
 
@@ -26,7 +28,7 @@
                  {#each data.verified as verified}
                     <svg
                     use:qr={{
-                        data: `https://euphoria.rlabz.in/verify/` + verified.event_payment.uuid,
+                        data: `https://euphoria.rlabz.in/beprofessional/admin/verify/` + verified.event_payment.uuid,
                         logo: '/images/logos/euphoria.png',
                         shape: 'circle',
                     }}

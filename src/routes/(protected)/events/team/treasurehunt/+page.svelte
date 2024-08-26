@@ -119,7 +119,8 @@
 	>
 		<div class="p-4 text-xs">
 			<ul class="list-disc">
-				<li>4 Players including leader</li>
+				<li>Add your 3 team members</li>
+				<li>No need to add leader again</li>
 				<li>None of the members should be leader or member of other Treasure Hunt</li>
 				<li>Any violation of terms & conditions will lead to disqualification with no refunds</li>
 			</ul>

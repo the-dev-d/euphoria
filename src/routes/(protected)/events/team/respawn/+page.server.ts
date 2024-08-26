@@ -1,4 +1,4 @@
-import { connection } from "$lib/prisma/connection";
+import { client, connection } from "$lib/prisma/connection";
 import { DiscordIdSchema, GamerSchema, RiotIdSchema, TeamNameSchema, TransactionSchema } from "$lib/zod/types";
 import { error, redirect, type Actions } from "@sveltejs/kit";
 import { unlinkSync, writeFileSync } from "fs";
@@ -12,6 +12,16 @@ export const load:PageServerLoad = async ({locals}) => {
     const events = res.map(e => e.event_code);
     
     if(events.includes("RP")) {
+        throw redirect(301, "/dashboard")
+    }
+
+    const count = await client.event_participants.count({
+        where: {
+            event_code: "RP"
+        }
+    });
+
+    if(count >= 16) {
         throw redirect(301, "/dashboard")
     }
 }
