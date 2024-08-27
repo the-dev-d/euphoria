@@ -41,7 +41,7 @@
 				<img src="/images/sponsers/Federal_Bank_Logo.png" alt="Federal Bank" class="h-24 md:h-32">
 			</div>
 			<div class="flex flex-col items-center justify-end relative z-10"> <!-- Ensure images are on top -->
-				<img src="/images/sponsers/double_hourse.png" alt="Double House" class="h-24 md:h-32"> <!-- Adjusted height for consistency -->
+				<img src="/images/sponsers/double_hourse.png" alt="Double House" class="h-32 md:h-48 sm:h-24"> <!-- Adjusted height for consistency -->
 			</div>
 		</div>
 	</div>
