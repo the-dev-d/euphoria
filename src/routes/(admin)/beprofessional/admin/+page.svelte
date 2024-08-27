@@ -271,7 +271,7 @@
         Total {data.count} records
       </div>
       <div class="flex items-center justify-center">
-        <a href={pageNumber > 1 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
+        <a href={pageNumber > 1 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : "" + data.filter ? "&filter=" + data.filter : ""} class="p-1 border mx-4 flex">
           <span class="material-symbols-outlined">
               chevron_left
           </span>
@@ -279,7 +279,7 @@
         <div class="">
             Page {data.pageNumber}/ {Math.ceil(data.count/data.limit)}
         </div>
-        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "admin?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
+        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "admin?page="+(data.pageNumber + 1)+"&limit="+data.limit : "" + data.filter ? "&filter=" + data.filter : ""}" class="p-1 border mx-4 flex">
             <span class="material-symbols-outlined">
                 chevron_right
             </span>

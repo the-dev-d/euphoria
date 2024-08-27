@@ -56,8 +56,6 @@
 
   <div class="container mx-auto px-4 py-16">
       <div class="relative z-10 px-4 space-y-8">
-       
-
         <section id="experience-centers" class="mb-16 text-center">
           <h2 class="text-3xl font-semibold mb-3">EXPERIENCE <span class="text-blue-400">CENTERS</span></h2>
           <p class="text-xl mb-8">DISCOVER OUR AMAZING EXPERIENCES</p>
@@ -118,8 +116,10 @@
             </button>
           </a>
         </div>
-      </div>
-  </div>
+    <section id="experience-centers" class="mb-16 text-center">
+      <h2 class="text-3xl font-semibold mb-3">EXPERIENCE <span class="text-blue-400">CENTERS</span></h2>
+      <p class="text-xl mb-8">DISCOVER OUR AMAZING EXPERIENCES</p>
+    </section>
 </main>
 
 <style lang="postcss">
