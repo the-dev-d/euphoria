@@ -83,11 +83,11 @@
 					>KNOW MORE</a
 				>
 			</div>
-			<div class="mt-2 text-center">
+			<div class="mt-2 text-center sm:bg-transparent bg-black bg-opacity-10">
 				<h2 class="font-fugaz text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase mb-2">
-					WITNESS THE <span class="text-pink-500">IMPACT</span>
+					WITNESS THE <span class="text-red-500">IMPACT</span>
 				</h2>
-				<p class="font-valorant text-base sm:text-lg md:text-xl text-pink-900 brightness-200 mb-4">
+				<p class="font-valorant text-base sm:text-lg md:text-xl text-red-800 brightness-200 mb-4">
 					<span class="flicker-fast">#</span><span class="flicker-slowxl">STREAMERS</span><span class="flicker-slow">BATTLE</span>
 				</p>
 				<a
@@ -98,9 +98,10 @@
 					<span> </span>
 					<span> </span>
 					<span> </span>
-					<span class="font-fugas mb-2">BOOK YOUR TICKETS NOW</span>
+					<span class="font-fugas mb-2 text-bold block">BOOK YOUR TICKETS NOW</span>
 				</a>
 			</div>
+			
 		</div>
 	</section>
 </section>
@@ -111,6 +112,10 @@
 	.mybtn {
 		position: relative;
 		overflow: hidden;
+
+		@apply bg-red-400 bg-opacity-30 sm:bg-opacity-0 sm:bg-transparent;
+	
+		
 	}
 
 	.mybtn span:nth-child(1) {
@@ -119,7 +124,7 @@
 		right: 0;
 		width: 100%;
 		height: 3px;
-		background: linear-gradient(to right, #831843, rgba(244, 114, 182, 0.5));
+		background: linear-gradient(to right, #ff0000, rgba(252, 58, 58, 0.5));
 		animation: animate1 4s linear infinite;
 	}
 
@@ -138,7 +143,7 @@
 		right: 0;
 		height: 100%;
 		width: 3px;
-		background: linear-gradient(to right, #831843, rgba(244, 114, 182, 0.5));
+		background: linear-gradient(to right, #ff0000, rgba(252, 58, 58, 0.5));
 		animation: animate2 4s linear infinite;
 		animation-delay: 2s;
 	}
@@ -157,7 +162,7 @@
 		right: 0;
 		width: 100%;
 		height: 3px;
-		background: linear-gradient(to right, #831843, rgba(244, 114, 182, 0.5));
+		background: linear-gradient(to right, #ff0000, rgba(252, 58, 58, 0.5));
 		animation: animate3 4s linear infinite;
 	}
 
@@ -176,7 +181,7 @@
 		left: 0;
 		height: 100%;
 		width: 3px;
-		background: linear-gradient(to right, #831843, rgba(244, 114, 182, 0.5));
+		background: linear-gradient(to right, #ff0000, rgba(252, 58, 58, 0.5));
 		animation: animate4 4s linear infinite;
 		animation-delay: 2s;
 	}
@@ -232,5 +237,11 @@
 	.btn-neon {
 		@apply bg-neon-violet bg-opacity-10 text-white hover:bg-opacity-20 hover:scale-105;
 	}
+
+	@media (max-width: 640px) { /* Targeting mobile devices */
+  .mybtn span .font-fugas {
+    font-size: 1.25rem; /* Adjust the size as needed for mobile view */
+  }
+}
 	
 </style>
