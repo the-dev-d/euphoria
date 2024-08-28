@@ -83,24 +83,6 @@
 					>KNOW MORE</a
 				>
 			</div>
-			<div class="mt-2 text-center sm:bg-transparent bg-black bg-opacity-10">
-				<h2 class="font-fugaz text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase mb-2">
-					WITNESS THE <span class="text-red-500">IMPACT</span>
-				</h2>
-				<p class="font-valorant text-base sm:text-lg md:text-xl text-red-800 brightness-200 mb-4">
-					<span class="flicker-fast">#</span><span class="flicker-slowxl">STREAMERS</span><span class="flicker-slow">BATTLE</span>
-				</p>
-				<a
-					href="/respawn/streamersbattle"
-					class="mybtn tex mb-2 mx-auto grid w-10/12 place-items-center py-4 text-center text-xs text-white hover:scale-105 hover:bg-neon-violet hover:bg-opacity-10 sm:w-8/12 md:w-7/12 lg:w-6/12"
-				>
-					<span> </span>
-					<span> </span>
-					<span> </span>
-					<span> </span>
-					<span class="font-fugas mb-2 text-bold block">BOOK YOUR TICKETS NOW</span>
-				</a>
-			</div>
 			
 		</div>
 	</section>

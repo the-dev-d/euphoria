@@ -76,7 +76,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
+	<!-- <div class="relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
 		<h1
 			class="relative mt-20 text-center font-fugaz text-2xl uppercase text-white md:text-4xl gl:mx-10 gl:text-6xl"
 		>
@@ -99,7 +99,7 @@
 			<span> </span>
 			<span class="font-fugas mb-4">BOOK YOUR TICKETS NOW</span></a
 		>
-	</div>
+	</div> -->
 </section>
 
 <style lang="postcss">

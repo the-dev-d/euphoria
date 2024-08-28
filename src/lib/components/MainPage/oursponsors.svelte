@@ -1,9 +1,15 @@
-<section class="relative w-full min-h-auto bg-[#030812] p-4 md:p-8 text-white overflow-hidden">
-	<div class="absolute inset-0 overflow-hidden">
-		<div class="absolute -left-1/4 -top-1/4 w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-pink-500 to-purple-500 opacity-20 blur-3xl z-0"></div>
-		<div class="absolute -right-1/4 -bottom-1/4 w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-blue-500 to-teal-500 opacity-20 blur-3xl z-0"></div>
-		<div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-yellow-500 to-red-500 opacity-20 blur-3xl z-0"></div>
-	</div>
+<section class="mt-10 min-h-auto relative w-full overflow-hidden bg-[#030812] p-4 text-white md:p-8">
+	<!-- <div class="absolute inset-0 overflow-hidden">
+		<div
+			class="absolute -left-1/4 -top-1/4 z-0 h-[1000px] w-[1000px] rounded-full bg-gradient-to-r from-pink-500 to-purple-500 opacity-20 blur-3xl"
+		></div>
+		<div
+			class="absolute -bottom-1/4 -right-1/4 z-0 h-[1000px] w-[1000px] rounded-full bg-gradient-to-r from-blue-500 to-teal-500 opacity-20 blur-3xl"
+		></div>
+		<div
+			class="absolute left-1/2 top-1/2 z-0 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-yellow-500 to-red-500 opacity-20 blur-3xl"
+		></div>
+	</div> -->
 	<!-- Schedule Section -->
 	<!-- Uncomment and use as needed -->
 	<!-- <div class="relative z-10 max-w-4xl mx-auto">
@@ -29,19 +35,37 @@
 			{/each}
 		</div>
 	</div> -->
-	
-	<!-- Sponsors Section -->
-	<h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">Special thanks to our sponsors</h1>
 
-	<div class="space-y-12 mb-8">
+	<!-- Sponsors Section -->
+	<h1 class="mb-12 text-center text-4xl font-extrabold font-valorant text-white md:text-5xl">
+		Special thanks to our <span class=" text-btn-main">sponsors</span>
+	</h1>
+
+	<div class="mb-8 space-y-12">
 		<!-- Banking Partner -->
 		<div class="flex flex-wrap justify-center gap-8">
-			<div class="flex flex-col items-center justify-end relative z-10"> <!-- Ensure images are on top -->
-				<h2 class="text-xl md:text-2xl font-bold text-center mb-2 text-white">BANKING PARTNER</h2>
-				<img src="/images/sponsers/Federal_Bank_Logo.png" alt="Federal Bank" class="h-24 md:h-32">
+			<div class="relative z-10 flex flex-col items-center justify-end">
+				<!-- Ensure images are on top -->
+				<h2 class="mb-2 text-center text-xl font-bold text-white md:text-2xl">BANKING PARTNER</h2>
+				<img src="/images/sponsers/Federal_Bank_Logo.png" alt="Federal Bank" class="h-24 md:h-32" />
 			</div>
-			<div class="flex flex-col items-center justify-end relative z-10"> <!-- Ensure images are on top -->
-				<img src="/images/sponsers/double_hourse.png" alt="Double House" class="h-32 md:h-48 sm:h-24"> <!-- Adjusted height for consistency -->
+			<div class="relative z-10 flex flex-col items-center justify-end">
+				<!-- Ensure images are on top -->
+				<img
+					src="/images/sponsers/double_hourse.png"
+					alt="Double House"
+					class="h-32 sm:h-24 md:h-48"
+				/>
+				<!-- Adjusted height for consistency -->
+			</div>
+			<div class="relative z-10 flex flex-col items-center justify-end">
+				<!-- Ensure images are on top -->
+				<img
+					src="/images/sponsers/CSL.png"
+					alt="Cochin Ship"
+					class="h-32 sm:h-24 md:h-48"
+				/>
+				<!-- Adjusted height for consistency -->
 			</div>
 		</div>
 	</div>

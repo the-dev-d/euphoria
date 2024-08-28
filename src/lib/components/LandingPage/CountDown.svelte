@@ -44,7 +44,7 @@
 	<div class=" hidden gl:flex bg-counter w-full items-center justify-start gap-10 bg-opacity-70 z-[-1]">
 		<h1 class="ml-20 text-6xl font-bold text-white">IN</h1>
 		<time class="h-full w-2/3 text-white grid grid-cols-8 p-3 place-items-center font-bold text-6xl">
-			<div class="flex flex-col justify-center items-center gap-4">
+			<div class="flex flex-col justify-center items-center gap-4 text-red-700 animate-pulse">
 				<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-3xl">Days</div>
 			</div>
@@ -79,7 +79,7 @@
 		<time
 			class="h-full w-full text-white grid grid-cols-7 place-items-center font-bold text-4xl p-3"
 		>
-			<div class="grid grid-rows-2 place-items-center">
+			<div class="grid grid-rows-2 place-items-center text-red-700 animate-pulse">
 				<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
 				<div class="font-valorant text-base">Days</div>
 			</div>
