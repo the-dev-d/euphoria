@@ -5,7 +5,7 @@
    
 <main class="container mx-auto mt-6">
     {#each data.teams as team}
-        <h3 class="font-semibold">TEAM NAME : {team.team_name}</h3>
+        <h3 class="font-semibold mt-6">TEAM NAME : {team.team_name}</h3>
         <Table.Root>
             <Table.Header>
             <Table.Row>
