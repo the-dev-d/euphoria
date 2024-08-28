@@ -158,7 +158,7 @@
                         <svg
                         class="w-2/3 mx-auto"
                             use:qr={{
-                                data: `https://euphoria.rlabz.in/verify/viewer/` + data.ticket.uuid,
+                                data: `https://euphoria.rlabz.in/beprofessional/admin/verify/viewer/` + data.ticket.uuid,
                                 logo: '/images/logos/euphoria.png',
                                 shape: 'circle',
                             }}
