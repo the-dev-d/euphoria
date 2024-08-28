@@ -25,8 +25,23 @@ export const load: PageServerLoad = async ({params}) => {
         })
     }
 
+    const th = participation.participation.filter(p => p.event_code === "TH");
+    let team = null;
+
+    if(th && th.length) {
+        team = await client.teams.findFirst({
+            include: {
+                Team_members: true
+            },
+            where: {
+                leader_id: th[0].participant_id
+            }
+        })
+    }
+   
     return {
         uuid,
+        team,
         participation: participation?.participation,
         participant: participation?.participation[0].participant
     }

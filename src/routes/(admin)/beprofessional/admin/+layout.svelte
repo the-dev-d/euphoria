@@ -32,6 +32,7 @@
             <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/verified") }}>Verified</Button>
             <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/tickets") }}>Tickets</Button>
             <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/tickets-approved") }}>Tickets Approved</Button>
+            <Button class="text-black" variant="outline" on:click={() => { open=false; goto("/beprofessional/admin/treasure-hunt") }}>Treasure Hunt</Button>
           </Sheet.Close>
         </div>
       </Sheet.Content>

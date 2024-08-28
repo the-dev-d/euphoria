@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import Button from "$lib/shardcn/ui/button/button.svelte";
     import { Badge } from "$lib/shardcn/ui/badge";
-    
+    import * as Table from "$lib/shardcn/ui/table/index";    
 
     export let data;
 
@@ -55,5 +55,29 @@
         {/each}
     </div>
 
-    <!-- {JSON.stringify(data)} -->
+    {#if data.team}
+        <div class="mt-6">
+            <h3 class="font-semibold">TEAM NAME : {data.team.team_name}</h3>
+        <Table.Root>
+            <Table.Header>
+            <Table.Row>
+                <Table.Head>Name</Table.Head>
+                <Table.Head>Email</Table.Head>
+                <Table.Head>Phone</Table.Head>
+            </Table.Row>
+            </Table.Header>
+            <Table.Body>
+            {#each data.team.Team_members as member}
+                <Table.Row>
+                    <Table.Cell>{member.name}</Table.Cell>
+                    <Table.Cell>{member.email}</Table.Cell>
+                    <Table.Cell>{member.phone}</Table.Cell>
+                </Table.Row>
+            {/each}
+            </Table.Body>
+        </Table.Root>
+        </div>
+    {/if}
+
+    <!-- {JSON.stringify(data.team)} -->
 </main>

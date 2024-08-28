@@ -23,7 +23,7 @@
             </div>
         </div>
         <div>
-            <div class="container max-w-96">
+            <div class="container max-w-[25rem]">
                 <!-- {`https://euphoria.rlabz.in/verify/` + data.verified[0].event_payment.uuid} -->
                  {#each data.verified as verified}
                     <svg
@@ -33,6 +33,7 @@
                         shape: 'circle',
                     }}
                     />
+                    <p class="text-nowrap text-center">{verified.event_payment.uuid}</p>
                  {/each}
             </div>              
         </div>
