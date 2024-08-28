@@ -178,7 +178,7 @@
             <Select.Item value="50">50</Select.Item>
           </Select.Content>
         </Select.Root>
-        <a href={"admin?page=1&limit="+data.limit+"&filter="+data.filter}>
+        <a href={"tickets?page=1&limit="+data.limit+"&filter="+data.filter}>
           <Button>Apply</Button>
         </a>
         <DropdownMenu.Root>
@@ -238,7 +238,7 @@
         Total {data.count} records
       </div>
       <div class="flex items-center justify-center">
-        <a href={pageNumber > 1 ? "admin?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
+        <a href={pageNumber > 1 ? "tickets?page="+(data.pageNumber - 1)+"&limit="+data.limit : ""} class="p-1 border mx-4 flex">
           <span class="material-symbols-outlined">
               chevron_left
           </span>
@@ -246,7 +246,7 @@
         <div class="">
             Page {data.pageNumber}/ {Math.ceil(data.count/data.limit)}
         </div>
-        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "admin?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
+        <a href="{pageNumber < Math.ceil(data.count/data.limit) ? "tickets?page="+(data.pageNumber + 1)+"&limit="+data.limit : ""}" class="p-1 border mx-4 flex">
             <span class="material-symbols-outlined">
                 chevron_right
             </span>
