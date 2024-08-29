@@ -12,8 +12,8 @@
 <Banner authenticated={data.authenticated == true} />
 <CountDown />
 <About />
-<Events />
 <Oursponsors/>
+<Events />
 
 <style>
 </style>
