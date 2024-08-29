@@ -37,6 +37,9 @@
 				<strong>Finals:</strong> The finals will be conducted as a LAN tournament. All participants must be physically present at the designated venue for the competition.
 			</li>
 			<li>
+				<strong>Finalists Confirmation:</strong> Finalists must confirm their presence for the event on the 31st by informing the event coordinator no later than 11:00 PM on August 29th.
+			</li>
+			<li>
 				<strong>Reporting:</strong> Participants are required to submit their final reports no later than two days before the event, specifically by the 30th of the month. Failure to comply may result in disqualification.
 			</li>
 			<li>
