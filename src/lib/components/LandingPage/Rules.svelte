@@ -34,6 +34,12 @@
 				keep your opponents waiting!
 			</li>
 			<li>
+				<strong>Finals:</strong> The finals will be conducted as a LAN tournament. All participants must be physically present at the designated venue for the competition.
+			</li>
+			<li>
+				<strong>Reporting:</strong> Participants are required to submit their final reports no later than two days before the event, specifically by the 30th of the month. Failure to comply may result in disqualification.
+			</li>
+			<li>
 				<strong>Streaming and Recording:</strong> Matches may be streamed and recorded by the event organizers.
 				By participating, you agree to be featured in any event-related media. Showcase your skills to
 				the world!
