@@ -14,7 +14,7 @@
 </svelte:head>
 
 <Banner />
-<div class="sm:3xl mb-10 bg-[#fa4454] text-center font-valorant text-2xl gl:text-6xl">
+<div class="sm:3xl my-10 bg-[#fa4454] text-center font-valorant text-2xl gl:text-6xl">
 	<h3 class="mt-3 flex items-center justify-center">REGISTRATIONS: {data.count}/16</h3>
 </div>
 <About />

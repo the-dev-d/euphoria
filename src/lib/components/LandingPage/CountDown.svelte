@@ -3,6 +3,7 @@
 
 	let targetDate = new Date('2024-08-31T00:00:00');
 	let timeRemaining = calculateTimeRemaining(targetDate);
+	let isTimeUp = false;
 
 	function calculateTimeRemaining(target) {
 		const now = new Date();
@@ -28,6 +29,7 @@
 			timeRemaining.seconds <= 0
 		) {
 			clearInterval(timerInterval);
+			isTimeUp = true;
 		}
 	}
 
@@ -39,72 +41,92 @@
 </script>
 
 <section
-	class="absolute top-0 left-0 w-full h-full content-end grid grid-rows-2 grid-cols-none gl:grid-cols-1 gl:grid-rows-none" 
+	class="absolute left-0 top-0 grid h-full w-full grid-cols-none grid-rows-2 content-end gl:grid-cols-1 gl:grid-rows-none"
 >
-	<div class=" hidden gl:flex bg-counter w-full items-center justify-start gap-10 bg-opacity-70 z-[-1]">
-		<h1 class="ml-20 text-6xl font-bold text-white">IN</h1>
-		<time class="h-full w-2/3 text-white grid grid-cols-8 p-3 place-items-center font-bold text-6xl">
-			<div class="flex flex-col justify-center items-center gap-4 text-red-700 animate-pulse">
-				<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-3xl">Days</div>
+	<div
+		class=" z-[-1] hidden w-full items-center justify-start gap-10 bg-counter bg-opacity-70 gl:flex"
+	>
+		{#if !isTimeUp}
+			<h1 class="ml-20 text-6xl font-bold text-white">IN</h1>
+			<time
+				class="grid h-full w-2/3 grid-cols-8 place-items-center p-3 text-6xl font-bold text-white"
+			>
+				<div class="flex animate-pulse flex-col items-center justify-center gap-4 text-red-700">
+					<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-3xl">Days</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>:</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>{timeRemaining.hours.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-3xl">Hours</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>:</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>{timeRemaining.minutes.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-3xl">Minutes</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>:</div>
+				</div>
+				<div class="flex flex-col items-center justify-center gap-4">
+					<div>{timeRemaining.seconds.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-3xl">Seconds</div>
+				</div>
+			</time>
+		{:else}
+			<div
+				class=" w-full py-4 text-left px-20 font-valorant text-xl font-bold uppercase text-white gl:text-5xl"
+			>
+				It's go time! Welcome to <span class=" text-red-500 drop-shadow-2xl">RESPAWN!</span>
 			</div>
-			<div class="flex flex-col justify-center items-center gap-4 ">
-				<div>:</div>
-			</div>
-			<div class="flex flex-col justify-center items-center gap-4">
-				<div>{timeRemaining.hours.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-3xl">Hours</div>
-			</div>
-			<div class="flex flex-col justify-center items-center gap-4 ">
-				<div>:</div>
-			</div>
-			<div class="flex flex-col justify-center items-center gap-4 ">
-				<div>{timeRemaining.minutes.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-3xl">Minutes</div>
-			</div>
-			<div class="flex flex-col justify-center items-center gap-4 ">
-				<div>:</div>
-			</div>
-			<div class="flex flex-col justify-center items-center gap-4 ">
-				<div>{timeRemaining.seconds.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-3xl">Seconds</div>
-			</div>
-		</time>
+		{/if}
 	</div>
 	<div></div>
 	<div
-		class=" relative flex flex-col gl:hidden bg-counter backdrop-brightness-50 h-full w-full justify-center items-center bg-opacity-20 pt-5"
+		class=" relative flex h-full w-full flex-col items-center justify-center bg-counter bg-opacity-20 pt-5 backdrop-brightness-50 gl:hidden"
 	>
-		<h1 class="text-4xl font-bold text-white">IN</h1>
-		<time
-			class="h-full w-full text-white grid grid-cols-7 place-items-center font-bold text-4xl p-3"
-		>
-			<div class="grid grid-rows-2 place-items-center text-red-700 animate-pulse">
-				<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-base">Days</div>
+		{#if !isTimeUp}
+			<h1 class="text-4xl font-bold text-white">IN</h1>
+			<time
+				class="grid h-full w-full grid-cols-7 place-items-center p-3 text-4xl font-bold text-white"
+			>
+				<div class="grid animate-pulse grid-rows-2 place-items-center text-red-700">
+					<div>{timeRemaining.days.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-base">Days</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>:</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>{timeRemaining.hours.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-base">Hours</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>:</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>{timeRemaining.minutes.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-base">Minutes</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>:</div>
+				</div>
+				<div class="grid grid-rows-2 place-items-center">
+					<div>{timeRemaining.seconds.toString().padStart(2, '0')}</div>
+					<div class="font-valorant text-base">Seconds</div>
+				</div>
+			</time>
+		{:else}
+			<div
+				class="py-4 w-full text-center font-valorant text-2xl font-bold uppercase text-white"
+			>
+				It's go time! Welcome to <span class=" text-red-500 drop-shadow-2xl">RESPAWN!</span>
 			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>:</div>
-			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>{timeRemaining.hours.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-base">Hours</div>
-			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>:</div>
-			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>{timeRemaining.minutes.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-base">Minutes</div>
-			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>:</div>
-			</div>
-			<div class="grid grid-rows-2 place-items-center">
-				<div>{timeRemaining.seconds.toString().padStart(2, '0')}</div>
-				<div class="font-valorant text-base">Seconds</div>
-			</div>
-		</time>
+		{/if}
 	</div>
 </section>
 
