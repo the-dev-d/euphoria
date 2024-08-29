@@ -4,6 +4,30 @@
 </script>
 
 <section class="relative mb-10 h-[88svh] max-h-[88svh] min-h-[740px] w-full overflow-hidden">
+	<div class="absolute bottom-10 flex w-full flex-col items-center justify-center gap-[10%] z-10 backdrop-blur-sm">
+		<h1
+			class="relative mt-10 text-center font-fugaz text-2xl uppercase text-white md:text-4xl gl:mx-10 gl:text-6xl font-bold"
+		>
+			WITNESS THE <span class=" text-btn-main text-3xl md:text-4xl gl:mx-10 gl:text-6xl">IMPACT</span>
+			<span
+				class="relative text-center font-valorant text-xl uppercase text-white md:text-2xl gl:mx-10"
+			>
+				<span class="flicker-fast">#</span><span class="flicker-slowxl font-bold">STREAMERS</span><span
+					class="flicker-slow">BATTLE</span
+				>
+			</span>
+		</h1>
+		<a
+			href="/respawn/streamersbattle"
+			class="mybtn tex mb-2 grid h-full w-11/12 place-items-center py-5 bg-btn-main bg-opacity-50 text-center text-sm text-white hover:scale-105 backdrop-blur-sm hover:bg-neon-violet hover:bg-opacity-10"
+		>
+			<span> </span>
+			<span> </span>
+			<span> </span>
+			<span> </span>
+			<span class="font-fugas">BOOK YOUR TICKETS NOW</span></a
+		>
+	</div>
 	<section class=" absolute right-0 top-0 h-full w-full overflow-hidden flex justify-center items-center">
 		<div class="h-full w-full">
 			<div class="grid h-full grid-rows-2 place-items-center gl:grid-cols-2 gl:grid-rows-1">
@@ -89,15 +113,10 @@
 </section>
 
 
-
 <style lang="postcss">
 	.mybtn {
 		position: relative;
 		overflow: hidden;
-
-		@apply bg-red-400 bg-opacity-30 sm:bg-opacity-0 sm:bg-transparent;
-	
-		
 	}
 
 	.mybtn span:nth-child(1) {
@@ -208,7 +227,7 @@
 		}
 	}
 	.btn {
-		@apply block w-full py-3 px-4 text-center text-sm font-bold uppercase transition-all duration-300;
+		@apply block w-full px-4 py-3 text-center text-sm font-bold uppercase transition-all duration-300;
 	}
 	.btn-primary {
 		@apply bg-btn-main text-black hover:bg-opacity-90;
@@ -217,13 +236,6 @@
 		@apply border border-btn-main bg-transparent hover:bg-btn-main hover:bg-opacity-10;
 	}
 	.btn-neon {
-		@apply bg-neon-violet bg-opacity-10 text-white hover:bg-opacity-20 hover:scale-105;
+		@apply bg-neon-violet bg-opacity-10 text-white hover:scale-105 hover:bg-opacity-20;
 	}
-
-	@media (max-width: 640px) { /* Targeting mobile devices */
-  .mybtn span .font-fugas {
-    font-size: 1.25rem; /* Adjust the size as needed for mobile view */
-  }
-}
-	
 </style>
