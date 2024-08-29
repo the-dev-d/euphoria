@@ -139,8 +139,8 @@
 			</li>
 			<li>
 				<strong>Code Masters:</strong>
-				In this final round, you'll work on 4 coding problems over a 1hour and 30minutes period.The top 2 participants
-				will be declared winners.
+				In this final round, you'll work on 4 coding problems over a 1hour and 30minutes period.The top
+				2 participants will be declared winners.
 			</li>
 		</ul>
 	</article>
@@ -157,11 +157,11 @@
 		REGISTRATION FEE: ₹150
 	</h1>
 	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
-		<a
-			href="/register"
-			class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-semibold text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
-			>REGISTER NOW</a
+		<div
+			class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-semibold uppercase text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 		>
+			Spot Registration
+		</div>
 	</div>
 </section>
 

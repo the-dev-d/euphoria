@@ -71,8 +71,8 @@
 				class="my-10 grid h-full w-full grid-rows-2 place-items-center gap-[10%] p-10 gl:grid-cols-2 gl:grid-rows-1"
 			>
 				{#if !authenticated}
-					<a href="/register" class="block w-full bg-btn-main p-3 text-center text-black"
-						>REGISTER NOW</a
+					<a href="/login" class="block w-full bg-btn-main p-3 text-center text-black uppercase"
+						>Login</a
 					>
 				{:else}
 					<a href="/dashboard" class="block w-full bg-btn-main p-3 text-center text-black"

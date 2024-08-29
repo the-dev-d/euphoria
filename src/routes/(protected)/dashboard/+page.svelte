@@ -17,11 +17,11 @@
 	}
 
 	const urls = {
-		CUG: "/solo",
-		CPG: "/solo",
-		WEB: "/solo",
-		TH: "/team/treasurehunt",
-		RP: "/team/respawn"
+		CUG: "/coding/ug",
+		CPG: "/coding/pg",
+		WEB: "/web-designing",
+		TH: "/treasure-hunt",
+		RP: "/respawn"
 	}
 
 	const participated = data.events.map(e => e.event_code);
@@ -88,7 +88,7 @@
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-3 gl:grid-cols-6">
 				{#each Object.keys(names) as key}
 					{#if !participated.includes(key)}
-						<a  class="hover:scale-105 transition-all shadow-white" href={"/events" + urls[key]}
+						<a class="hover:scale-105 transition-all shadow-white" href={urls[key]}
 						><div class="aspect-square w-full relative border bg-blue-900/10 border-blue-400">
 							<div class="w-full uppercase text-center h-full grid place-items-center z-20 absolute font-Ubuntu text-2xl font-semibold" >
 								<span>{names[key]}</span>
