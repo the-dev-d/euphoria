@@ -160,8 +160,8 @@
 		REGISTRATION FEE: ₹150
 	</h1>
 	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
-		<div class="block h-full w-full bg-neon-violet p-3 text-center text-black">
-			REGISTRATION CLOSED
+		<div class="block h-full w-full bg-neon-violet p-3 text-center text-white uppercase font-bold text-sm">
+			thanks to all participants and congratulations to the winners!
 		</div>
 	</div>
 </section>

@@ -156,9 +156,11 @@
 	<h1 class="relative mx-5 mt-10 font-fugaz text-2xl uppercase text-white gl:mx-10 gl:text-4xl">
 		REGISTRATION FEE: ₹150
 	</h1>
-	<div class=" relative grid w-full place-items-center gap-[10%] p-5 gl:p-10">
-		<div class="block h-full w-full bg-neon-violet p-3 text-center text-black">
-			SPOT REGISTRATION
+	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
+		<div
+			class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-bold uppercase text-white transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+		>
+		thanks to all participants and congratulations to the winners!
 		</div>
 	</div>
 </section>

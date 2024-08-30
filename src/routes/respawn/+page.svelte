@@ -40,14 +40,14 @@
 		</span>
 	</h1>
 	<a
-		href="/respawn/streamersbattle"
+		href="/respawn/streamersbattle/login"
 		class="mybtn tex mb-2 grid h-full w-11/12 place-items-center py-5 text-center text-sm text-white hover:scale-105 hover:bg-neon-violet hover:bg-opacity-10"
 	>
 		<span> </span>
 		<span> </span>
 		<span> </span>
 		<span> </span>
-		<span class="font-fugas mb-4">BOOK YOUR TICKETS NOW</span></a
+		<span class="font-fugas mb-3 uppercase">View Your TICKETS</span></a
 	>
 </div>
 

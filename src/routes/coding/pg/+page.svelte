@@ -158,9 +158,9 @@
 	</h1>
 	<div class="relative my-10 grid w-full place-items-center gap-4 sm:gap-6">
 		<div
-			class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-semibold uppercase text-black transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
+			class="block w-full bg-neon-violet px-4 py-2 text-center text-sm font-bold uppercase text-white transition-all duration-300 hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-neon-violet focus:ring-opacity-50"
 		>
-			Spot Registration
+		thanks to all participants and congratulations to the winners!
 		</div>
 	</div>
 </section>

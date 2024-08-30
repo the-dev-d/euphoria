@@ -62,21 +62,21 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative transition-transform transform hover:scale-105 hover:shadow-lg">
               <img src="/images/experience/vr.jpg" alt="VR Experience" class="absolute inset-0 w-full h-full object-cover" />
-              <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+              <div class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
                 VR EXPERIENCE
-              </a>
+              </div>
             </div>
             <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative transition-transform transform hover:scale-105 hover:shadow-lg">
               <img src="/images/experience/ps5.jpg" alt="PS5" class="absolute inset-0 w-full h-full object-cover" />
-              <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+              <div class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
                 PS5
-              </a>
+              </div>
             </div>
             <div class="border-2 border-pink-600 aspect-square flex flex-col items-center justify-end overflow-hidden rounded-lg relative transition-transform transform hover:scale-105 hover:shadow-lg">
               <img src="/images/experience/ds.jpg" alt="Driving Simulator" class="absolute inset-0 w-full h-full object-cover" />
-              <a href="#" target="_blank" rel="noopener noreferrer" class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
+              <div class="bg-black bg-opacity-70 w-full text-center py-2 text-sm relative z-10 hover:bg-opacity-90 transition-colors">
                 DRIVING SIMULATOR
-              </a>
+              </div>
             </div>
           </div>
         </section>
@@ -110,9 +110,9 @@
         </div>
 
         <div class="text-center space-y-4">
-          <a href="/respawn/streamersbattle/register">
+          <a href="/respawn/streamersbattle/login">
             <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-4 px-10 rounded-full transition duration-300 text-xl hover:shadow-lg">
-              Book Now
+              View My Tickets
             </button>
           </a>
         </div>
