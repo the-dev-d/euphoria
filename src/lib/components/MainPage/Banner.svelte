@@ -96,7 +96,7 @@
 						>
 					{/if} -->
 					<a
-						href="/dashboard"
+						href="/respawn/streamersbattle/login"
 						class="mybtn tex grid w-full place-items-center py-5 text-center text-sm text-white backdrop-blur-sm hover:scale-105 hover:bg-neon-violet hover:bg-opacity-10"
 					>
 						<span> </span>
